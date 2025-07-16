@@ -14,5 +14,13 @@
         "disabled": false,
         "info": "",
         "env": []
+    },
+    {
+        "id": "df380f55bee6342a",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
     }
 ]

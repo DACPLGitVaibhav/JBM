@@ -1,16 +1,32 @@
 [
     {
-        "id": "3e234f70437bd3be",
+        "id": "e07e4c26beb8b4f7",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Flow_Alarm_ML_10",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "e07e4c26beb8b4f7",
+        "id": "8c2ed9fb4186f37f",
         "type": "tab",
-        "label": "Flow_Alarm_ML_10",
+        "label": "Flow_Alarm_ML_20",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e72cc2d74f6e5f1f",
+        "type": "tab",
+        "label": "Flow_Alarm_ML_30",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5b94b71bbabe44fd",
+        "type": "tab",
+        "label": "Flow_Alarm_ML_40",
         "disabled": false,
         "info": "",
         "env": []
@@ -658,6 +674,3444 @@
         ]
     },
     {
+        "id": "6d38527813a3951d",
+        "type": "MSSQL-CN",
+        "z": "8c2ed9fb4186f37f",
+        "tdsVersion": "7_4",
+        "name": "SQL Server",
+        "server": "DESKTOP-UEMD3BN\\MSSQLSERVER2022",
+        "port": "1433",
+        "encyption": false,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "c55b68dffbd8100e",
+        "type": "s7 endpoint",
+        "z": "8c2ed9fb4186f37f",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": "1000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB100,X0.5",
+                "name": "ML20_1"
+            },
+            {
+                "addr": "DB100,X0.6",
+                "name": "ML20_2"
+            },
+            {
+                "addr": "DB100,X0.7",
+                "name": "ML20_3"
+            },
+            {
+                "addr": "DB100,X1.0",
+                "name": "ML20_4"
+            },
+            {
+                "addr": "DB100,X1.1",
+                "name": "ML20_5"
+            },
+            {
+                "addr": "DB100,X1.2",
+                "name": "ML20_6"
+            },
+            {
+                "addr": "DB100,X1.3",
+                "name": "ML20_7"
+            },
+            {
+                "addr": "DB100,X1.4",
+                "name": "ML20_8"
+            },
+            {
+                "addr": "DB100,X1.5",
+                "name": "ML20_9"
+            },
+            {
+                "addr": "DB100,X1.6",
+                "name": "ML20_10"
+            },
+            {
+                "addr": "DB100,X1.7",
+                "name": "ML20_11"
+            },
+            {
+                "addr": "DB100,X2.0",
+                "name": "ML20_12"
+            },
+            {
+                "addr": "DB100,X2.1",
+                "name": "ML20_13"
+            },
+            {
+                "addr": "DB100,X2.2",
+                "name": "ML20_14"
+            },
+            {
+                "addr": "DB100,X2.3",
+                "name": "ML20_15"
+            },
+            {
+                "addr": "DB100,X2.4",
+                "name": "ML20_16"
+            },
+            {
+                "addr": "DB100,X2.5",
+                "name": "ML20_17"
+            },
+            {
+                "addr": "DB100,X2.6",
+                "name": "ML20_18"
+            },
+            {
+                "addr": "DB100,X2.7",
+                "name": "ML20_19"
+            },
+            {
+                "addr": "DB100,X3.0",
+                "name": "ML20_20"
+            },
+            {
+                "addr": "DB100,X3.1",
+                "name": "ML20_21"
+            },
+            {
+                "addr": "DB100,X3.2",
+                "name": "ML20_22"
+            },
+            {
+                "addr": "DB100,X3.3",
+                "name": "ML20_23"
+            },
+            {
+                "addr": "DB100,X3.5",
+                "name": "ML20_24"
+            },
+            {
+                "addr": "DB100,X3.6",
+                "name": "ML20_25"
+            },
+            {
+                "addr": "DB100,X3.7",
+                "name": "ML20_26"
+            },
+            {
+                "addr": "DB100,X3.4",
+                "name": "ML20_27"
+            },
+            {
+                "addr": "DB100,X7.6",
+                "name": "ML20_28"
+            },
+            {
+                "addr": "DB100,X7.7",
+                "name": "ML20_29"
+            },
+            {
+                "addr": "DB100,X8.0",
+                "name": "ML20_30"
+            },
+            {
+                "addr": "DB100,X8.1",
+                "name": "ML20_31"
+            },
+            {
+                "addr": "DB100,X8.2",
+                "name": "ML20_32"
+            },
+            {
+                "addr": "DB100,X8.3",
+                "name": "ML20_33"
+            },
+            {
+                "addr": "DB52,X6.0",
+                "name": "ML20_34"
+            },
+            {
+                "addr": "DB52,X6.1",
+                "name": "ML20_35"
+            },
+            {
+                "addr": "DB52,X6.2",
+                "name": "ML20_36"
+            },
+            {
+                "addr": "DB52,X6.3",
+                "name": "ML20_37"
+            },
+            {
+                "addr": "DB52,X6.4",
+                "name": "ML20_38"
+            },
+            {
+                "addr": "DB52,X6.5",
+                "name": "ML20_39"
+            },
+            {
+                "addr": "DB52,X6.6",
+                "name": "ML20_40"
+            },
+            {
+                "addr": "DB52,X6.7",
+                "name": "ML20_41"
+            },
+            {
+                "addr": "DB52,X7.0",
+                "name": "ML20_42"
+            },
+            {
+                "addr": "DB52,X7.1",
+                "name": "ML20_43"
+            },
+            {
+                "addr": "DB52,X7.2",
+                "name": "ML20_44"
+            },
+            {
+                "addr": "DB52,X7.3",
+                "name": "ML20_45"
+            },
+            {
+                "addr": "DB52,X7.4",
+                "name": "ML20_46"
+            },
+            {
+                "addr": "DB52,X7.5",
+                "name": "ML20_47"
+            },
+            {
+                "addr": "DB52,X7.6",
+                "name": "ML20_48"
+            },
+            {
+                "addr": "DB52,X7.7",
+                "name": "ML20_49"
+            },
+            {
+                "addr": "DB52,X8.0",
+                "name": "ML20_50"
+            },
+            {
+                "addr": "DB52,X8.1",
+                "name": "ML20_51"
+            },
+            {
+                "addr": "DB52,X8.2",
+                "name": "ML20_52"
+            },
+            {
+                "addr": "DB52,X8.3",
+                "name": "ML20_53"
+            },
+            {
+                "addr": "DB52,X8.4",
+                "name": "ML20_54"
+            },
+            {
+                "addr": "DB52,X8.5",
+                "name": "ML20_55"
+            },
+            {
+                "addr": "DB52,X8.6",
+                "name": "ML20_56"
+            },
+            {
+                "addr": "DB52,X8.7",
+                "name": "ML20_57"
+            },
+            {
+                "addr": "DB52,X9.0",
+                "name": "ML20_58"
+            },
+            {
+                "addr": "DB52,X9.1",
+                "name": "ML20_59"
+            },
+            {
+                "addr": "DB52,X9.2",
+                "name": "ML20_60"
+            },
+            {
+                "addr": "DB52,X9.3",
+                "name": "ML20_61"
+            },
+            {
+                "addr": "DB52,X9.4",
+                "name": "ML20_62"
+            },
+            {
+                "addr": "DB52,X9.5",
+                "name": "ML20_63"
+            },
+            {
+                "addr": "DB52,X9.6",
+                "name": "ML20_64"
+            },
+            {
+                "addr": "DB52,X9.7",
+                "name": "ML20_65"
+            },
+            {
+                "addr": "DB52,X10.0",
+                "name": "ML20_66"
+            },
+            {
+                "addr": "DB52,X10.1",
+                "name": "ML20_67"
+            },
+            {
+                "addr": "DB53,X6.0",
+                "name": "ML20_68"
+            },
+            {
+                "addr": "DB53,X6.1",
+                "name": "ML20_69"
+            },
+            {
+                "addr": "DB53,X6.2",
+                "name": "ML20_70"
+            },
+            {
+                "addr": "DB53,X6.3",
+                "name": "ML20_71"
+            },
+            {
+                "addr": "DB53,X6.4",
+                "name": "ML20_72"
+            },
+            {
+                "addr": "DB53,X6.5",
+                "name": "ML20_73"
+            },
+            {
+                "addr": "DB53,X6.6",
+                "name": "ML20_74"
+            },
+            {
+                "addr": "DB53,X6.7",
+                "name": "ML20_75"
+            },
+            {
+                "addr": "DB53,X7.0",
+                "name": "ML20_76"
+            },
+            {
+                "addr": "DB53,X7.1",
+                "name": "ML20_77"
+            },
+            {
+                "addr": "DB53,X7.2",
+                "name": "ML20_78"
+            },
+            {
+                "addr": "DB53,X7.3",
+                "name": "ML20_79"
+            },
+            {
+                "addr": "DB53,X7.4",
+                "name": "ML20_80"
+            },
+            {
+                "addr": "DB53,X7.5",
+                "name": "ML20_81"
+            },
+            {
+                "addr": "DB53,X7.6",
+                "name": "ML20_82"
+            },
+            {
+                "addr": "DB53,X7.7",
+                "name": "ML20_83"
+            },
+            {
+                "addr": "DB53,X8.0",
+                "name": "ML20_84"
+            },
+            {
+                "addr": "DB53,X8.1",
+                "name": "ML20_85"
+            },
+            {
+                "addr": "DB53,X8.2",
+                "name": "ML20_86"
+            },
+            {
+                "addr": "DB53,X8.3",
+                "name": "ML20_87"
+            },
+            {
+                "addr": "DB53,X8.4",
+                "name": "ML20_88"
+            },
+            {
+                "addr": "DB53,X8.5",
+                "name": "ML20_89"
+            },
+            {
+                "addr": "DB53,X8.6",
+                "name": "ML20_90"
+            },
+            {
+                "addr": "DB53,X8.7",
+                "name": "ML20_91"
+            },
+            {
+                "addr": "DB53,X9.0",
+                "name": "ML20_92"
+            },
+            {
+                "addr": "DB53,X9.1",
+                "name": "ML20_93"
+            },
+            {
+                "addr": "DB53,X9.2",
+                "name": "ML20_94"
+            },
+            {
+                "addr": "DB53,X9.3",
+                "name": "ML20_95"
+            },
+            {
+                "addr": "DB53,X9.4",
+                "name": "ML20_96"
+            },
+            {
+                "addr": "DB53,X9.5",
+                "name": "ML20_97"
+            },
+            {
+                "addr": "DB53,X9.6",
+                "name": "ML20_98"
+            },
+            {
+                "addr": "DB53,X9.7",
+                "name": "ML20_99"
+            },
+            {
+                "addr": "DB53,X10.0",
+                "name": "ML20_100"
+            },
+            {
+                "addr": "DB53,X10.1",
+                "name": "ML20_101"
+            },
+            {
+                "addr": "DB54,X6.0",
+                "name": "ML20_102"
+            },
+            {
+                "addr": "DB54,X6.1",
+                "name": "ML20_103"
+            },
+            {
+                "addr": "DB54,X6.2",
+                "name": "ML20_104"
+            },
+            {
+                "addr": "DB54,X6.3",
+                "name": "ML20_105"
+            },
+            {
+                "addr": "DB54,X6.4",
+                "name": "ML20_106"
+            },
+            {
+                "addr": "DB54,X6.5",
+                "name": "ML20_107"
+            },
+            {
+                "addr": "DB54,X6.6",
+                "name": "ML20_108"
+            },
+            {
+                "addr": "DB54,X6.7",
+                "name": "ML20_109"
+            },
+            {
+                "addr": "DB54,X7.0",
+                "name": "ML20_110"
+            },
+            {
+                "addr": "DB54,X7.1",
+                "name": "ML20_111"
+            },
+            {
+                "addr": "DB54,X7.2",
+                "name": "ML20_112"
+            },
+            {
+                "addr": "DB54,X7.3",
+                "name": "ML20_113"
+            },
+            {
+                "addr": "DB54,X7.4",
+                "name": "ML20_114"
+            },
+            {
+                "addr": "DB54,X7.5",
+                "name": "ML20_115"
+            },
+            {
+                "addr": "DB54,X7.6",
+                "name": "ML20_116"
+            },
+            {
+                "addr": "DB54,X7.7",
+                "name": "ML20_117"
+            },
+            {
+                "addr": "DB54,X8.0",
+                "name": "ML20_118"
+            },
+            {
+                "addr": "DB54,X8.1",
+                "name": "ML20_119"
+            },
+            {
+                "addr": "DB54,X8.2",
+                "name": "ML20_120"
+            },
+            {
+                "addr": "DB54,X8.3",
+                "name": "ML20_121"
+            },
+            {
+                "addr": "DB54,X8.4",
+                "name": "ML20_122"
+            },
+            {
+                "addr": "DB54,X8.5",
+                "name": "ML20_123"
+            },
+            {
+                "addr": "DB54,X8.6",
+                "name": "ML20_124"
+            },
+            {
+                "addr": "DB54,X8.7",
+                "name": "ML20_125"
+            },
+            {
+                "addr": "DB54,X9.0",
+                "name": "ML20_126"
+            },
+            {
+                "addr": "DB54,X9.1",
+                "name": "ML20_127"
+            },
+            {
+                "addr": "DB54,X9.2",
+                "name": "ML20_128"
+            },
+            {
+                "addr": "DB54,X9.3",
+                "name": "ML20_129"
+            },
+            {
+                "addr": "DB54,X9.4",
+                "name": "ML20_130"
+            },
+            {
+                "addr": "DB54,X9.5",
+                "name": "ML20_131"
+            },
+            {
+                "addr": "DB54,X9.6",
+                "name": "ML20_132"
+            },
+            {
+                "addr": "DB54,X9.7",
+                "name": "ML20_133"
+            },
+            {
+                "addr": "DB54,X10.0",
+                "name": "ML20_134"
+            },
+            {
+                "addr": "DB54,X10.1",
+                "name": "ML20_135"
+            },
+            {
+                "addr": "DB51,X6.0",
+                "name": "ML20_136"
+            },
+            {
+                "addr": "DB51,X6.1",
+                "name": "ML20_137"
+            },
+            {
+                "addr": "DB51,X6.2",
+                "name": "ML20_138"
+            },
+            {
+                "addr": "DB51,X6.3",
+                "name": "ML20_139"
+            },
+            {
+                "addr": "DB51,X6.4",
+                "name": "ML20_140"
+            },
+            {
+                "addr": "DB51,X6.5",
+                "name": "ML20_141"
+            },
+            {
+                "addr": "DB51,X6.6",
+                "name": "ML20_142"
+            },
+            {
+                "addr": "DB51,X6.7",
+                "name": "ML20_143"
+            },
+            {
+                "addr": "DB51,X7.0",
+                "name": "ML20_144"
+            },
+            {
+                "addr": "DB51,X7.1",
+                "name": "ML20_145"
+            },
+            {
+                "addr": "DB51,X7.2",
+                "name": "ML20_146"
+            },
+            {
+                "addr": "DB51,X7.3",
+                "name": "ML20_147"
+            },
+            {
+                "addr": "DB51,X7.4",
+                "name": "ML20_148"
+            },
+            {
+                "addr": "DB51,X7.5",
+                "name": "ML20_149"
+            },
+            {
+                "addr": "DB51,X7.6",
+                "name": "ML20_150"
+            },
+            {
+                "addr": "DB51,X7.7",
+                "name": "ML20_151"
+            },
+            {
+                "addr": "DB51,X8.0",
+                "name": "ML20_152"
+            },
+            {
+                "addr": "DB51,X8.1",
+                "name": "ML20_153"
+            },
+            {
+                "addr": "DB51,X8.2",
+                "name": "ML20_154"
+            },
+            {
+                "addr": "DB51,X8.3",
+                "name": "ML20_155"
+            },
+            {
+                "addr": "DB51,X8.4",
+                "name": "ML20_156"
+            },
+            {
+                "addr": "DB51,X8.5",
+                "name": "ML20_157"
+            },
+            {
+                "addr": "DB51,X8.6",
+                "name": "ML20_158"
+            },
+            {
+                "addr": "DB51,X8.7",
+                "name": "ML20_159"
+            },
+            {
+                "addr": "DB51,X9.0",
+                "name": "ML20_160"
+            },
+            {
+                "addr": "DB51,X9.1",
+                "name": "ML20_161"
+            },
+            {
+                "addr": "DB51,X9.2",
+                "name": "ML20_162"
+            },
+            {
+                "addr": "DB51,X9.3",
+                "name": "ML20_163"
+            },
+            {
+                "addr": "DB51,X9.4",
+                "name": "ML20_164"
+            },
+            {
+                "addr": "DB51,X9.5",
+                "name": "ML20_165"
+            },
+            {
+                "addr": "DB51,X9.6",
+                "name": "ML20_166"
+            },
+            {
+                "addr": "DB51,X9.7",
+                "name": "ML20_167"
+            },
+            {
+                "addr": "DB51,X10.0",
+                "name": "ML20_168"
+            },
+            {
+                "addr": "DB51,X10.1",
+                "name": "ML20_169"
+            },
+            {
+                "addr": "DB100,X12.0",
+                "name": "ML20_170"
+            },
+            {
+                "addr": "DB100,X12.2",
+                "name": "ML20_171"
+            },
+            {
+                "addr": "DB100,X12.3",
+                "name": "ML20_172"
+            },
+            {
+                "addr": "DB100,X12.4",
+                "name": "ML20_173"
+            },
+            {
+                "addr": "DB100,X12.6",
+                "name": "ML20_174"
+            },
+            {
+                "addr": "DB100,X12.7",
+                "name": "ML20_175"
+            },
+            {
+                "addr": "DB100,X13.0",
+                "name": "ML20_176"
+            },
+            {
+                "addr": "DB100,X13.2",
+                "name": "ML20_177"
+            },
+            {
+                "addr": "DB100,X13.3",
+                "name": "ML20_178"
+            },
+            {
+                "addr": "DB100,X13.4",
+                "name": "ML20_179"
+            },
+            {
+                "addr": "DB100,X13.6",
+                "name": "ML20_180"
+            },
+            {
+                "addr": "DB100,X13.7",
+                "name": "ML20_181"
+            },
+            {
+                "addr": "DB100,X16.0",
+                "name": "ML20_182"
+            },
+            {
+                "addr": "DB100,X16.1",
+                "name": "ML20_183"
+            },
+            {
+                "addr": "DB100,X16.2",
+                "name": "ML20_184"
+            },
+            {
+                "addr": "DB100,X16.3",
+                "name": "ML20_185"
+            },
+            {
+                "addr": "DB100,X15.3",
+                "name": "ML20_186"
+            },
+            {
+                "addr": "DB100,X15.1",
+                "name": "ML20_187"
+            },
+            {
+                "addr": "DB100,X15.2",
+                "name": "ML20_188"
+            },
+            {
+                "addr": "DB100,X17.0",
+                "name": "ML20_189"
+            },
+            {
+                "addr": "DB100,X17.1",
+                "name": "ML20_190"
+            },
+            {
+                "addr": "DB100,X17.2",
+                "name": "ML20_191"
+            },
+            {
+                "addr": "DB100,X17.3",
+                "name": "ML20_192"
+            },
+            {
+                "addr": "DB100,X17.4",
+                "name": "ML20_193"
+            },
+            {
+                "addr": "DB100,X17.5",
+                "name": "ML20_194"
+            },
+            {
+                "addr": "DB100,X17.6",
+                "name": "ML20_195"
+            },
+            {
+                "addr": "DB100,X17.7",
+                "name": "ML20_196"
+            },
+            {
+                "addr": "DB100,X18.0",
+                "name": "ML20_197"
+            },
+            {
+                "addr": "DB100,X18.1",
+                "name": "ML20_198"
+            },
+            {
+                "addr": "DB100,X18.2",
+                "name": "ML20_199"
+            },
+            {
+                "addr": "DB100,X18.3",
+                "name": "ML20_200"
+            },
+            {
+                "addr": "DB100,X18.4",
+                "name": "ML20_201"
+            },
+            {
+                "addr": "DB100,X18.5",
+                "name": "ML20_202"
+            },
+            {
+                "addr": "DB100,X19.0",
+                "name": "ML20_203"
+            },
+            {
+                "addr": "DB100,X19.1",
+                "name": "ML20_204"
+            },
+            {
+                "addr": "DB100,X19.2",
+                "name": "ML20_205"
+            },
+            {
+                "addr": "DB100,X19.3",
+                "name": "ML20_206"
+            },
+            {
+                "addr": "DB100,X19.5",
+                "name": "ML20_207"
+            },
+            {
+                "addr": "DB100,X19.6",
+                "name": "ML20_208"
+            },
+            {
+                "addr": "DB100,X19.7",
+                "name": "ML20_209"
+            },
+            {
+                "addr": "DB100,X20.0",
+                "name": "ML20_210"
+            },
+            {
+                "addr": "DB100,X20.3",
+                "name": "ML20_211"
+            },
+            {
+                "addr": "DB100,X20.4",
+                "name": "ML20_212"
+            },
+            {
+                "addr": "DB100,X20.5",
+                "name": "ML20_213"
+            },
+            {
+                "addr": "DB100,X20.6",
+                "name": "ML20_214"
+            },
+            {
+                "addr": "DB100,X21.1",
+                "name": "ML20_215"
+            },
+            {
+                "addr": "DB100,X21.2",
+                "name": "ML20_216"
+            },
+            {
+                "addr": "DB100,X21.3",
+                "name": "ML20_217"
+            },
+            {
+                "addr": "DB100,X21.4",
+                "name": "ML20_218"
+            },
+            {
+                "addr": "DB100,X21.5",
+                "name": "ML20_219"
+            },
+            {
+                "addr": "DB100,X28.4",
+                "name": "ML20_220"
+            },
+            {
+                "addr": "DB100,X28.5",
+                "name": "ML20_221"
+            },
+            {
+                "addr": "DB100,X28.6",
+                "name": "ML20_222"
+            },
+            {
+                "addr": "DB100,X28.7",
+                "name": "ML20_223"
+            },
+            {
+                "addr": "DB100,X29.0",
+                "name": "ML20_224"
+            },
+            {
+                "addr": "DB100,X29.1",
+                "name": "ML20_225"
+            },
+            {
+                "addr": "DB100,X29.2",
+                "name": "ML20_226"
+            },
+            {
+                "addr": "DB100,X29.3",
+                "name": "ML20_227"
+            },
+            {
+                "addr": "DB100,X29.4",
+                "name": "ML20_228"
+            },
+            {
+                "addr": "DB100,X29.5",
+                "name": "ML20_229"
+            },
+            {
+                "addr": "DB100,X29.6",
+                "name": "ML20_230"
+            },
+            {
+                "addr": "DB100,X29.7",
+                "name": "ML20_231"
+            },
+            {
+                "addr": "DB100,X30.0",
+                "name": "ML20_232"
+            },
+            {
+                "addr": "DB100,X30.1",
+                "name": "ML20_233"
+            },
+            {
+                "addr": "DB100,X30.2",
+                "name": "ML20_234"
+            },
+            {
+                "addr": "DB100,X30.3",
+                "name": "ML20_235"
+            },
+            {
+                "addr": "DB100,X30.4",
+                "name": "ML20_236"
+            },
+            {
+                "addr": "DB100,X30.5",
+                "name": "ML20_237"
+            },
+            {
+                "addr": "DB100,X30.6",
+                "name": "ML20_238"
+            },
+            {
+                "addr": "DB100,X30.7",
+                "name": "ML20_239"
+            },
+            {
+                "addr": "DB100,X31.0",
+                "name": "ML20_240"
+            },
+            {
+                "addr": "DB100,X31.1",
+                "name": "ML20_241"
+            },
+            {
+                "addr": "DB100,X31.2",
+                "name": "ML20_242"
+            },
+            {
+                "addr": "DB100,X31.3",
+                "name": "ML20_243"
+            },
+            {
+                "addr": "DB100,X31.4",
+                "name": "ML20_244"
+            },
+            {
+                "addr": "DB100,X31.5",
+                "name": "ML20_245"
+            },
+            {
+                "addr": "DB100,X31.6",
+                "name": "ML20_246"
+            },
+            {
+                "addr": "DB100,X31.7",
+                "name": "ML20_247"
+            },
+            {
+                "addr": "DB100,X32.0",
+                "name": "ML20_248"
+            },
+            {
+                "addr": "DB100,X32.1",
+                "name": "ML20_249"
+            },
+            {
+                "addr": "DB100,X32.2",
+                "name": "ML20_250"
+            },
+            {
+                "addr": "DB100,X32.3",
+                "name": "ML20_251"
+            },
+            {
+                "addr": "DB100,X32.4",
+                "name": "ML20_252"
+            },
+            {
+                "addr": "DB100,X32.5",
+                "name": "ML20_253"
+            },
+            {
+                "addr": "DB100,X32.6",
+                "name": "ML20_254"
+            },
+            {
+                "addr": "DB100,X32.7",
+                "name": "ML20_255"
+            },
+            {
+                "addr": "DB100,X33.0",
+                "name": "ML20_256"
+            },
+            {
+                "addr": "DB100,X33.1",
+                "name": "ML20_257"
+            },
+            {
+                "addr": "DB100,X33.2",
+                "name": "ML20_258"
+            },
+            {
+                "addr": "DB100,X33.3",
+                "name": "ML20_259"
+            },
+            {
+                "addr": "DB100,X33.4",
+                "name": "ML20_260"
+            },
+            {
+                "addr": "DB100,X33.5",
+                "name": "ML20_261"
+            },
+            {
+                "addr": "DB100,X33.6",
+                "name": "ML20_262"
+            },
+            {
+                "addr": "DB100,X33.7",
+                "name": "ML20_263"
+            },
+            {
+                "addr": "DB100,X40.0",
+                "name": "ML20_264"
+            },
+            {
+                "addr": "DB100,X40.1",
+                "name": "ML20_265"
+            },
+            {
+                "addr": "DB100,X40.2",
+                "name": "ML20_266"
+            },
+            {
+                "addr": "DB100,X40.3",
+                "name": "ML20_267"
+            },
+            {
+                "addr": "DB100,X39.5",
+                "name": "ML20_268"
+            },
+            {
+                "addr": "DB100,X56.4",
+                "name": "ML20_269"
+            },
+            {
+                "addr": "DB100,X56.5",
+                "name": "ML20_270"
+            },
+            {
+                "addr": "DB100,X56.6",
+                "name": "ML20_271"
+            },
+            {
+                "addr": "DB100,X56.7",
+                "name": "ML20_272"
+            },
+            {
+                "addr": "DB100,X57.0",
+                "name": "ML20_273"
+            },
+            {
+                "addr": "DB100,X57.1",
+                "name": "ML20_274"
+            },
+            {
+                "addr": "DB100,X57.2",
+                "name": "ML20_275"
+            },
+            {
+                "addr": "DB100,X57.3",
+                "name": "ML20_276"
+            },
+            {
+                "addr": "DB100,X57.4",
+                "name": "ML20_277"
+            },
+            {
+                "addr": "DB100,X57.5",
+                "name": "ML20_278"
+            },
+            {
+                "addr": "DB100,X57.6",
+                "name": "ML20_279"
+            },
+            {
+                "addr": "DB100,X57.7",
+                "name": "ML20_280"
+            },
+            {
+                "addr": "DB100,X43.0",
+                "name": "ML20_313"
+            },
+            {
+                "addr": "DB100,X43.1",
+                "name": "ML20_314"
+            },
+            {
+                "addr": "DB100,X43.2",
+                "name": "ML20_315"
+            },
+            {
+                "addr": "DB100,X43.3",
+                "name": "ML20_316"
+            },
+            {
+                "addr": "DB100,X43.4",
+                "name": "ML20_317"
+            },
+            {
+                "addr": "DB100,X43.5",
+                "name": "ML20_318"
+            },
+            {
+                "addr": "DB100,X43.6",
+                "name": "ML20_319"
+            },
+            {
+                "addr": "DB100,X43.7",
+                "name": "ML20_320"
+            },
+            {
+                "addr": "DB100,X44.0",
+                "name": "ML20_321"
+            },
+            {
+                "addr": "DB100,X44.1",
+                "name": "ML20_322"
+            },
+            {
+                "addr": "DB100,X45.0",
+                "name": "ML20_323"
+            },
+            {
+                "addr": "DB100,X45.1",
+                "name": "ML20_324"
+            },
+            {
+                "addr": "DB100,X45.2",
+                "name": "ML20_325"
+            },
+            {
+                "addr": "DB100,X45.3",
+                "name": "ML20_326"
+            },
+            {
+                "addr": "DB100,X45.4",
+                "name": "ML20_327"
+            },
+            {
+                "addr": "DB100,X45.5",
+                "name": "ML20_328"
+            },
+            {
+                "addr": "DB100,X45.6",
+                "name": "ML20_329"
+            },
+            {
+                "addr": "DB100,X45.7",
+                "name": "ML20_330"
+            },
+            {
+                "addr": "DB100,X46.0",
+                "name": "ML20_331"
+            },
+            {
+                "addr": "DB100,X46.1",
+                "name": "ML20_332"
+            },
+            {
+                "addr": "DB100,X46.2",
+                "name": "ML20_333"
+            },
+            {
+                "addr": "DB100,X46.3",
+                "name": "ML20_334"
+            },
+            {
+                "addr": "DB100,X46.4",
+                "name": "ML20_335"
+            },
+            {
+                "addr": "DB100,X46.5",
+                "name": "ML20_336"
+            },
+            {
+                "addr": "DB100,X46.6",
+                "name": "ML20_337"
+            },
+            {
+                "addr": "DB100,X46.7",
+                "name": "ML20_338"
+            },
+            {
+                "addr": "DB100,X47.2",
+                "name": "ML20_339"
+            },
+            {
+                "addr": "DB100,X47.3",
+                "name": "ML20_340"
+            },
+            {
+                "addr": "DB100,X47.4",
+                "name": "ML20_341"
+            },
+            {
+                "addr": "DB100,X47.5",
+                "name": "ML20_342"
+            },
+            {
+                "addr": "DB100,X62.0",
+                "name": "ML20_343"
+            },
+            {
+                "addr": "DB100,X62.1",
+                "name": "ML20_344"
+            },
+            {
+                "addr": "DB100,X62.2",
+                "name": "ML20_345"
+            },
+            {
+                "addr": "DB100,X62.3",
+                "name": "ML20_346"
+            },
+            {
+                "addr": "DB100,X62.4",
+                "name": "ML20_347"
+            },
+            {
+                "addr": "DB100,X62.5",
+                "name": "ML20_348"
+            },
+            {
+                "addr": "DB100,X62.6",
+                "name": "ML20_349"
+            },
+            {
+                "addr": "DB100,X62.7",
+                "name": "ML20_350"
+            },
+            {
+                "addr": "DB100,X75.0",
+                "name": "ML20_399"
+            },
+            {
+                "addr": "DB100,X15.4",
+                "name": "ML20_400"
+            },
+            {
+                "addr": "DB100,X75.2",
+                "name": "ML20_401"
+            },
+            {
+                "addr": "DB100,X75.3",
+                "name": "ML20_402"
+            },
+            {
+                "addr": "DB100,X75.4",
+                "name": "ML20_403"
+            },
+            {
+                "addr": "DB100,X75.5",
+                "name": "ML20_404"
+            },
+            {
+                "addr": "DB100,X75.6",
+                "name": "ML20_405"
+            },
+            {
+                "addr": "DB100,X75.7",
+                "name": "ML20_406"
+            },
+            {
+                "addr": "DB100,X105.1",
+                "name": "ML20_428"
+            },
+            {
+                "addr": "DB100,X105.2",
+                "name": "ML20_429"
+            },
+            {
+                "addr": "DB100,X105.3",
+                "name": "ML20_430"
+            },
+            {
+                "addr": "DB100,X105.4",
+                "name": "ML20_431"
+            },
+            {
+                "addr": "DB100,X105.5",
+                "name": "ML20_432"
+            },
+            {
+                "addr": "DB100,X107.5",
+                "name": "ML20_433"
+            },
+            {
+                "addr": "DB100,X107.6",
+                "name": "ML20_434"
+            },
+            {
+                "addr": "DB100,X107.7",
+                "name": "ML20_435"
+            },
+            {
+                "addr": "DB100,X108.0",
+                "name": "ML20_436"
+            },
+            {
+                "addr": "DB100,X108.1",
+                "name": "ML20_437"
+            },
+            {
+                "addr": "DB100,X108.2",
+                "name": "ML20_438"
+            },
+            {
+                "addr": "DB100,X109.2",
+                "name": "ML20_439"
+            },
+            {
+                "addr": "DB100,X109.7",
+                "name": "ML20_440"
+            },
+            {
+                "addr": "DB100,X110.0",
+                "name": "ML20_441"
+            },
+            {
+                "addr": "DB100,X110.6",
+                "name": "ML20_442"
+            },
+            {
+                "addr": "DB100,X111.1",
+                "name": "ML20_443"
+            },
+            {
+                "addr": "DB100,X111.2",
+                "name": "ML20_444"
+            },
+            {
+                "addr": "DB100,X111.3",
+                "name": "ML20_445"
+            },
+            {
+                "addr": "DB100,X111.4",
+                "name": "ML20_446"
+            },
+            {
+                "addr": "DB100,X111.5",
+                "name": "ML20_447"
+            },
+            {
+                "addr": "DB100,X111.6",
+                "name": "ML20_448"
+            },
+            {
+                "addr": "DB100,X111.7",
+                "name": "ML20_449"
+            },
+            {
+                "addr": "DB100,X112.0",
+                "name": "ML20_450"
+            },
+            {
+                "addr": "DB100,X112.2",
+                "name": "ML20_451"
+            },
+            {
+                "addr": "DB100,X112.3",
+                "name": "ML20_452"
+            },
+            {
+                "addr": "DB100,X112.4",
+                "name": "ML20_453"
+            },
+            {
+                "addr": "DB100,X112.5",
+                "name": "ML20_454"
+            },
+            {
+                "addr": "DB303,X1.3",
+                "name": "ML20_455"
+            },
+            {
+                "addr": "DB303,X1.4",
+                "name": "ML20_456"
+            },
+            {
+                "addr": "DB303,X1.5",
+                "name": "ML20_457"
+            },
+            {
+                "addr": "DB303,X1.7",
+                "name": "ML20_458"
+            },
+            {
+                "addr": "DB303,X0.0",
+                "name": "ML20_459"
+            },
+            {
+                "addr": "DB303,X0.2",
+                "name": "ML20_460"
+            },
+            {
+                "addr": "DB303,X0.3",
+                "name": "ML20_461"
+            },
+            {
+                "addr": "DB350,X2.4",
+                "name": "ML20_462"
+            },
+            {
+                "addr": "DB350,X2.5",
+                "name": "ML20_463"
+            },
+            {
+                "addr": "DB350,X2.6",
+                "name": "ML20_464"
+            },
+            {
+                "addr": "DB350,X2.7",
+                "name": "ML20_465"
+            },
+            {
+                "addr": "DB350,X3.7",
+                "name": "ML20_466"
+            },
+            {
+                "addr": "DB350,X4.2",
+                "name": "ML20_467"
+            },
+            {
+                "addr": "DB350,X4.3",
+                "name": "ML20_468"
+            },
+            {
+                "addr": "DB350,X4.4",
+                "name": "ML20_469"
+            },
+            {
+                "addr": "DB350,X4.5",
+                "name": "ML20_470"
+            },
+            {
+                "addr": "DB350,X4.6",
+                "name": "ML20_471"
+            },
+            {
+                "addr": "DB350,X4.7",
+                "name": "ML20_472"
+            },
+            {
+                "addr": "DB350,X5.0",
+                "name": "ML20_473"
+            },
+            {
+                "addr": "DB350,X5.1",
+                "name": "ML20_474"
+            },
+            {
+                "addr": "DB350,X5.2",
+                "name": "ML20_475"
+            },
+            {
+                "addr": "DB350,X5.3",
+                "name": "ML20_476"
+            },
+            {
+                "addr": "DB350,X5.4",
+                "name": "ML20_477"
+            },
+            {
+                "addr": "DB350,X5.5",
+                "name": "ML20_478"
+            },
+            {
+                "addr": "DB350,X5.6",
+                "name": "ML20_479"
+            },
+            {
+                "addr": "DB350,X6.1",
+                "name": "ML20_480"
+            },
+            {
+                "addr": "DB350,X6.2",
+                "name": "ML20_481"
+            },
+            {
+                "addr": "DB350,X6.3",
+                "name": "ML20_482"
+            },
+            {
+                "addr": "DB350,X6.4",
+                "name": "ML20_483"
+            },
+            {
+                "addr": "DB350,X6.5",
+                "name": "ML20_484"
+            },
+            {
+                "addr": "DB350,X7.0",
+                "name": "ML20_485"
+            },
+            {
+                "addr": "DB350,X7.3",
+                "name": "ML20_486"
+            },
+            {
+                "addr": "DB350,X7.4",
+                "name": "ML20_487"
+            },
+            {
+                "addr": "DB350,X7.5",
+                "name": "ML20_488"
+            },
+            {
+                "addr": "DB350,X7.6",
+                "name": "ML20_489"
+            },
+            {
+                "addr": "DB350,X7.7",
+                "name": "ML20_490"
+            },
+            {
+                "addr": "DB350,X8.0",
+                "name": "ML20_491"
+            },
+            {
+                "addr": "DB350,X8.1",
+                "name": "ML20_492"
+            },
+            {
+                "addr": "DB395,X0.7",
+                "name": "ML20_493"
+            },
+            {
+                "addr": "DB395,X1.0",
+                "name": "ML20_494"
+            },
+            {
+                "addr": "DB395,X1.1",
+                "name": "ML20_495"
+            },
+            {
+                "addr": "DB395,X1.2",
+                "name": "ML20_496"
+            },
+            {
+                "addr": "DB395,X1.3",
+                "name": "ML20_497"
+            },
+            {
+                "addr": "DB395,X1.4",
+                "name": "ML20_498"
+            },
+            {
+                "addr": "DB395,X1.5",
+                "name": "ML20_499"
+            },
+            {
+                "addr": "DB395,X1.6",
+                "name": "ML20_500"
+            },
+            {
+                "addr": "DB395,X1.7",
+                "name": "ML20_501"
+            },
+            {
+                "addr": "DB395,X2.0",
+                "name": "ML20_502"
+            },
+            {
+                "addr": "DB395,X2.1",
+                "name": "ML20_503"
+            },
+            {
+                "addr": "DB395,X2.2",
+                "name": "ML20_504"
+            },
+            {
+                "addr": "DB395,X2.3",
+                "name": "ML20_505"
+            },
+            {
+                "addr": "DB395,X6.4",
+                "name": "ML20_506"
+            },
+            {
+                "addr": "DB395,X6.5",
+                "name": "ML20_507"
+            },
+            {
+                "addr": "DB395,X6.6",
+                "name": "ML20_508"
+            },
+            {
+                "addr": "DB395,X6.7",
+                "name": "ML20_509"
+            },
+            {
+                "addr": "DB303,X2.5",
+                "name": "ML20_523"
+            },
+            {
+                "addr": "DB303,X2.6",
+                "name": "ML20_524"
+            },
+            {
+                "addr": "DB303,X2.7",
+                "name": "ML20_525"
+            },
+            {
+                "addr": "DB303,X3.0",
+                "name": "ML20_526"
+            },
+            {
+                "addr": "DB303,X3.1",
+                "name": "ML20_527"
+            },
+            {
+                "addr": "DB303,X3.2",
+                "name": "ML20_528"
+            },
+            {
+                "addr": "DB303,X3.3",
+                "name": "ML20_529"
+            },
+            {
+                "addr": "DB303,X3.4",
+                "name": "ML20_530"
+            },
+            {
+                "addr": "DB51,X17.3",
+                "name": "ML20_531"
+            },
+            {
+                "addr": "DB51,X17.4",
+                "name": "ML20_532"
+            },
+            {
+                "addr": "DB52,X17.3",
+                "name": "ML20_533"
+            },
+            {
+                "addr": "DB52,X17.4",
+                "name": "ML20_534"
+            },
+            {
+                "addr": "DB53,X17.3",
+                "name": "ML20_535"
+            },
+            {
+                "addr": "DB53,X17.4",
+                "name": "ML20_536"
+            },
+            {
+                "addr": "DB54,X17.3",
+                "name": "ML20_537"
+            },
+            {
+                "addr": "DB54,X17.4",
+                "name": "ML20_538"
+            },
+            {
+                "addr": "DB53,X17.5",
+                "name": "ML20_539"
+            },
+            {
+                "addr": "DB53,X17.6",
+                "name": "ML20_540"
+            },
+            {
+                "addr": "DB54,X17.5",
+                "name": "ML20_541"
+            },
+            {
+                "addr": "DB54,X17.6",
+                "name": "ML20_542"
+            },
+            {
+                "addr": "DB350,X9.4",
+                "name": "ML20_543"
+            },
+            {
+                "addr": "DB350,X9.5",
+                "name": "ML20_544"
+            },
+            {
+                "addr": "DB350,X9.6",
+                "name": "ML20_545"
+            },
+            {
+                "addr": "DB350,X9.7",
+                "name": "ML20_546"
+            },
+            {
+                "addr": "DB100,X69.0",
+                "name": "ML20_547"
+            },
+            {
+                "addr": "DB100,X69.1",
+                "name": "ML20_548"
+            }
+        ]
+    },
+    {
+        "id": "1b3b5148b51bbc29",
+        "type": "s7 endpoint",
+        "z": "e72cc2d74f6e5f1f",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": "1000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB100,X4.0",
+                "name": "ML30_1"
+            },
+            {
+                "addr": "DB100,X4.1",
+                "name": "ML30_2"
+            },
+            {
+                "addr": "DB100,X4.2",
+                "name": "ML30_3"
+            },
+            {
+                "addr": "DB100,X4.3",
+                "name": "ML30_4"
+            },
+            {
+                "addr": "DB100,X4.6",
+                "name": "ML30_5"
+            },
+            {
+                "addr": "DB100,X4.7",
+                "name": "ML30_6"
+            },
+            {
+                "addr": "DB100,X5.1",
+                "name": "ML30_7"
+            },
+            {
+                "addr": "DB100,X4.4",
+                "name": "ML30_8"
+            },
+            {
+                "addr": "DB100,X8.4",
+                "name": "ML30_9"
+            },
+            {
+                "addr": "DB100,X8.5",
+                "name": "ML30_10"
+            },
+            {
+                "addr": "DB100,X8.6",
+                "name": "ML30_11"
+            },
+            {
+                "addr": "DB100,X8.7",
+                "name": "ML30_12"
+            },
+            {
+                "addr": "DB100,X9.0",
+                "name": "ML30_13"
+            },
+            {
+                "addr": "DB100,X9.1",
+                "name": "ML30_14"
+            },
+            {
+                "addr": "DB100,X40.7",
+                "name": "ML30_15"
+            },
+            {
+                "addr": "DB100,X41.0",
+                "name": "ML30_16"
+            },
+            {
+                "addr": "DB100,X41.1",
+                "name": "ML30_17"
+            },
+            {
+                "addr": "DB100,X41.2",
+                "name": "ML30_18"
+            },
+            {
+                "addr": "DB100,X14.3",
+                "name": "ML30_19"
+            },
+            {
+                "addr": "DB100,X14.4",
+                "name": "ML30_20"
+            },
+            {
+                "addr": "DB100,X19.4",
+                "name": "ML30_21"
+            },
+            {
+                "addr": "DB100,X20.1",
+                "name": "ML30_22"
+            },
+            {
+                "addr": "DB100,X20.2",
+                "name": "ML30_23"
+            },
+            {
+                "addr": "DB100,X20.7",
+                "name": "ML30_24"
+            },
+            {
+                "addr": "DB100,X21.0",
+                "name": "ML30_25"
+            },
+            {
+                "addr": "DB100,X21.7",
+                "name": "ML30_26"
+            },
+            {
+                "addr": "DB100,X22.0",
+                "name": "ML30_27"
+            },
+            {
+                "addr": "DB100,X22.1",
+                "name": "ML30_28"
+            },
+            {
+                "addr": "DB100,X22.2",
+                "name": "ML30_29"
+            },
+            {
+                "addr": "DB100,X22.3",
+                "name": "ML30_30"
+            },
+            {
+                "addr": "DB100,X22.4",
+                "name": "ML30_31"
+            },
+            {
+                "addr": "DB100,X22.5",
+                "name": "ML30_32"
+            },
+            {
+                "addr": "DB100,X22.6",
+                "name": "ML30_33"
+            },
+            {
+                "addr": "DB100,X22.7",
+                "name": "ML30_34"
+            },
+            {
+                "addr": "DB100,X23.0",
+                "name": "ML30_35"
+            },
+            {
+                "addr": "DB100,X23.1",
+                "name": "ML30_36"
+            },
+            {
+                "addr": "DB100,X23.2",
+                "name": "ML30_37"
+            },
+            {
+                "addr": "DB100,X23.3",
+                "name": "ML30_38"
+            },
+            {
+                "addr": "DB100,X23.4",
+                "name": "ML30_39"
+            },
+            {
+                "addr": "DB100,X23.5",
+                "name": "ML30_40"
+            },
+            {
+                "addr": "DB100,X23.6",
+                "name": "ML30_41"
+            },
+            {
+                "addr": "DB100,X23.7",
+                "name": "ML30_42"
+            },
+            {
+                "addr": "DB100,X24.0",
+                "name": "ML30_43"
+            },
+            {
+                "addr": "DB100,X24.1",
+                "name": "ML30_44"
+            },
+            {
+                "addr": "DB100,X24.2",
+                "name": "ML30_45"
+            },
+            {
+                "addr": "DB100,X24.3",
+                "name": "ML30_46"
+            },
+            {
+                "addr": "DB100,X24.4",
+                "name": "ML30_47"
+            },
+            {
+                "addr": "DB100,X24.5",
+                "name": "ML30_48"
+            },
+            {
+                "addr": "DB100,X24.6",
+                "name": "ML30_49"
+            },
+            {
+                "addr": "DB100,X24.7",
+                "name": "ML30_50"
+            },
+            {
+                "addr": "DB100,X25.0",
+                "name": "ML30_51"
+            },
+            {
+                "addr": "DB100,X25.1",
+                "name": "ML30_52"
+            },
+            {
+                "addr": "DB100,X25.2",
+                "name": "ML30_53"
+            },
+            {
+                "addr": "DB100,X25.3",
+                "name": "ML30_54"
+            },
+            {
+                "addr": "DB100,X25.4",
+                "name": "ML30_55"
+            },
+            {
+                "addr": "DB100,X25.5",
+                "name": "ML30_56"
+            },
+            {
+                "addr": "DB100,X25.6",
+                "name": "ML30_57"
+            },
+            {
+                "addr": "DB100,X25.7",
+                "name": "ML30_58"
+            },
+            {
+                "addr": "DB100,X26.0",
+                "name": "ML30_59"
+            },
+            {
+                "addr": "DB100,X26.1",
+                "name": "ML30_60"
+            },
+            {
+                "addr": "DB100,X26.2",
+                "name": "ML30_61"
+            },
+            {
+                "addr": "DB100,X26.3",
+                "name": "ML30_62"
+            },
+            {
+                "addr": "DB100,X26.4",
+                "name": "ML30_63"
+            },
+            {
+                "addr": "DB100,X26.5",
+                "name": "ML30_64"
+            },
+            {
+                "addr": "DB100,X26.6",
+                "name": "ML30_65"
+            },
+            {
+                "addr": "DB100,X34.0",
+                "name": "ML30_66"
+            },
+            {
+                "addr": "DB100,X34.1",
+                "name": "ML30_67"
+            },
+            {
+                "addr": "DB100,X34.2",
+                "name": "ML30_68"
+            },
+            {
+                "addr": "DB100,X34.3",
+                "name": "ML30_69"
+            },
+            {
+                "addr": "DB100,X34.4",
+                "name": "ML30_70"
+            },
+            {
+                "addr": "DB100,X34.5",
+                "name": "ML30_71"
+            },
+            {
+                "addr": "DB100,X34.6",
+                "name": "ML30_72"
+            },
+            {
+                "addr": "DB100,X34.7",
+                "name": "ML30_73"
+            },
+            {
+                "addr": "DB100,X35.0",
+                "name": "ML30_74"
+            },
+            {
+                "addr": "DB100,X35.1",
+                "name": "ML30_75"
+            },
+            {
+                "addr": "DB100,X35.2",
+                "name": "ML30_76"
+            },
+            {
+                "addr": "DB100,X35.3",
+                "name": "ML30_77"
+            },
+            {
+                "addr": "DB100,X35.4",
+                "name": "ML30_78"
+            },
+            {
+                "addr": "DB100,X35.5",
+                "name": "ML30_79"
+            },
+            {
+                "addr": "DB100,X35.6",
+                "name": "ML30_80"
+            },
+            {
+                "addr": "DB100,X35.7",
+                "name": "ML30_81"
+            },
+            {
+                "addr": "DB100,X36.0",
+                "name": "ML30_82"
+            },
+            {
+                "addr": "DB100,X36.1",
+                "name": "ML30_83"
+            },
+            {
+                "addr": "DB100,X36.2",
+                "name": "ML30_84"
+            },
+            {
+                "addr": "DB100,X36.3",
+                "name": "ML30_85"
+            },
+            {
+                "addr": "DB100,X36.4",
+                "name": "ML30_86"
+            },
+            {
+                "addr": "DB100,X36.5",
+                "name": "ML30_87"
+            },
+            {
+                "addr": "DB100,X36.6",
+                "name": "ML30_88"
+            },
+            {
+                "addr": "DB100,X36.7",
+                "name": "ML30_89"
+            },
+            {
+                "addr": "DB100,X37.0",
+                "name": "ML30_90"
+            },
+            {
+                "addr": "DB100,X37.1",
+                "name": "ML30_91"
+            },
+            {
+                "addr": "DB100,X37.2",
+                "name": "ML30_92"
+            },
+            {
+                "addr": "DB100,X37.3",
+                "name": "ML30_93"
+            },
+            {
+                "addr": "DB100,X37.4",
+                "name": "ML30_94"
+            },
+            {
+                "addr": "DB100,X37.5",
+                "name": "ML30_95"
+            },
+            {
+                "addr": "DB100,X37.6",
+                "name": "ML30_96"
+            },
+            {
+                "addr": "DB100,X37.7",
+                "name": "ML30_97"
+            },
+            {
+                "addr": "DB100,X38.0",
+                "name": "ML30_98"
+            },
+            {
+                "addr": "DB100,X38.1",
+                "name": "ML30_99"
+            },
+            {
+                "addr": "DB100,X38.2",
+                "name": "ML30_100"
+            },
+            {
+                "addr": "DB100,X38.3",
+                "name": "ML30_101"
+            },
+            {
+                "addr": "DB100,X40.4",
+                "name": "ML30_102"
+            },
+            {
+                "addr": "DB100,X50.0",
+                "name": "ML30_103"
+            },
+            {
+                "addr": "DB100,X50.1",
+                "name": "ML30_104"
+            },
+            {
+                "addr": "DB100,X50.2",
+                "name": "ML30_105"
+            },
+            {
+                "addr": "DB100,X50.3",
+                "name": "ML30_106"
+            },
+            {
+                "addr": "DB100,X50.4",
+                "name": "ML30_107"
+            },
+            {
+                "addr": "DB100,X50.5",
+                "name": "ML30_108"
+            },
+            {
+                "addr": "DB100,X50.6",
+                "name": "ML30_109"
+            },
+            {
+                "addr": "DB100,X50.7",
+                "name": "ML30_110"
+            },
+            {
+                "addr": "DB100,X51.0",
+                "name": "ML30_111"
+            },
+            {
+                "addr": "DB100,X51.1",
+                "name": "ML30_112"
+            },
+            {
+                "addr": "DB100,X51.2",
+                "name": "ML30_113"
+            },
+            {
+                "addr": "DB100,X51.3",
+                "name": "ML30_114"
+            },
+            {
+                "addr": "DB100,X51.4",
+                "name": "ML30_115"
+            },
+            {
+                "addr": "DB100,X51.5",
+                "name": "ML30_116"
+            },
+            {
+                "addr": "DB100,X51.6",
+                "name": "ML30_117"
+            },
+            {
+                "addr": "DB100,X51.7",
+                "name": "ML30_118"
+            },
+            {
+                "addr": "DB100,X52.0",
+                "name": "ML30_119"
+            },
+            {
+                "addr": "DB100,X52.1",
+                "name": "ML30_120"
+            },
+            {
+                "addr": "DB100,X52.2",
+                "name": "ML30_121"
+            },
+            {
+                "addr": "DB100,X52.3",
+                "name": "ML30_122"
+            },
+            {
+                "addr": "DB100,X52.4",
+                "name": "ML30_123"
+            },
+            {
+                "addr": "DB100,X52.5",
+                "name": "ML30_124"
+            },
+            {
+                "addr": "DB100,X52.6",
+                "name": "ML30_125"
+            },
+            {
+                "addr": "DB100,X52.7",
+                "name": "ML30_126"
+            },
+            {
+                "addr": "DB100,X53.0",
+                "name": "ML30_127"
+            },
+            {
+                "addr": "DB100,X53.1",
+                "name": "ML30_128"
+            },
+            {
+                "addr": "DB100,X53.2",
+                "name": "ML30_129"
+            },
+            {
+                "addr": "DB100,X53.3",
+                "name": "ML30_130"
+            },
+            {
+                "addr": "DB100,X53.4",
+                "name": "ML30_131"
+            },
+            {
+                "addr": "DB100,X53.5",
+                "name": "ML30_132"
+            },
+            {
+                "addr": "DB100,X53.6",
+                "name": "ML30_133"
+            },
+            {
+                "addr": "DB100,X53.7",
+                "name": "ML30_134"
+            },
+            {
+                "addr": "DB100,X54.0",
+                "name": "ML30_135"
+            },
+            {
+                "addr": "DB100,X54.1",
+                "name": "ML30_136"
+            },
+            {
+                "addr": "DB100,X54.2",
+                "name": "ML30_137"
+            },
+            {
+                "addr": "DB100,X54.3",
+                "name": "ML30_138"
+            },
+            {
+                "addr": "DB100,X54.4",
+                "name": "ML30_139"
+            },
+            {
+                "addr": "DB100,X54.5",
+                "name": "ML30_140"
+            },
+            {
+                "addr": "DB100,X54.6",
+                "name": "ML30_141"
+            },
+            {
+                "addr": "DB100,X54.7",
+                "name": "ML30_142"
+            },
+            {
+                "addr": "DB100,X55.0",
+                "name": "ML30_143"
+            },
+            {
+                "addr": "DB100,X55.1",
+                "name": "ML30_144"
+            },
+            {
+                "addr": "DB100,X55.2",
+                "name": "ML30_145"
+            },
+            {
+                "addr": "DB100,X55.3",
+                "name": "ML30_146"
+            },
+            {
+                "addr": "DB100,X55.4",
+                "name": "ML30_147"
+            },
+            {
+                "addr": "DB100,X55.5",
+                "name": "ML30_148"
+            },
+            {
+                "addr": "DB100,X55.6",
+                "name": "ML30_149"
+            },
+            {
+                "addr": "DB100,X55.7",
+                "name": "ML30_150"
+            },
+            {
+                "addr": "DB100,X56.0",
+                "name": "ML30_151"
+            },
+            {
+                "addr": "DB100,X56.1",
+                "name": "ML30_152"
+            },
+            {
+                "addr": "DB100,X56.2",
+                "name": "ML30_153"
+            },
+            {
+                "addr": "DB100,X56.3",
+                "name": "ML30_154"
+            },
+            {
+                "addr": "DB100,X39.6",
+                "name": "ML30_155"
+            },
+            {
+                "addr": "DB100,X44.2",
+                "name": "ML30_156"
+            },
+            {
+                "addr": "DB100,X44.3",
+                "name": "ML30_157"
+            },
+            {
+                "addr": "DB100,X44.4",
+                "name": "ML30_158"
+            },
+            {
+                "addr": "DB100,X44.5",
+                "name": "ML30_159"
+            },
+            {
+                "addr": "DB100,X44.6",
+                "name": "ML30_160"
+            },
+            {
+                "addr": "DB100,X44.7",
+                "name": "ML30_161"
+            },
+            {
+                "addr": "DB100,X47.0",
+                "name": "ML30_162"
+            },
+            {
+                "addr": "DB100,X47.1",
+                "name": "ML30_163"
+            },
+            {
+                "addr": "DB100,X47.6",
+                "name": "ML30_164"
+            },
+            {
+                "addr": "DB100,X47.7",
+                "name": "ML30_165"
+            },
+            {
+                "addr": "DB100,X70.0",
+                "name": "ML30_166"
+            },
+            {
+                "addr": "DB100,X70.1",
+                "name": "ML30_167"
+            },
+            {
+                "addr": "DB100,X70.3",
+                "name": "ML30_168"
+            },
+            {
+                "addr": "DB100,X70.4",
+                "name": "ML30_169"
+            },
+            {
+                "addr": "DB100,X70.5",
+                "name": "ML30_170"
+            },
+            {
+                "addr": "DB100,X70.6",
+                "name": "ML30_171"
+            },
+            {
+                "addr": "DB100,X70.7",
+                "name": "ML30_172"
+            },
+            {
+                "addr": "DB100,X71.0",
+                "name": "ML30_173"
+            },
+            {
+                "addr": "DB100,X71.1",
+                "name": "ML30_174"
+            },
+            {
+                "addr": "DB100,X71.2",
+                "name": "ML30_175"
+            },
+            {
+                "addr": "DB100,X71.3",
+                "name": "ML30_176"
+            },
+            {
+                "addr": "DB100,X71.4",
+                "name": "ML30_177"
+            },
+            {
+                "addr": "DB100,X71.5",
+                "name": "ML30_178"
+            },
+            {
+                "addr": "DB100,X71.6",
+                "name": "ML30_179"
+            },
+            {
+                "addr": "DB100,X71.7",
+                "name": "ML30_180"
+            },
+            {
+                "addr": "DB100,X72.0",
+                "name": "ML30_181"
+            },
+            {
+                "addr": "DB100,X72.1",
+                "name": "ML30_182"
+            },
+            {
+                "addr": "DB100,X72.2",
+                "name": "ML30_183"
+            },
+            {
+                "addr": "DB100,X72.3",
+                "name": "ML30_184"
+            },
+            {
+                "addr": "DB100,X72.4",
+                "name": "ML30_185"
+            },
+            {
+                "addr": "DB100,X72.5",
+                "name": "ML30_186"
+            },
+            {
+                "addr": "DB100,X72.6",
+                "name": "ML30_187"
+            },
+            {
+                "addr": "DB100,X72.7",
+                "name": "ML30_188"
+            },
+            {
+                "addr": "DB100,X73.0",
+                "name": "ML30_189"
+            },
+            {
+                "addr": "DB100,X73.1",
+                "name": "ML30_190"
+            },
+            {
+                "addr": "DB100,X73.2",
+                "name": "ML30_191"
+            },
+            {
+                "addr": "DB100,X73.3",
+                "name": "ML30_192"
+            },
+            {
+                "addr": "DB100,X73.4",
+                "name": "ML30_193"
+            },
+            {
+                "addr": "DB100,X73.5",
+                "name": "ML30_194"
+            },
+            {
+                "addr": "DB100,X73.6",
+                "name": "ML30_195"
+            },
+            {
+                "addr": "DB100,X73.7",
+                "name": "ML30_196"
+            },
+            {
+                "addr": "DB100,X74.0",
+                "name": "ML30_197"
+            },
+            {
+                "addr": "DB100,X74.1",
+                "name": "ML30_198"
+            },
+            {
+                "addr": "DB100,X74.2",
+                "name": "ML30_199"
+            },
+            {
+                "addr": "DB100,X74.3",
+                "name": "ML30_200"
+            },
+            {
+                "addr": "DB100,X74.4",
+                "name": "ML30_201"
+            },
+            {
+                "addr": "DB100,X74.5",
+                "name": "ML30_202"
+            },
+            {
+                "addr": "DB100,X74.6",
+                "name": "ML30_203"
+            },
+            {
+                "addr": "DB100,X74.7",
+                "name": "ML30_204"
+            },
+            {
+                "addr": "DB100,X70.2",
+                "name": "ML30_205"
+            },
+            {
+                "addr": "DB100,X75.1",
+                "name": "ML30_206"
+            },
+            {
+                "addr": "DB100,X15.5",
+                "name": "ML30_207"
+            },
+            {
+                "addr": "DB100,X80.0",
+                "name": "ML30_218"
+            },
+            {
+                "addr": "DB100,X80.1",
+                "name": "ML30_219"
+            },
+            {
+                "addr": "DB100,X80.2",
+                "name": "ML30_220"
+            },
+            {
+                "addr": "DB100,X80.3",
+                "name": "ML30_221"
+            },
+            {
+                "addr": "DB100,X80.4",
+                "name": "ML30_222"
+            },
+            {
+                "addr": "DB100,X80.5",
+                "name": "ML30_223"
+            },
+            {
+                "addr": "DB100,X80.6",
+                "name": "ML30_224"
+            },
+            {
+                "addr": "DB100,X80.7",
+                "name": "ML30_225"
+            },
+            {
+                "addr": "DB100,X81.0",
+                "name": "ML30_226"
+            },
+            {
+                "addr": "DB100,X81.1",
+                "name": "ML30_227"
+            },
+            {
+                "addr": "DB100,X81.2",
+                "name": "ML30_228"
+            },
+            {
+                "addr": "DB100,X81.3",
+                "name": "ML30_229"
+            },
+            {
+                "addr": "DB100,X81.4",
+                "name": "ML30_230"
+            },
+            {
+                "addr": "DB100,X81.5",
+                "name": "ML30_231"
+            },
+            {
+                "addr": "DB100,X81.6",
+                "name": "ML30_232"
+            },
+            {
+                "addr": "DB100,X81.7",
+                "name": "ML30_233"
+            },
+            {
+                "addr": "DB100,X105.0",
+                "name": "ML30_255"
+            },
+            {
+                "addr": "DB100,X105.6",
+                "name": "ML30_256"
+            },
+            {
+                "addr": "DB100,X105.7",
+                "name": "ML30_257"
+            },
+            {
+                "addr": "DB100,X107.0",
+                "name": "ML30_258"
+            },
+            {
+                "addr": "DB100,X108.3",
+                "name": "ML30_259"
+            },
+            {
+                "addr": "DB100,X108.4",
+                "name": "ML30_260"
+            },
+            {
+                "addr": "DB100,X109.3",
+                "name": "ML30_261"
+            },
+            {
+                "addr": "DB100,X110.1",
+                "name": "ML30_262"
+            },
+            {
+                "addr": "DB100,X110.2",
+                "name": "ML30_263"
+            },
+            {
+                "addr": "DB100,X110.7",
+                "name": "ML30_264"
+            },
+            {
+                "addr": "DB100,X112.1",
+                "name": "ML30_265"
+            },
+            {
+                "addr": "DB100,X113.0",
+                "name": "ML30_266"
+            },
+            {
+                "addr": "DB100,X113.1",
+                "name": "ML30_267"
+            },
+            {
+                "addr": "DB100,X113.2",
+                "name": "ML30_268"
+            },
+            {
+                "addr": "DB100,X113.3",
+                "name": "ML30_269"
+            },
+            {
+                "addr": "DB303,X1.1",
+                "name": "ML30_270"
+            },
+            {
+                "addr": "DB303,X1.2",
+                "name": "ML30_271"
+            },
+            {
+                "addr": "DB350,X3.0",
+                "name": "ML30_272"
+            },
+            {
+                "addr": "DB350,X3.1",
+                "name": "ML30_273"
+            },
+            {
+                "addr": "DB350,X4.0",
+                "name": "ML30_274"
+            },
+            {
+                "addr": "DB350,X5.7",
+                "name": "ML30_275"
+            },
+            {
+                "addr": "DB350,X6.0",
+                "name": "ML30_276"
+            },
+            {
+                "addr": "DB350,X6.6",
+                "name": "ML30_277"
+            },
+            {
+                "addr": "DB350,X8.4",
+                "name": "ML30_278"
+            },
+            {
+                "addr": "DB350,X8.5",
+                "name": "ML30_279"
+            },
+            {
+                "addr": "DB395,X2.4",
+                "name": "ML30_280"
+            },
+            {
+                "addr": "DB395,X2.5",
+                "name": "ML30_281"
+            },
+            {
+                "addr": "DB395,X2.6",
+                "name": "ML30_282"
+            },
+            {
+                "addr": "DB395,X2.7",
+                "name": "ML30_283"
+            },
+            {
+                "addr": "DB395,X3.0",
+                "name": "ML30_284"
+            },
+            {
+                "addr": "DB395,X7.0",
+                "name": "ML30_285"
+            },
+            {
+                "addr": "DB395,X7.1",
+                "name": "ML30_286"
+            },
+            {
+                "addr": "DB303,X3.5",
+                "name": "ML30_290"
+            },
+            {
+                "addr": "DB303,X3.6",
+                "name": "ML30_291"
+            },
+            {
+                "addr": "DB350,X10.0",
+                "name": "ML30_292"
+            },
+            {
+                "addr": "DB350,X10.1",
+                "name": "ML30_293"
+            }
+        ]
+    },
+    {
+        "id": "a69e0d60c29f2150",
+        "type": "MSSQL-CN",
+        "z": "e72cc2d74f6e5f1f",
+        "tdsVersion": "7_4",
+        "name": "SQL Server",
+        "server": "DESKTOP-UEMD3BN\\MSSQLSERVER2022",
+        "port": "1433",
+        "encyption": false,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "e24bcaab519ee0a8",
+        "type": "MSSQL-CN",
+        "z": "5b94b71bbabe44fd",
+        "tdsVersion": "7_4",
+        "name": "SQL Server",
+        "server": "DESKTOP-UEMD3BN\\MSSQLSERVER2022",
+        "port": "1433",
+        "encyption": false,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "77df47fa9e7dc3c0",
+        "type": "s7 endpoint",
+        "z": "5b94b71bbabe44fd",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": "1000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB100,X5.2",
+                "name": "ML40_1"
+            },
+            {
+                "addr": "DB100,X5.3",
+                "name": "ML40_2"
+            },
+            {
+                "addr": "DB100,X5.4",
+                "name": "ML40_3"
+            },
+            {
+                "addr": "DB100,X5.5",
+                "name": "ML40_4"
+            },
+            {
+                "addr": "DB100,X5.6",
+                "name": "ML40_5"
+            },
+            {
+                "addr": "DB100,X9.2",
+                "name": "ML40_6"
+            },
+            {
+                "addr": "DB100,X9.3",
+                "name": "ML40_7"
+            },
+            {
+                "addr": "DB100,X9.4",
+                "name": "ML40_8"
+            },
+            {
+                "addr": "DB100,X9.5",
+                "name": "ML40_9"
+            },
+            {
+                "addr": "DB100,X9.6",
+                "name": "ML40_10"
+            },
+            {
+                "addr": "DB100,X9.7",
+                "name": "ML40_11"
+            },
+            {
+                "addr": "DB100,X38.4",
+                "name": "ML40_12"
+            },
+            {
+                "addr": "DB100,X38.5",
+                "name": "ML40_13"
+            },
+            {
+                "addr": "DB100,X38.6",
+                "name": "ML40_14"
+            },
+            {
+                "addr": "DB100,X38.7",
+                "name": "ML40_15"
+            },
+            {
+                "addr": "DB100,X39.0",
+                "name": "ML40_16"
+            },
+            {
+                "addr": "DB100,X39.1",
+                "name": "ML40_17"
+            },
+            {
+                "addr": "DB100,X39.2",
+                "name": "ML40_18"
+            },
+            {
+                "addr": "DB100,X39.3",
+                "name": "ML40_19"
+            },
+            {
+                "addr": "DB100,X39.7",
+                "name": "ML40_20"
+            },
+            {
+                "addr": "DB100,X94.4",
+                "name": "ML40_21"
+            },
+            {
+                "addr": "DB100,X94.5",
+                "name": "ML40_22"
+            },
+            {
+                "addr": "DB100,X94.6",
+                "name": "ML40_23"
+            },
+            {
+                "addr": "DB100,X94.7",
+                "name": "ML40_24"
+            },
+            {
+                "addr": "DB100,X95.0",
+                "name": "ML40_25"
+            },
+            {
+                "addr": "DB100,X95.1",
+                "name": "ML40_26"
+            },
+            {
+                "addr": "DB100,X95.2",
+                "name": "ML40_27"
+            },
+            {
+                "addr": "DB100,X95.3",
+                "name": "ML40_28"
+            },
+            {
+                "addr": "DB100,X95.4",
+                "name": "ML40_29"
+            },
+            {
+                "addr": "DB100,X95.5",
+                "name": "ML40_30"
+            },
+            {
+                "addr": "DB100,X95.6",
+                "name": "ML40_31"
+            },
+            {
+                "addr": "DB100,X95.7",
+                "name": "ML40_32"
+            },
+            {
+                "addr": "DB100,X96.0",
+                "name": "ML40_33"
+            },
+            {
+                "addr": "DB100,X96.1",
+                "name": "ML40_34"
+            },
+            {
+                "addr": "DB100,X96.2",
+                "name": "ML40_35"
+            },
+            {
+                "addr": "DB100,X96.3",
+                "name": "ML40_36"
+            },
+            {
+                "addr": "DB100,X96.4",
+                "name": "ML40_37"
+            },
+            {
+                "addr": "DB100,X96.5",
+                "name": "ML40_38"
+            },
+            {
+                "addr": "DB100,X96.6",
+                "name": "ML40_39"
+            },
+            {
+                "addr": "DB100,X96.7",
+                "name": "ML40_40"
+            },
+            {
+                "addr": "DB100,X97.0",
+                "name": "ML40_41"
+            },
+            {
+                "addr": "DB100,X97.1",
+                "name": "ML40_42"
+            },
+            {
+                "addr": "DB100,X97.2",
+                "name": "ML40_43"
+            },
+            {
+                "addr": "DB100,X97.3",
+                "name": "ML40_44"
+            },
+            {
+                "addr": "DB100,X97.4",
+                "name": "ML40_45"
+            },
+            {
+                "addr": "DB100,X97.5",
+                "name": "ML40_46"
+            },
+            {
+                "addr": "DB100,X97.6",
+                "name": "ML40_47"
+            },
+            {
+                "addr": "DB100,X97.7",
+                "name": "ML40_48"
+            },
+            {
+                "addr": "DB100,X98.0",
+                "name": "ML40_49"
+            },
+            {
+                "addr": "DB100,X98.1",
+                "name": "ML40_50"
+            },
+            {
+                "addr": "DB100,X98.2",
+                "name": "ML40_51"
+            },
+            {
+                "addr": "DB100,X98.3",
+                "name": "ML40_52"
+            },
+            {
+                "addr": "DB100,X98.4",
+                "name": "ML40_53"
+            },
+            {
+                "addr": "DB100,X98.5",
+                "name": "ML40_54"
+            },
+            {
+                "addr": "DB100,X98.6",
+                "name": "ML40_55"
+            },
+            {
+                "addr": "DB100,X98.7",
+                "name": "ML40_56"
+            },
+            {
+                "addr": "DB100,X99.0",
+                "name": "ML40_57"
+            },
+            {
+                "addr": "DB100,X99.1",
+                "name": "ML40_58"
+            },
+            {
+                "addr": "DB100,X99.2",
+                "name": "ML40_59"
+            },
+            {
+                "addr": "DB100,X99.3",
+                "name": "ML40_60"
+            },
+            {
+                "addr": "DB100,X99.4",
+                "name": "ML40_61"
+            },
+            {
+                "addr": "DB100,X99.5",
+                "name": "ML40_62"
+            },
+            {
+                "addr": "DB100,X99.6",
+                "name": "ML40_63"
+            },
+            {
+                "addr": "DB100,X99.7",
+                "name": "ML40_64"
+            },
+            {
+                "addr": "DB100,X100.0",
+                "name": "ML40_65"
+            },
+            {
+                "addr": "DB100,X100.1",
+                "name": "ML40_66"
+            },
+            {
+                "addr": "DB100,X100.2",
+                "name": "ML40_67"
+            },
+            {
+                "addr": "DB100,X100.3",
+                "name": "ML40_68"
+            },
+            {
+                "addr": "DB100,X100.4",
+                "name": "ML40_69"
+            },
+            {
+                "addr": "DB100,X100.5",
+                "name": "ML40_70"
+            },
+            {
+                "addr": "DB100,X100.6",
+                "name": "ML40_71"
+            },
+            {
+                "addr": "DB100,X100.7",
+                "name": "ML40_72"
+            },
+            {
+                "addr": "DB100,X101.0",
+                "name": "ML40_73"
+            },
+            {
+                "addr": "DB100,X101.1",
+                "name": "ML40_74"
+            },
+            {
+                "addr": "DB100,X101.2",
+                "name": "ML40_75"
+            },
+            {
+                "addr": "DB100,X101.3",
+                "name": "ML40_76"
+            },
+            {
+                "addr": "DB100,X101.4",
+                "name": "ML40_77"
+            },
+            {
+                "addr": "DB100,X101.5",
+                "name": "ML40_78"
+            },
+            {
+                "addr": "DB100,X101.6",
+                "name": "ML40_79"
+            },
+            {
+                "addr": "DB100,X101.7",
+                "name": "ML40_80"
+            },
+            {
+                "addr": "DB100,X102.0",
+                "name": "ML40_81"
+            },
+            {
+                "addr": "DB100,X102.1",
+                "name": "ML40_82"
+            },
+            {
+                "addr": "DB100,X102.2",
+                "name": "ML40_83"
+            },
+            {
+                "addr": "DB100,X102.3",
+                "name": "ML40_84"
+            },
+            {
+                "addr": "DB100,X102.4",
+                "name": "ML40_85"
+            },
+            {
+                "addr": "DB100,X102.5",
+                "name": "ML40_86"
+            },
+            {
+                "addr": "DB100,X102.6",
+                "name": "ML40_87"
+            },
+            {
+                "addr": "DB100,X102.7",
+                "name": "ML40_88"
+            },
+            {
+                "addr": "DB100,X103.0",
+                "name": "ML40_89"
+            },
+            {
+                "addr": "DB100,X103.1",
+                "name": "ML40_90"
+            },
+            {
+                "addr": "DB100,X103.2",
+                "name": "ML40_91"
+            },
+            {
+                "addr": "DB100,X103.3",
+                "name": "ML40_92"
+            },
+            {
+                "addr": "DB100,X103.4",
+                "name": "ML40_93"
+            },
+            {
+                "addr": "DB100,X103.5",
+                "name": "ML40_94"
+            },
+            {
+                "addr": "DB100,X103.6",
+                "name": "ML40_95"
+            },
+            {
+                "addr": "DB100,X103.7",
+                "name": "ML40_96"
+            },
+            {
+                "addr": "DB100,X104.4",
+                "name": "ML40_97"
+            },
+            {
+                "addr": "DB100,X104.5",
+                "name": "ML40_98"
+            },
+            {
+                "addr": "DB100,X104.6",
+                "name": "ML40_99"
+            },
+            {
+                "addr": "DB100,X104.7",
+                "name": "ML40_100"
+            },
+            {
+                "addr": "DB100,X106.4",
+                "name": "ML40_101"
+            },
+            {
+                "addr": "DB100,X106.5",
+                "name": "ML40_102"
+            },
+            {
+                "addr": "DB100,X106.6",
+                "name": "ML40_103"
+            },
+            {
+                "addr": "DB100,X106.7",
+                "name": "ML40_104"
+            },
+            {
+                "addr": "DB100,X108.5",
+                "name": "ML40_105"
+            },
+            {
+                "addr": "DB100,X108.6",
+                "name": "ML40_106"
+            },
+            {
+                "addr": "DB100,X108.7",
+                "name": "ML40_107"
+            },
+            {
+                "addr": "DB100,X109.0",
+                "name": "ML40_108"
+            },
+            {
+                "addr": "DB100,X109.4",
+                "name": "ML40_109"
+            },
+            {
+                "addr": "DB100,X110.3",
+                "name": "ML40_110"
+            },
+            {
+                "addr": "DB100,X110.4",
+                "name": "ML40_111"
+            },
+            {
+                "addr": "DB100,X111.0",
+                "name": "ML40_112"
+            },
+            {
+                "addr": "DB350,X3.2",
+                "name": "ML40_113"
+            },
+            {
+                "addr": "DB350,X3.3",
+                "name": "ML40_114"
+            },
+            {
+                "addr": "DB350,X3.4",
+                "name": "ML40_115"
+            },
+            {
+                "addr": "DB350,X3.5",
+                "name": "ML40_116"
+            },
+            {
+                "addr": "DB350,X4.1",
+                "name": "ML40_117"
+            },
+            {
+                "addr": "DB350,X7.1",
+                "name": "ML40_118"
+            },
+            {
+                "addr": "DB350,X7.2",
+                "name": "ML40_119"
+            },
+            {
+                "addr": "DB350,X8.6",
+                "name": "ML40_120"
+            },
+            {
+                "addr": "DB350,X8.7",
+                "name": "ML40_121"
+            },
+            {
+                "addr": "DB395,X3.1",
+                "name": "ML40_122"
+            },
+            {
+                "addr": "DB395,X3.2",
+                "name": "ML40_123"
+            },
+            {
+                "addr": "DB395,X3.3",
+                "name": "ML40_124"
+            },
+            {
+                "addr": "DB395,X3.4",
+                "name": "ML40_125"
+            },
+            {
+                "addr": "DB395,X3.5",
+                "name": "ML40_126"
+            },
+            {
+                "addr": "DB395,X3.6",
+                "name": "ML40_127"
+            },
+            {
+                "addr": "DB395,X7.2",
+                "name": "ML40_128"
+            },
+            {
+                "addr": "DB395,X7.3",
+                "name": "ML40_129"
+            },
+            {
+                "addr": "DB395,X7.4",
+                "name": "ML40_130"
+            },
+            {
+                "addr": "DB395,X7.5",
+                "name": "ML40_131"
+            },
+            {
+                "addr": "DB350,X10.2",
+                "name": "ML40_136"
+            },
+            {
+                "addr": "DB350,X10.3",
+                "name": "ML40_137"
+            },
+            {
+                "addr": "DB350,X10.4",
+                "name": "ML40_138"
+            },
+            {
+                "addr": "DB350,X10.5",
+                "name": "ML40_139"
+            }
+        ]
+    },
+    {
         "id": "2caf7da1d841fdb1",
         "type": "debug",
         "z": "e07e4c26beb8b4f7",
@@ -812,6 +4266,477 @@
         "statusType": "auto",
         "x": 630,
         "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a84c4a85c1f20ca4",
+        "type": "debug",
+        "z": "8c2ed9fb4186f37f",
+        "name": "Print ML_20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "caf54fa048162fef",
+        "type": "MSSQL",
+        "z": "8c2ed9fb4186f37f",
+        "mssqlCN": "6d38527813a3951d",
+        "name": "SQL ML_20",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payloadd",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": false,
+        "params": [],
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "a84c4a85c1f20ca4"
+            ]
+        ]
+    },
+    {
+        "id": "eb415a47557ae549",
+        "type": "function",
+        "z": "8c2ed9fb4186f37f",
+        "name": "function ML_20",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet messages = [];\n\nfor (let key in currentAlarms) {\n    let newMsg = {};\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n       // let newMsg = {};\n        newMsg.payloadd= \"SP_Alarm_Insert_ML20\",\n            newMsg.queryParams= [\n                { name: \"AlarmCode\", value: key.toString() }\n            ]\n        \n        messages.push(newMsg);\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n       // let newMsg = {};\n        newMsg.payloadd = \"SP_Alarm_Update_ML20\",\n            newMsg.queryParams = [\n                { name: \"AlarmCode\", value: key.toString() }\n            ]\n            \n        messages.push(newMsg);\n    }\n}\n\n\n\n// for (let i = 1; i <= 10; i++) {\n//     node.warn(i);\n//     let newMsg = {}\n//         newMsg.payloadd= \"SP_Alarm_Insert_ML10\",\n//         newMsg.queryParams= [\n//             { name: \"AlarmCode\", value: \"Alarm\" + i }\n//         ]\n   \n//     messages.push(newMsg);\n// }\n\n// Save current state\nflow.set(\"lastAlarms\", currentAlarms);\n\n// Send all generated alarm messages\nreturn [messages];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"lastAlarms\", undefined);",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [
+                "caf54fa048162fef"
+            ]
+        ]
+    },
+    {
+        "id": "282c9b9bd19757af",
+        "type": "s7 in",
+        "z": "8c2ed9fb4186f37f",
+        "endpoint": "c55b68dffbd8100e",
+        "mode": "all",
+        "variable": "Alarm1",
+        "diff": true,
+        "name": "S7 Node ML_20",
+        "x": 80,
+        "y": 80,
+        "wires": [
+            [
+                "eb415a47557ae549"
+            ]
+        ]
+    },
+    {
+        "id": "eea8806688157b9b",
+        "type": "catch",
+        "z": "8c2ed9fb4186f37f",
+        "name": "",
+        "scope": [
+            "caf54fa048162fef",
+            "eb415a47557ae549",
+            "282c9b9bd19757af"
+        ],
+        "uncaught": false,
+        "x": 50,
+        "y": 160,
+        "wires": [
+            [
+                "ae5108d9c39fc28a"
+            ]
+        ]
+    },
+    {
+        "id": "ae5108d9c39fc28a",
+        "type": "function",
+        "z": "8c2ed9fb4186f37f",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "cabb4dd2bbd471fb"
+            ]
+        ]
+    },
+    {
+        "id": "cabb4dd2bbd471fb",
+        "type": "file",
+        "z": "8c2ed9fb4186f37f",
+        "name": "",
+        "filename": "D:\\JBM\\Log\\ML_20_Error.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "3372da5a81135aef"
+            ]
+        ]
+    },
+    {
+        "id": "3372da5a81135aef",
+        "type": "debug",
+        "z": "8c2ed9fb4186f37f",
+        "name": "Error Print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "86e266d1f48903ec",
+        "type": "debug",
+        "z": "e72cc2d74f6e5f1f",
+        "name": "Print ML_30",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f1f62173c676eeea",
+        "type": "function",
+        "z": "e72cc2d74f6e5f1f",
+        "name": "function ML_30",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet messages = [];\n\nfor (let key in currentAlarms) {\n    let newMsg = {};\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n       // let newMsg = {};\n        newMsg.payloadd= \"SP_Alarm_Insert_ML30\",\n            newMsg.queryParams= [\n                { name: \"AlarmCode\", value: key.toString() }\n            ]\n        \n        messages.push(newMsg);\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n       // let newMsg = {};\n        newMsg.payloadd = \"SP_Alarm_Update_ML30\",\n            newMsg.queryParams = [\n                { name: \"AlarmCode\", value: key.toString() }\n            ]\n            \n        messages.push(newMsg);\n    }\n}\n\n\n\n// for (let i = 1; i <= 10; i++) {\n//     node.warn(i);\n//     let newMsg = {}\n//         newMsg.payloadd= \"SP_Alarm_Insert_ML10\",\n//         newMsg.queryParams= [\n//             { name: \"AlarmCode\", value: \"Alarm\" + i }\n//         ]\n   \n//     messages.push(newMsg);\n// }\n\n// Save current state\nflow.set(\"lastAlarms\", currentAlarms);\n\n// Send all generated alarm messages\nreturn [messages];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"lastAlarms\", undefined);",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [
+                "fbbf44cb3c8a2799"
+            ]
+        ]
+    },
+    {
+        "id": "654f35b64f5ff4a9",
+        "type": "catch",
+        "z": "e72cc2d74f6e5f1f",
+        "name": "",
+        "scope": [
+            "f1f62173c676eeea",
+            "988e897af987d37b",
+            "fbbf44cb3c8a2799"
+        ],
+        "uncaught": false,
+        "x": 50,
+        "y": 160,
+        "wires": [
+            [
+                "8b95cd5e80139655"
+            ]
+        ]
+    },
+    {
+        "id": "8b95cd5e80139655",
+        "type": "function",
+        "z": "e72cc2d74f6e5f1f",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "a550d002123609c7"
+            ]
+        ]
+    },
+    {
+        "id": "a550d002123609c7",
+        "type": "file",
+        "z": "e72cc2d74f6e5f1f",
+        "name": "",
+        "filename": "D:\\JBM\\Log\\ML_30_Error.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "eecd592d63579512"
+            ]
+        ]
+    },
+    {
+        "id": "eecd592d63579512",
+        "type": "debug",
+        "z": "e72cc2d74f6e5f1f",
+        "name": "Error Print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "988e897af987d37b",
+        "type": "s7 in",
+        "z": "e72cc2d74f6e5f1f",
+        "endpoint": "1b3b5148b51bbc29",
+        "mode": "all",
+        "variable": "Alarm1",
+        "diff": true,
+        "name": "S7 Node ML_30",
+        "x": 80,
+        "y": 80,
+        "wires": [
+            [
+                "f1f62173c676eeea"
+            ]
+        ]
+    },
+    {
+        "id": "fbbf44cb3c8a2799",
+        "type": "MSSQL",
+        "z": "e72cc2d74f6e5f1f",
+        "mssqlCN": "a69e0d60c29f2150",
+        "name": "SQL ML_30",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payloadd",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": false,
+        "params": [],
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "86e266d1f48903ec"
+            ]
+        ]
+    },
+    {
+        "id": "c12590a741e3b357",
+        "type": "debug",
+        "z": "5b94b71bbabe44fd",
+        "name": "Print ML_40",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "7d671a480632c8bc",
+        "type": "MSSQL",
+        "z": "5b94b71bbabe44fd",
+        "mssqlCN": "e24bcaab519ee0a8",
+        "name": "SQL ML_40",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payloadd",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": false,
+        "params": [],
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "c12590a741e3b357"
+            ]
+        ]
+    },
+    {
+        "id": "0b554b2e3513f588",
+        "type": "function",
+        "z": "5b94b71bbabe44fd",
+        "name": "function ML_40",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet messages = [];\n\nfor (let key in currentAlarms) {\n    let newMsg = {};\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n       // let newMsg = {};\n        newMsg.payloadd= \"SP_Alarm_Insert_ML40\",\n            newMsg.queryParams= [\n                { name: \"AlarmCode\", value: key.toString() }\n            ]\n        \n        messages.push(newMsg);\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n       // let newMsg = {};\n        newMsg.payloadd = \"SP_Alarm_Update_ML40\",\n            newMsg.queryParams = [\n                { name: \"AlarmCode\", value: key.toString() }\n            ]\n            \n        messages.push(newMsg);\n    }\n}\n\n\n\n// for (let i = 1; i <= 10; i++) {\n//     node.warn(i);\n//     let newMsg = {}\n//         newMsg.payloadd= \"SP_Alarm_Insert_ML10\",\n//         newMsg.queryParams= [\n//             { name: \"AlarmCode\", value: \"Alarm\" + i }\n//         ]\n   \n//     messages.push(newMsg);\n// }\n\n// Save current state\nflow.set(\"lastAlarms\", currentAlarms);\n\n// Send all generated alarm messages\nreturn [messages];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"lastAlarms\", undefined);",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [
+                "7d671a480632c8bc"
+            ]
+        ]
+    },
+    {
+        "id": "0a7e502cba8e3af0",
+        "type": "s7 in",
+        "z": "5b94b71bbabe44fd",
+        "endpoint": "77df47fa9e7dc3c0",
+        "mode": "all",
+        "variable": "Alarm1",
+        "diff": true,
+        "name": "S7 Node ML_40",
+        "x": 80,
+        "y": 80,
+        "wires": [
+            [
+                "0b554b2e3513f588"
+            ]
+        ]
+    },
+    {
+        "id": "e8150fcc54ce8db2",
+        "type": "catch",
+        "z": "5b94b71bbabe44fd",
+        "name": "",
+        "scope": [
+            "7d671a480632c8bc",
+            "0b554b2e3513f588",
+            "0a7e502cba8e3af0"
+        ],
+        "uncaught": false,
+        "x": 50,
+        "y": 160,
+        "wires": [
+            [
+                "560f1bad95c88563"
+            ]
+        ]
+    },
+    {
+        "id": "560f1bad95c88563",
+        "type": "function",
+        "z": "5b94b71bbabe44fd",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "e07debdeb25c2cda"
+            ]
+        ]
+    },
+    {
+        "id": "e07debdeb25c2cda",
+        "type": "file",
+        "z": "5b94b71bbabe44fd",
+        "name": "",
+        "filename": "D:\\JBM\\Log\\ML_40_Error.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "2aa74db69832dc89"
+            ]
+        ]
+    },
+    {
+        "id": "2aa74db69832dc89",
+        "type": "debug",
+        "z": "5b94b71bbabe44fd",
+        "name": "Error Print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 220,
         "wires": []
     }
 ]

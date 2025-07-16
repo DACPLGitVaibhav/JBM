@@ -6,13 +6,5 @@
         "disabled": false,
         "info": "",
         "env": []
-    },
-    {
-        "id": "b4cb580131b2a283",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
     }
 ]

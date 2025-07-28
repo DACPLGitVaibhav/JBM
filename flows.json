@@ -34,7 +34,7 @@
     {
         "id": "77b8f05fc0c712f8",
         "type": "tab",
-        "label": "H P Insert Update",
+        "label": "HP_Insert_Update",
         "disabled": false,
         "info": "",
         "env": []
@@ -42,7 +42,7 @@
     {
         "id": "9ba016c4084cf3a0",
         "type": "tab",
-        "label": "Target_Daily_Monthly",
+        "label": "Target_Monthly",
         "disabled": false,
         "info": "",
         "env": []
@@ -58,14 +58,14 @@
     {
         "id": "a1e07c2d53e4c8ee",
         "type": "tab",
-        "label": "Shift Production Insert",
+        "label": "Shift_Production_Insert",
         "disabled": false,
         "info": ""
     },
     {
         "id": "d56e9038cfc4ecfb",
         "type": "tab",
-        "label": "Intruption_collision_spot",
+        "label": "Intruption_collision_TipChange",
         "disabled": false,
         "info": "",
         "env": []

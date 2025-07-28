@@ -40,6 +40,37 @@
         "env": []
     },
     {
+        "id": "9ba016c4084cf3a0",
+        "type": "tab",
+        "label": "Target_Daily_Monthly",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "047a2ed188a4b718",
+        "type": "tab",
+        "label": "Robot_health_Status",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a1e07c2d53e4c8ee",
+        "type": "tab",
+        "label": "Shift Production Insert",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d56e9038cfc4ecfb",
+        "type": "tab",
+        "label": "Intruption_collision_spot",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "5f5798233d6334e6",
         "type": "MSSQL-CN",
         "z": "e07e4c26beb8b4f7",
@@ -4354,6 +4385,657 @@
         "readOnlyIntent": false
     },
     {
+        "id": "67d6eb1648b017c2",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB98,I0",
+                "name": "Monthly_Target "
+            },
+            {
+                "addr": "DB98,I26",
+                "name": "Monthly_Achieved"
+            }
+        ]
+    },
+    {
+        "id": "f490d5d3917eac31",
+        "type": "MSSQL-CN",
+        "z": "9ba016c4084cf3a0",
+        "tdsVersion": "7_4",
+        "name": "MSSQl",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "a850c336a3ba0e74",
+        "type": "s7 endpoint",
+        "z": "047a2ed188a4b718",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB317,I12.3",
+                "name": "ML10_rbt1_Active"
+            },
+            {
+                "addr": "DB299,I12.3",
+                "name": "ML10_rbt2_Active"
+            },
+            {
+                "addr": "DB168,I12.3",
+                "name": "ML10_rbt3_Active"
+            },
+            {
+                "addr": "DB300,I12.3",
+                "name": "ML10_rbt4_Active"
+            },
+            {
+                "addr": "DB3,I12.3",
+                "name": "ML20_rbt5_Active"
+            },
+            {
+                "addr": "DB5,I12.3",
+                "name": "ML20_rbt6_Active"
+            },
+            {
+                "addr": "DB7,I12.3",
+                "name": "ML20_rbt7_Active"
+            },
+            {
+                "addr": "DB9,I12.3",
+                "name": "ML20_rbt8_Active"
+            },
+            {
+                "addr": "DB11,I12.3",
+                "name": "ML30_rbt9_Active"
+            },
+            {
+                "addr": "DB13,I12.3",
+                "name": "ML30_rbt10_Active"
+            },
+            {
+                "addr": "DB374,I12.3",
+                "name": "ML30_rbt11_Active"
+            },
+            {
+                "addr": "DB363,I12.3",
+                "name": "ML30_rbt12_Active"
+            },
+            {
+                "addr": "DB361,I12.3",
+                "name": "ML40_rbt13_Active"
+            },
+            {
+                "addr": "DB373,I12.3",
+                "name": "ML40_rbt14_Active"
+            },
+            {
+                "addr": "DB317,I9.4",
+                "name": "ML10_rbt1_Idle"
+            },
+            {
+                "addr": "DB299,I9.4",
+                "name": "ML10_rbt2_Idle"
+            },
+            {
+                "addr": "DB168,I9.4",
+                "name": "ML10_rbt3_Idle"
+            },
+            {
+                "addr": "DB300,I9.4",
+                "name": "ML10_rbt4_Idle"
+            },
+            {
+                "addr": "DB3,I9.4",
+                "name": "ML20_rbt5_Idle"
+            },
+            {
+                "addr": "DB5,I9.4",
+                "name": "ML20_rbt6_Idle"
+            },
+            {
+                "addr": "DB7,I9.4",
+                "name": "ML20_rbt7_Idle"
+            },
+            {
+                "addr": "DB9,I9.4",
+                "name": "ML20_rbt8_Idle"
+            },
+            {
+                "addr": "DB11,I9.4",
+                "name": "ML30_rbt9_Idle"
+            },
+            {
+                "addr": "DB13,I9.4",
+                "name": "ML30_rbt10_Idle"
+            },
+            {
+                "addr": "DB374,I9.4",
+                "name": "ML30_rbt11_Idle"
+            },
+            {
+                "addr": "DB363,I9.4",
+                "name": "ML30_rbt12_Idle"
+            },
+            {
+                "addr": "DB361,I9.4",
+                "name": "ML40_rbt13_Idle"
+            },
+            {
+                "addr": "DB373,I9.4",
+                "name": "ML40_rbt14_Idle"
+            },
+            {
+                "addr": "DB317,I46.2",
+                "name": "ML10_rbt1_Breakdown"
+            },
+            {
+                "addr": "DB299,I46.2",
+                "name": "ML10_rbt2_Breakdown"
+            },
+            {
+                "addr": "DB168,I46.2",
+                "name": "ML10_rbt3_Breakdown"
+            },
+            {
+                "addr": "DB300,I46.2",
+                "name": "ML10_rbt4_Breakdown"
+            },
+            {
+                "addr": "DB3,I46.2",
+                "name": "ML20_rbt5_Breakdown"
+            },
+            {
+                "addr": "DB5,I46.2",
+                "name": "ML20_rbt6_Breakdown"
+            },
+            {
+                "addr": "DB7,I46.2",
+                "name": "ML20_rbt7_Breakdown"
+            },
+            {
+                "addr": "DB9,I46.2",
+                "name": "ML20_rbt8_Breakdown"
+            },
+            {
+                "addr": "DB11,I46.2",
+                "name": "ML30_rbt9_Breakdown"
+            },
+            {
+                "addr": "DB13,I46.2",
+                "name": "ML30_rbt10_Breakdown"
+            },
+            {
+                "addr": "DB374,I46.2",
+                "name": "ML30_rbt11_Breakdown"
+            },
+            {
+                "addr": "DB363,I46.2",
+                "name": "ML30_rbt12_Breakdown"
+            },
+            {
+                "addr": "DB361,I46.2",
+                "name": "ML40_rbt13_Breakdown"
+            },
+            {
+                "addr": "DB373,I46.2",
+                "name": "ML40_rbt14_Breakdown"
+            },
+            {
+                "addr": "DB317,I46.3",
+                "name": "ML10_rbt1_Battery"
+            },
+            {
+                "addr": "DB299,I46.3",
+                "name": "ML10_rbt2_Battery"
+            },
+            {
+                "addr": "DB168,I46.3",
+                "name": "ML10_rbt3_Battery"
+            },
+            {
+                "addr": "DB300,I46.3",
+                "name": "ML10_rbt4_Battery"
+            },
+            {
+                "addr": "DB3,I46.3",
+                "name": "ML20_rbt5_Battery"
+            },
+            {
+                "addr": "DB5,I46.3",
+                "name": "ML20_rbt6_Battery"
+            },
+            {
+                "addr": "DB7,I46.3",
+                "name": "ML20_rbt7_Battery"
+            },
+            {
+                "addr": "DB9,I46.3",
+                "name": "ML20_rbt8_Battery"
+            },
+            {
+                "addr": "DB11,I46.3",
+                "name": "ML30_rbt9_Battery"
+            },
+            {
+                "addr": "DB13,I46.3",
+                "name": "ML30_rbt10_Battery"
+            },
+            {
+                "addr": "DB374,I46.3",
+                "name": "ML30_rbt11_Battery"
+            },
+            {
+                "addr": "DB363,I46.3",
+                "name": "ML30_rbt12_Battery"
+            },
+            {
+                "addr": "DB361,I46.3",
+                "name": "ML40_rbt13_Battery"
+            },
+            {
+                "addr": "DB373,I46.3",
+                "name": "ML40_rbt14_Battery"
+            }
+        ]
+    },
+    {
+        "id": "e8032874d3c564a4",
+        "type": "MSSQL-CN",
+        "z": "047a2ed188a4b718",
+        "tdsVersion": "7_4",
+        "name": "Robot Health",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "b2b6a7e4789a4f8e",
+        "type": "s7 endpoint",
+        "z": "a1e07c2d53e4c8ee",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "",
+        "cycletime": "1000",
+        "timeout": 1500,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB99,X40.0",
+                "name": "SHIFT_A"
+            },
+            {
+                "addr": "DB99,X0.1",
+                "name": "SHIFT_B"
+            },
+            {
+                "addr": "DB99,X40.2",
+                "name": "SHIFT_C"
+            },
+            {
+                "addr": "DB428,I108",
+                "name": "ACTUALLHA"
+            },
+            {
+                "addr": "DB428,I110",
+                "name": "ACTUALLHB"
+            },
+            {
+                "addr": "DB428,I112",
+                "name": "ACTUALLHC"
+            },
+            {
+                "addr": "DB428,I48",
+                "name": "ACTUALRHA"
+            },
+            {
+                "addr": "DB428,I50",
+                "name": "ACTUALRHB"
+            },
+            {
+                "addr": "DB428,I52",
+                "name": "ACTUALRHC"
+            },
+            {
+                "addr": "DB98,I4",
+                "name": "TARGETA"
+            },
+            {
+                "addr": " DB98,I6",
+                "name": "TARGETB"
+            },
+            {
+                "addr": "DB98,I8",
+                "name": "TARGETC"
+            },
+            {
+                "addr": "DB98,I22",
+                "name": "Actual_CountA"
+            },
+            {
+                "addr": "DB98,I24",
+                "name": "Actual_CountB"
+            },
+            {
+                "addr": "DB98,I26",
+                "name": "Actual_CountC"
+            }
+        ]
+    },
+    {
+        "id": "a066e5382d89db51",
+        "type": "MSSQL-CN",
+        "z": "a1e07c2d53e4c8ee",
+        "tdsVersion": "7_4",
+        "name": "MSSQL JBM",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": false,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "",
+        "cancelTimeout": "",
+        "pool": "",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "c51548e2cfc4b964",
+        "type": "MSSQL-CN",
+        "z": "d56e9038cfc4ecfb",
+        "tdsVersion": "7_4",
+        "name": "",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "cab73a55475e776c",
+        "type": "s7 endpoint",
+        "z": "d56e9038cfc4ecfb",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB428,X130.0",
+                "name": "01_Collision"
+            },
+            {
+                "addr": "DB428,X130.1",
+                "name": "02_Collision"
+            },
+            {
+                "addr": "DB428,X130.2",
+                "name": "03_Collision"
+            },
+            {
+                "addr": "DB428,X130.3",
+                "name": "04_Collision"
+            },
+            {
+                "addr": "DB428,X130.4",
+                "name": "05_Collision"
+            },
+            {
+                "addr": "DB428,X130.5",
+                "name": "06_Collision"
+            },
+            {
+                "addr": "DB428,X130.6",
+                "name": "07_Collision"
+            },
+            {
+                "addr": "DB428,X130.7",
+                "name": "08_Collision"
+            },
+            {
+                "addr": "DB428,X140.0",
+                "name": "09_Collision"
+            },
+            {
+                "addr": "DB428,X140.1",
+                "name": "10_Collision"
+            },
+            {
+                "addr": "DB428,X140.2",
+                "name": "11_Collision"
+            },
+            {
+                "addr": "DB428,X140.3",
+                "name": "12_Collision"
+            },
+            {
+                "addr": "DB428,X140.4",
+                "name": "13_Collision"
+            },
+            {
+                "addr": "DB428,X140.5",
+                "name": "14_Collision"
+            },
+            {
+                "addr": "DB428,X140.6",
+                "name": "15_Collision"
+            },
+            {
+                "addr": "DB428,X140.7",
+                "name": "16_Collision"
+            },
+            {
+                "addr": "DB428,X120.0",
+                "name": "01_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X120.1",
+                "name": "02_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X120.2",
+                "name": "03_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X120.3",
+                "name": "04_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X120.4",
+                "name": "05_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X120.5",
+                "name": "06_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X120.6",
+                "name": "07_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X120.7",
+                "name": "08_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X121.0",
+                "name": "09_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X121.1",
+                "name": "10_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X121.2",
+                "name": "11_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X121.3",
+                "name": "12_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X121.4",
+                "name": "13_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X121.5",
+                "name": "14_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X121.6",
+                "name": "15_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X121.7",
+                "name": "16_AtcIntruption"
+            },
+            {
+                "addr": "DB428,X122.0",
+                "name": "01_Tipchange"
+            },
+            {
+                "addr": "DB428,X122.1",
+                "name": "02_Tipchange"
+            },
+            {
+                "addr": "DB428,X122.2",
+                "name": "03_Tipchange"
+            },
+            {
+                "addr": "DB428,X122.3",
+                "name": "04_Tipchange"
+            },
+            {
+                "addr": "DB428,X122.4",
+                "name": "05_Tipchange"
+            },
+            {
+                "addr": "DB428,X122.5",
+                "name": "06_Tipchange"
+            },
+            {
+                "addr": "DB428,X122.6",
+                "name": "07_Tipchange"
+            },
+            {
+                "addr": "DB428,X122.7",
+                "name": "08_Tipchange"
+            },
+            {
+                "addr": "DB428,X123.0",
+                "name": "09_Tipchange"
+            },
+            {
+                "addr": "DB428,X123.1",
+                "name": "10_Tipchange"
+            },
+            {
+                "addr": "DB428,X123.2",
+                "name": "11_Tipchange"
+            },
+            {
+                "addr": "DB428,X123.3",
+                "name": "12_Tipchange"
+            },
+            {
+                "addr": "DB428,X123.4",
+                "name": "13_Tipchange"
+            },
+            {
+                "addr": "DB428,X123.5",
+                "name": "14_Tipchange"
+            },
+            {
+                "addr": "DB428,X123.6",
+                "name": "15_Tipchange"
+            },
+            {
+                "addr": "DB428,X123.7",
+                "name": "16_Tipchange"
+            }
+        ]
+    },
+    {
         "id": "2caf7da1d841fdb1",
         "type": "debug",
         "z": "e07e4c26beb8b4f7",
@@ -5105,5 +5787,465 @@
         "x": 660,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "s7read",
+        "type": "s7 in",
+        "z": "9ba016c4084cf3a0",
+        "endpoint": "67d6eb1648b017c2",
+        "mode": "all",
+        "variable": "DB1,REAL0",
+        "diff": true,
+        "name": "Read Tag",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "f106fb750e6e5c92"
+            ]
+        ]
+    },
+    {
+        "id": "f106fb750e6e5c92",
+        "type": "function",
+        "z": "9ba016c4084cf3a0",
+        "name": "InsertonTime",
+        "func": "// Get current month and year key (e.g., 072025)\nlet now = new Date();\nlet key = String(now.getMonth() + 1).padStart(2, '0') + String(now.getFullYear());\n\n// Get tag values (replace with correct tag names)\nlet monthlyTarget = msg.payload.Monthly_Target || 0;\nlet monthlyActual = msg.payload.Monthly_Achieved || 0;\n\n// Prepare SQL message for stored procedure\nlet sqlMsg = {\n    payload: \"USP_InsertOrUpdate_Target_Production\",\n    queryParams: [\n        { name: \"Month\", value: parseInt(key) },\n        { name: \"Monthly_Target\", value: monthlyTarget },\n        { name: \"Monthly_Actual\", value: monthlyActual }\n    ],\n    queryMode: \"execute\"\n};\n\nreturn [sqlMsg];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "bf73e5927246885f"
+            ]
+        ]
+    },
+    {
+        "id": "bf73e5927246885f",
+        "type": "MSSQL",
+        "z": "9ba016c4084cf3a0",
+        "mssqlCN": "f490d5d3917eac31",
+        "name": "Monthly Target",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 500,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93c0b8171837b934",
+        "type": "catch",
+        "z": "9ba016c4084cf3a0",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "850f5ecdaee0e83e"
+            ]
+        ]
+    },
+    {
+        "id": "850f5ecdaee0e83e",
+        "type": "function",
+        "z": "9ba016c4084cf3a0",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "0e84f642f5c3ddce"
+            ]
+        ]
+    },
+    {
+        "id": "0e84f642f5c3ddce",
+        "type": "file",
+        "z": "9ba016c4084cf3a0",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\MontlyTargetError.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 710,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b682b57b8c5bee3e",
+        "type": "function",
+        "z": "047a2ed188a4b718",
+        "name": "function 3",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changes\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Update stored tag states\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date();\n    \n\n    for (let i = 0; i < changed.length; i++) {\n        let tag = changed[i];\n\n        msgs.push({\n            payload:  \"sp_RobotHealthStatus\",\n            queryParams: [\n                { name:\"TagName\" , value:tag.name },\n                { name:\"Status\" ,value:tag.value},\n                { name:\"TimeStamp\",value:now}\n               \n            ],\n            queryMode: \"execute\"\n        });\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "1e9dbbdf6dc6a5d5"
+            ]
+        ]
+    },
+    {
+        "id": "fafb7862565ca41b",
+        "type": "s7 in",
+        "z": "047a2ed188a4b718",
+        "endpoint": "a850c336a3ba0e74",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "b682b57b8c5bee3e"
+            ]
+        ]
+    },
+    {
+        "id": "1e9dbbdf6dc6a5d5",
+        "type": "MSSQL",
+        "z": "047a2ed188a4b718",
+        "mssqlCN": "e8032874d3c564a4",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f12a227200c4ba7",
+        "type": "file",
+        "z": "047a2ed188a4b718",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\RobotHealthError.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 570,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c669e5a84ee67c89",
+        "type": "function",
+        "z": "047a2ed188a4b718",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "5f12a227200c4ba7"
+            ]
+        ]
+    },
+    {
+        "id": "44766b6a65080c18",
+        "type": "catch",
+        "z": "047a2ed188a4b718",
+        "name": "",
+        "scope": "group",
+        "uncaught": false,
+        "x": 70,
+        "y": 240,
+        "wires": [
+            [
+                "c669e5a84ee67c89"
+            ]
+        ]
+    },
+    {
+        "id": "8477498de13bfc7a",
+        "type": "s7 in",
+        "z": "a1e07c2d53e4c8ee",
+        "endpoint": "b2b6a7e4789a4f8e",
+        "mode": "single",
+        "variable": "",
+        "diff": false,
+        "name": "Read PLC Tags",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "7f07cbcfcb9e73a6"
+            ]
+        ]
+    },
+    {
+        "id": "7f07cbcfcb9e73a6",
+        "type": "function",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Detect Shift & Prepare SP Params",
+        "func": "let data = msg.payload;\n\n// Previous state storage\nlet prev = flow.get('prevShiftState') || {\n    SHIFT_A: true,\n    SHIFT_B: true,\n    SHIFT_C: true\n};\n\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count :0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n\n// Detect falling edge (1 -> 0)\n//\nif (prev.SHIFT_A === true && data.SHIFT_A === false) {\n    shift = \"SHIFT_A\";\n    params.Target_Count = data.TARGETA || 0;\n    params.Actual_CountLH = data.ACTUALLHA || 0;\n     params.Actual_CountRH = data.ACTUALRHA || 0;\n    params.Actual_Count = data.Actual_CountA || 0;\n} else if (prev.SHIFT_B === true && data.SHIFT_B === false) {\n    shift = \"SHIFT_B\";\n     params.Target_Count = data.TARGETB || 0;\n    params.Actual_CountLH = data.ACTUALLHB || 0;\n     params.Actual_CountRH = data.ACTUALRHB || 0;\n     params.Actual_Count = data.Actual_CountB || 0;\n} else if (prev.SHIFT_C === true && data.SHIFT_C === false) {\n    shift = \"SHIFT_C\";\n     params.Target_Count = data.TARGETB || 0;\n    params.Actual_CountLH = data.ACTUALLHB || 0;\n     params.Actual_CountRH = data.ACTUALRHB || 0;\n     params.Actual_Count = data.Actual_CountC || 0;\n} else {\n    // Update state and exit\n    flow.set('prevShiftState', {\n        SHIFT_A: data.SHIFT_A,\n        SHIFT_B: data.SHIFT_B,\n        SHIFT_C: data.SHIFT_C\n    });\n    return null;\n}\n\n// Update previous state\nflow.set('prevShiftState', {\n    SHIFT_A: data.SHIFT_A,\n    SHIFT_B: data.SHIFT_B,\n    SHIFT_C: data.SHIFT_C\n});\n\n// Output for MSSQL\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n{ name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 140,
+        "wires": [
+            [
+                "fc703e98303739a6"
+            ]
+        ]
+    },
+    {
+        "id": "fc703e98303739a6",
+        "type": "MSSQL",
+        "z": "a1e07c2d53e4c8ee",
+        "mssqlCN": "a066e5382d89db51",
+        "name": "Call sp_USP_Shift_Production",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "EXEC sp_USP_Shift_Production @Shift=?, @Target_Count=?, @Actual_Count=?, @ReJection_Count=?, @Ok_Count=?, @Within_Cycle=?, @Exceeded_Cycle=?",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload.query",
+        "queryOptType": "msg",
+        "paramsOpt": "payload.queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 750,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "519c5a1eac7e44e3",
+        "type": "catch",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "",
+        "scope": "group",
+        "uncaught": false,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "0f1885f3c2a2ba7a"
+            ]
+        ]
+    },
+    {
+        "id": "0f1885f3c2a2ba7a",
+        "type": "function",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "767599ffc87e6df3"
+            ]
+        ]
+    },
+    {
+        "id": "767599ffc87e6df3",
+        "type": "file",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\ProductionError.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 660,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "func001",
+        "type": "function",
+        "z": "d56e9038cfc4ecfb",
+        "name": "Filter TRUE tags and prepare SQL",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedToTrue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    if (current[tag] === true && previous[tag] !== true) {\n        changedToTrue.push(tag);\n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\n// Build SQL procedure calls\nlet now = new Date();\nlet timestamp = now.toISOString();\n\nlet msgs = [];\n\nfor (let i = 0; i < changedToTrue.length; i++) {\n    const key = changedToTrue[i];\n    const parts = key.split('_');\n\n    if (parts.length === 2) {\n        msgs.push({\n            payload: 'USP_Insert_Atc_TipChange_Collision',\n            queryParams: [\n                { name: \"RobotID\", value: parts[0] },\n                { name: \"EventType\", value: parts[1] },\n                { name: \"TimeStamp\", value: timestamp }\n            ],\n            queryMode: \"execute\"\n        });\n    }\n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 140,
+        "wires": [
+            [
+                "sql001"
+            ]
+        ]
+    },
+    {
+        "id": "sql001",
+        "type": "MSSQL",
+        "z": "d56e9038cfc4ecfb",
+        "mssqlCN": "c51548e2cfc4b964",
+        "name": "MSSQL",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 900,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3d09e36a6407f9b",
+        "type": "s7 in",
+        "z": "d56e9038cfc4ecfb",
+        "endpoint": "cab73a55475e776c",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "func001"
+            ]
+        ]
+    },
+    {
+        "id": "a307dca4be505910",
+        "type": "catch",
+        "z": "d56e9038cfc4ecfb",
+        "name": "",
+        "scope": "group",
+        "uncaught": false,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "0b61a2f5e1089f4a"
+            ]
+        ]
+    },
+    {
+        "id": "0b61a2f5e1089f4a",
+        "type": "function",
+        "z": "d56e9038cfc4ecfb",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "7a9451015cbe1bab"
+            ]
+        ]
+    },
+    {
+        "id": "7a9451015cbe1bab",
+        "type": "file",
+        "z": "d56e9038cfc4ecfb",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\ATCError.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 780,
+        "y": 280,
+        "wires": [
+            []
+        ]
     }
 ]

@@ -65,7 +65,15 @@
     {
         "id": "d56e9038cfc4ecfb",
         "type": "tab",
-        "label": "Intruption_collision_TipChange",
+        "label": "ACTIntruption_collision",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b225c926a1394a08",
+        "type": "tab",
+        "label": "Tip_Change_Count",
         "disabled": false,
         "info": "",
         "env": []
@@ -4387,6 +4395,7 @@
     {
         "id": "67d6eb1648b017c2",
         "type": "s7 endpoint",
+        "z": "b225c926a1394a08",
         "transport": "iso-on-tcp",
         "address": "192.168.1.50",
         "port": "102",
@@ -4404,12 +4413,80 @@
         "name": "",
         "vartable": [
             {
-                "addr": "DB98,I0",
-                "name": "Monthly_Target "
+                "addr": "DB428,I132",
+                "name": "1_G1"
             },
             {
-                "addr": "DB98,I26",
-                "name": "Monthly_Achieved"
+                "addr": "DB428,I134",
+                "name": "2_G1"
+            },
+            {
+                "addr": "DB428,I136",
+                "name": "3_G1"
+            },
+            {
+                "addr": "DB428,I138",
+                "name": "4_G1"
+            },
+            {
+                "addr": "DB428,I140",
+                "name": "5_G1"
+            },
+            {
+                "addr": "DB428,I142",
+                "name": "6_G1"
+            },
+            {
+                "addr": "DB428,I144",
+                "name": "7_G1"
+            },
+            {
+                "addr": "DB428,I146",
+                "name": "7_G2"
+            },
+            {
+                "addr": "DB428,I148",
+                "name": "7_G3"
+            },
+            {
+                "addr": "DB428,I150",
+                "name": "8_G1"
+            },
+            {
+                "addr": "DB428,I152",
+                "name": "8_G2"
+            },
+            {
+                "addr": "DB428,I154",
+                "name": "8_G3"
+            },
+            {
+                "addr": "DB428,I156",
+                "name": "9_G1"
+            },
+            {
+                "addr": "DB428,I158",
+                "name": "10_G1"
+            },
+            {
+                "addr": "DB428,I160",
+                "name": "11_G1"
+            },
+            {
+                "addr": "DB428,I162",
+                "name": "12_G1"
+            },
+            {
+                "addr": "DB428,I164",
+                "name": "13_G1"
+            },
+            {
+                "addr": "DB428,I166",
+                "name": "14_G1"
+            },
+            {
+                "addr": "DB428,I168",
+                "name": "15_G1"
             }
         ]
     },
@@ -4968,72 +5045,28 @@
             {
                 "addr": "DB428,X121.7",
                 "name": "16_AtcIntruption"
-            },
-            {
-                "addr": "DB428,X122.0",
-                "name": "01_Tipchange"
-            },
-            {
-                "addr": "DB428,X122.1",
-                "name": "02_Tipchange"
-            },
-            {
-                "addr": "DB428,X122.2",
-                "name": "03_Tipchange"
-            },
-            {
-                "addr": "DB428,X122.3",
-                "name": "04_Tipchange"
-            },
-            {
-                "addr": "DB428,X122.4",
-                "name": "05_Tipchange"
-            },
-            {
-                "addr": "DB428,X122.5",
-                "name": "06_Tipchange"
-            },
-            {
-                "addr": "DB428,X122.6",
-                "name": "07_Tipchange"
-            },
-            {
-                "addr": "DB428,X122.7",
-                "name": "08_Tipchange"
-            },
-            {
-                "addr": "DB428,X123.0",
-                "name": "09_Tipchange"
-            },
-            {
-                "addr": "DB428,X123.1",
-                "name": "10_Tipchange"
-            },
-            {
-                "addr": "DB428,X123.2",
-                "name": "11_Tipchange"
-            },
-            {
-                "addr": "DB428,X123.3",
-                "name": "12_Tipchange"
-            },
-            {
-                "addr": "DB428,X123.4",
-                "name": "13_Tipchange"
-            },
-            {
-                "addr": "DB428,X123.5",
-                "name": "14_Tipchange"
-            },
-            {
-                "addr": "DB428,X123.6",
-                "name": "15_Tipchange"
-            },
-            {
-                "addr": "DB428,X123.7",
-                "name": "16_Tipchange"
             }
         ]
+    },
+    {
+        "id": "0f28796f53dacafb",
+        "type": "MSSQL-CN",
+        "z": "b225c926a1394a08",
+        "tdsVersion": "7_4",
+        "name": "SQL",
+        "server": "192.168.1.64",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
     },
     {
         "id": "2caf7da1d841fdb1",
@@ -5792,7 +5825,7 @@
         "id": "s7read",
         "type": "s7 in",
         "z": "9ba016c4084cf3a0",
-        "endpoint": "67d6eb1648b017c2",
+        "endpoint": "",
         "mode": "all",
         "variable": "DB1,REAL0",
         "diff": true,
@@ -6244,6 +6277,183 @@
         "encoding": "none",
         "x": 780,
         "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ace388f45e1996f",
+        "type": "function",
+        "z": "b225c926a1394a08",
+        "name": "Filter TRUE tags and prepare SQL",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedValue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    \n    if (current[tag] !== previous[tag]) {\n        changedValue.push({\n            name:tag,\n            val:current[tag]\n        });\n        \n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\nlet msgs = [];\n\nfor (let i = 0; i < changedValue.length; i++) {\n   \n        msgs.push({\n            payload: 'SP_Insert_TipChangeCount',\n            queryParams: [\n                { name: \"Name\", value: changedValue[i].name },\n                { name: \"Value\", value: changedValue[i].val },\n                \n            ],\n            queryMode: \"execute\"\n        });\n  \n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 60,
+        "wires": [
+            [
+                "6f4d104c605bbe9f"
+            ]
+        ]
+    },
+    {
+        "id": "6f4d104c605bbe9f",
+        "type": "MSSQL",
+        "z": "b225c926a1394a08",
+        "mssqlCN": "0f28796f53dacafb",
+        "name": "MSSQL",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 780,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "02924357444d71d2",
+        "type": "s7 in",
+        "z": "b225c926a1394a08",
+        "endpoint": "67d6eb1648b017c2",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 180,
+        "y": 60,
+        "wires": [
+            [
+                "3ace388f45e1996f"
+            ]
+        ]
+    },
+    {
+        "id": "db8621b7774af121",
+        "type": "catch",
+        "z": "b225c926a1394a08",
+        "name": "",
+        "scope": "group",
+        "uncaught": false,
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "2104cae33c39f48c"
+            ]
+        ]
+    },
+    {
+        "id": "2104cae33c39f48c",
+        "type": "function",
+        "z": "b225c926a1394a08",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [
+                "e329418541afd4a4"
+            ]
+        ]
+    },
+    {
+        "id": "e329418541afd4a4",
+        "type": "file",
+        "z": "b225c926a1394a08",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\ATCError.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 660,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2e1a69d940d76cf",
+        "type": "inject",
+        "z": "b225c926a1394a08",
+        "name": "inject 1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"1_G1\":\"1\"}",
+        "payloadType": "json",
+        "x": 230,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15dc27dddbed0564",
+        "type": "debug",
+        "z": "b225c926a1394a08",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d3e9118137a8bcfc",
+        "type": "inject",
+        "z": "b225c926a1394a08",
+        "name": "inject 2",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"1_G1\":\"2\"}",
+        "payloadType": "json",
+        "x": 230,
+        "y": 160,
         "wires": [
             []
         ]

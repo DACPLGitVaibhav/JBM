@@ -79,6 +79,22 @@
         "env": []
     },
     {
+        "id": "b1091eeb775de1e0",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9dab2313a2f19c0b",
+        "type": "tab",
+        "label": "Line_Layout",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "5f5798233d6334e6",
         "type": "MSSQL-CN",
         "z": "e07e4c26beb8b4f7",
@@ -5123,6 +5139,369 @@
         "readOnlyIntent": false
     },
     {
+        "id": "89fe3d04833d07b8",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.51",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB100,DT18",
+                "name": "DateTime"
+            },
+            {
+                "addr": "DB100,DTL4",
+                "name": "DTL"
+            }
+        ]
+    },
+    {
+        "id": "b0512d1c226ceb67",
+        "type": "s7 endpoint",
+        "z": "9dab2313a2f19c0b",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": "100",
+        "timeout": 2000,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB428,X170.0",
+                "name": "SafetyGate1"
+            },
+            {
+                "addr": "DB428,X170.1",
+                "name": "SafetyGate2"
+            },
+            {
+                "addr": "DB428,X170.2",
+                "name": "SafetyGate3"
+            },
+            {
+                "addr": "DB428,X170.3",
+                "name": "SafetyGate4"
+            },
+            {
+                "addr": "DB428,X170.4",
+                "name": "SafetyGate5"
+            },
+            {
+                "addr": "DB428,X170.5",
+                "name": "SafetyGate6"
+            },
+            {
+                "addr": "DB428,X170.6",
+                "name": "SafetyGate7"
+            },
+            {
+                "addr": "DB428,X170.7",
+                "name": "SafetyGate8"
+            },
+            {
+                "addr": "DB428,X171.0",
+                "name": "SafetyGate9"
+            },
+            {
+                "addr": "DB428,X171.1",
+                "name": "SafetyGate10"
+            },
+            {
+                "addr": "DB428,X171.2",
+                "name": "SafetyGate11"
+            },
+            {
+                "addr": "DB428,X171.3",
+                "name": "LightCurtain1"
+            },
+            {
+                "addr": "DB428,X171.4",
+                "name": "LightCurtain2"
+            },
+            {
+                "addr": "DB428,X171.5",
+                "name": "LightCurtain3"
+            },
+            {
+                "addr": "DB428,X171.6",
+                "name": "LightCurtain4"
+            },
+            {
+                "addr": "DB428,X171.7",
+                "name": "LightCurtain5"
+            },
+            {
+                "addr": "DB428,X172.0",
+                "name": "LightCurtain6"
+            },
+            {
+                "addr": "DB428,X172.1",
+                "name": "LightCurtain7"
+            },
+            {
+                "addr": "DB428,X172.2",
+                "name": "LightCurtain8"
+            },
+            {
+                "addr": "DB428,X172.3",
+                "name": "LightCurtain9"
+            },
+            {
+                "addr": "DB428,X172.4",
+                "name": "LightCurtain10"
+            },
+            {
+                "addr": "DB428,X172.5",
+                "name": "EMGMLSafetyGate2"
+            },
+            {
+                "addr": "DB428,X172.6",
+                "name": "EMGMLSafetyGate5"
+            },
+            {
+                "addr": "DB428,X172.7",
+                "name": "EMGMLSafetyGate7"
+            },
+            {
+                "addr": "DB428,X173.0",
+                "name": "EMGMLSafetyGate9"
+            },
+            {
+                "addr": "DB428,X173.1",
+                "name": "EMGMLSafetyGate8"
+            },
+            {
+                "addr": "DB428,X173.2",
+                "name": "EMGMLSafetyGate4"
+            },
+            {
+                "addr": "DB428,X173.3",
+                "name": "EMGMLSafetyGate3"
+            },
+            {
+                "addr": "DB428,X173.4",
+                "name": "EMGRFSafetyGate1"
+            },
+            {
+                "addr": "DB428,X173.5",
+                "name": "EMGMLSafetyGate6"
+            },
+            {
+                "addr": "DB428,X173.6",
+                "name": "EMGRFSafetyGate2"
+            },
+            {
+                "addr": "DB428,X173.7",
+                "name": "EMGHeamingSafetyGate1"
+            },
+            {
+                "addr": "DB428,X174.0",
+                "name": "EMGML20RunStand1"
+            },
+            {
+                "addr": "DB428,X174.1",
+                "name": "EMGML20RunStand2"
+            },
+            {
+                "addr": "DB428,X174.2",
+                "name": "EMGML20RunStand3"
+            },
+            {
+                "addr": "DB428,X174.3",
+                "name": "EMGML20RunStand4"
+            },
+            {
+                "addr": "DB428,X174.4",
+                "name": "EMGML20RunStand5"
+            },
+            {
+                "addr": "DB428,X174.5",
+                "name": "EMGRFRunStand1"
+            },
+            {
+                "addr": "DB428,X174.6",
+                "name": "EMHeimingRunStand1"
+            },
+            {
+                "addr": "DB428,X174.7",
+                "name": "EMGML10TopPLC"
+            },
+            {
+                "addr": "DB428,X175",
+                "name": "EMGML10BottomPLC"
+            },
+            {
+                "addr": "DB428,X175.1",
+                "name": "EMGMFLTOPENDPLC"
+            },
+            {
+                "addr": "DB428,X175.2",
+                "name": "EMGHeimingPLC"
+            },
+            {
+                "addr": "DB428,X175.3",
+                "name": "EMGRFPLC"
+            },
+            {
+                "addr": "DB428,X175.4",
+                "name": "EMGMLENDBottomHMI"
+            },
+            {
+                "addr": "DB428,X175.5",
+                "name": "EMGMLStartBottomHMI"
+            },
+            {
+                "addr": "DB428,X175.6",
+                "name": "EMGMLbottomOPBox01"
+            },
+            {
+                "addr": "DB428,X175.7",
+                "name": "EMGMFLendOP03Panel"
+            },
+            {
+                "addr": "DB428,X176.0",
+                "name": "EMGMLEND"
+            },
+            {
+                "addr": "DB428,X176.1",
+                "name": "EMGMLStart"
+            },
+            {
+                "addr": "DB428,X176.2",
+                "name": "EmgMFL10Bottom"
+            },
+            {
+                "addr": "DB428,X176.3",
+                "name": "EmgMFL20Bottom"
+            },
+            {
+                "addr": "DB428,X176.4",
+                "name": "EmgMFL30Bottom"
+            },
+            {
+                "addr": "DB428,X176.5",
+                "name": "EmgMFL40Bottom"
+            },
+            {
+                "addr": "DB428,X176.6",
+                "name": "EmgMFL50Bottom"
+            },
+            {
+                "addr": "DB428,X176.7",
+                "name": "EmgMFL60Bottom"
+            },
+            {
+                "addr": "DB428,X177.00",
+                "name": "EmgMFL70Bottom"
+            },
+            {
+                "addr": "DB428,X177.1",
+                "name": "EmgMFL80Bottom"
+            },
+            {
+                "addr": "DB428,X177.2",
+                "name": "EmgMFL10Top"
+            },
+            {
+                "addr": "DB428,X177.3",
+                "name": "EmgMFL20Top"
+            },
+            {
+                "addr": "DB428,X177.4",
+                "name": "EmgMFL30Top"
+            },
+            {
+                "addr": "DB428,X177.5",
+                "name": "EmgMFL40Top"
+            },
+            {
+                "addr": "DB428,X177.6",
+                "name": "EmgMFL50Top"
+            },
+            {
+                "addr": "DB428,X177.7",
+                "name": "EmgMFL60Top"
+            },
+            {
+                "addr": "DB428,X178.0",
+                "name": "EmgMFL70Top"
+            },
+            {
+                "addr": "DB428,X178.1",
+                "name": "EmgMFL80Top"
+            },
+            {
+                "addr": "DB428,I180",
+                "name": "1"
+            },
+            {
+                "addr": "DB428,I182",
+                "name": "2"
+            },
+            {
+                "addr": "DB428,I184",
+                "name": "3"
+            },
+            {
+                "addr": "DB428,I186",
+                "name": "4"
+            },
+            {
+                "addr": "DB428,X188.0",
+                "name": "ROOFGATE1"
+            },
+            {
+                "addr": "DB428,X188.1",
+                "name": "ROOFGATE2"
+            },
+            {
+                "addr": "DB428,X188.2",
+                "name": "HEMMINGGATE1"
+            }
+        ]
+    },
+    {
+        "id": "f34941d89bbcb888",
+        "type": "MSSQL-CN",
+        "z": "9dab2313a2f19c0b",
+        "tdsVersion": "7_4",
+        "name": "LineLayout",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
         "id": "2caf7da1d841fdb1",
         "type": "debug",
         "z": "e07e4c26beb8b4f7",
@@ -6559,6 +6938,212 @@
         "wires": [
             [
                 "6bb08825d1ccc69b"
+            ]
+        ]
+    },
+    {
+        "id": "95d6d67383aa8ebc",
+        "type": "s7 in",
+        "z": "b1091eeb775de1e0",
+        "endpoint": "89fe3d04833d07b8",
+        "mode": "all",
+        "variable": "DB1,REAL0",
+        "diff": true,
+        "name": "Target Production",
+        "x": 200,
+        "y": 140,
+        "wires": [
+            [
+                "1662686522380adb"
+            ]
+        ]
+    },
+    {
+        "id": "1662686522380adb",
+        "type": "debug",
+        "z": "b1091eeb775de1e0",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c6b9d849bee65878",
+        "type": "s7 in",
+        "z": "9dab2313a2f19c0b",
+        "endpoint": "b0512d1c226ceb67",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "57e98e7c32c850f5"
+            ]
+        ]
+    },
+    {
+        "id": "57e98e7c32c850f5",
+        "type": "function",
+        "z": "9dab2313a2f19c0b",
+        "name": "function 4",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Save current values for next time\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date();\n    let currentDate = now.getFullYear() + '-' +\n        String(now.getMonth() + 1).padStart(2, '0') + '-' +\n        String(now.getDate()).padStart(2, '0') + ' ' +\n        String(now.getHours()).padStart(2, '0') + ':' +\n        String(now.getMinutes()).padStart(2, '0') + ':' +\n        String(now.getSeconds()).padStart(2, '0');\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_linestatus\",\n                queryParams: [\n                    { name: \"TagName\", value: c.name },\n                    { name: \"Status\", value: c.value },\n                    { name: \"Timestamp\", value: currentDate }\n                ],\n                queryMode: \"execute\"\n            });\n       console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "d15a79cae49abac8"
+            ]
+        ]
+    },
+    {
+        "id": "d15a79cae49abac8",
+        "type": "MSSQL",
+        "z": "9dab2313a2f19c0b",
+        "mssqlCN": "f34941d89bbcb888",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 620,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88d7ace8f1d6eb81",
+        "type": "inject",
+        "z": "9dab2313a2f19c0b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"1\":100,\"2\":200,\"3\":300,\"4\":400,\"SafetyGate1\":true,\"SafetyGate2\":true,\"SafetyGate3\":true,\"SafetyGate4\":true,\"SafetyGate5\":true,\"SafetyGate6\":true,\"SafetyGate7\":true,\"SafetyGate8\":true,\"SafetyGate9\":true,\"SafetyGate10\":true,\"SafetyGate11\":true,\"LightCurtain1\":true,\"LightCurtain2\":true,\"LightCurtain3\":true,\"LightCurtain4\":true,\"LightCurtain5\":true,\"LightCurtain6\":true,\"LightCurtain7\":true,\"LightCurtain8\":true,\"LightCurtain9\":true,\"LightCurtain10\":true,\"EMGMLSafetyGate2\":true,\"EMGMLSafetyGate5\":true,\"EMGMLSafetyGate7\":true,\"EMGMLSafetyGate9\":true,\"EMGMLSafetyGate8\":true,\"EMGMLSafetyGate4\":true,\"EMGMLSafetyGate3\":true,\"EMGRFSafetyGate1\":true,\"EMGMLSafetyGate6\":true,\"EMGRFSafetyGate2\":true,\"EMGHeamingSafetyGate1\":true,\"EMGML20RunStand1\":true,\"EMGML20RunStand2\":true,\"EMGML20RunStand3\":true,\"EMGML20RunStand4\":true,\"EMGML20RunStand5\":true,\"EMGRFRunStand1\":true,\"EMHeimingRunStand1\":true,\"EMGML10TopPLC\":true,\"EMGML10BottomPLC\":true,\"EMGMFLTOPENDPLC\":true,\"EMGHeimingPLC\":true,\"EMGRFPLC\":true,\"EMGMLENDBottomHMI\":true,\"EMGMLStartBottomHMI\":true,\"EMGMLbottomOPBox01\":true,\"EMGMFLendOP03Panel\":true,\"EMGMLEND\":true,\"EMGMLStart\":true,\"EmgMFL10Bottom\":true,\"EmgMFL20Bottom\":true,\"EmgMFL30Bottom\":true,\"EmgMFL40Bottom\":true,\"EmgMFL50Bottom\":true,\"EmgMFL60Bottom\":true,\"EmgMFL70Bottom\":true,\"EmgMFL80Bottom\":true,\"EmgMFL10Top\":true,\"EmgMFL20Top\":true,\"EmgMFL30Top\":true,\"EmgMFL40Top\":true,\"EmgMFL50Top\":true,\"EmgMFL60Top\":true,\"EmgMFL70Top\":true,\"EmgMFL80Top\":true,\"ROOFGATE1\":true,\"ROOFGATE2\":true,\"HEMMINGGATE1\":true}",
+        "payloadType": "json",
+        "x": 90,
+        "y": 60,
+        "wires": [
+            [
+                "57e98e7c32c850f5"
+            ]
+        ]
+    },
+    {
+        "id": "cc170d4322b6055a",
+        "type": "inject",
+        "z": "9dab2313a2f19c0b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"1\":101,\"2\":202,\"3\":303,\"4\":404,\"SafetyGate1\":false,\"SafetyGate2\":false,\"SafetyGate3\":false,\"SafetyGate4\":false,\"SafetyGate5\":false,\"SafetyGate6\":false,\"SafetyGate7\":false,\"SafetyGate8\":false,\"SafetyGate9\":false,\"SafetyGate10\":false,\"SafetyGate11\":false,\"LightCurtain1\":false,\"LightCurtain2\":false,\"LightCurtain3\":false,\"LightCurtain4\":false,\"LightCurtain5\":false,\"LightCurtain6\":false,\"LightCurtain7\":false,\"LightCurtain8\":false,\"LightCurtain9\":false,\"LightCurtain10\":false,\"EMGMLSafetyGate2\":false,\"EMGMLSafetyGate5\":false,\"EMGMLSafetyGate7\":false,\"EMGMLSafetyGate9\":false,\"EMGMLSafetyGate8\":false,\"EMGMLSafetyGate4\":false,\"EMGMLSafetyGate3\":false,\"EMGRFSafetyGate1\":false,\"EMGMLSafetyGate6\":false,\"EMGRFSafetyGate2\":false,\"EMGHeamingSafetyGate1\":false,\"EMGML20RunStand1\":false,\"EMGML20RunStand2\":false,\"EMGML20RunStand3\":false,\"EMGML20RunStand4\":false,\"EMGML20RunStand5\":false,\"EMGRFRunStand1\":false,\"EMHeimingRunStand1\":false,\"EMGML10TopPLC\":false,\"EMGML10BottomPLC\":false,\"EMGMFLTOPENDPLC\":false,\"EMGHeimingPLC\":false,\"EMGRFPLC\":false,\"EMGMLENDBottomHMI\":false,\"EMGMLStartBottomHMI\":false,\"EMGMLbottomOPBox01\":false,\"EMGMFLendOP03Panel\":false,\"EMGMLEND\":false,\"EMGMLStart\":false,\"EmgMFL10Bottom\":false,\"EmgMFL20Bottom\":false,\"EmgMFL30Bottom\":false,\"EmgMFL40Bottom\":false,\"EmgMFL50Bottom\":false,\"EmgMFL60Bottom\":false,\"EmgMFL70Bottom\":false,\"EmgMFL80Bottom\":false,\"EmgMFL10Top\":false,\"EmgMFL20Top\":false,\"EmgMFL30Top\":false,\"EmgMFL40Top\":false,\"EmgMFL50Top\":false,\"EmgMFL60Top\":false,\"EmgMFL70Top\":false,\"EmgMFL80Top\":false,\"ROOFGATE1\":false,\"ROOFGATE2\":false,\"HEMMINGGATE1\":false}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "57e98e7c32c850f5"
+            ]
+        ]
+    },
+    {
+        "id": "42bc434680540376",
+        "type": "file",
+        "z": "9dab2313a2f19c0b",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\LineLayoutError.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 560,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42e29c5abd30121c",
+        "type": "function",
+        "z": "9dab2313a2f19c0b",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "42bc434680540376"
+            ]
+        ]
+    },
+    {
+        "id": "8c600e6d30733480",
+        "type": "catch",
+        "z": "9dab2313a2f19c0b",
+        "name": "",
+        "scope": "group",
+        "uncaught": true,
+        "x": 70,
+        "y": 320,
+        "wires": [
+            [
+                "42e29c5abd30121c"
             ]
         ]
     }

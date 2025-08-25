@@ -100,7 +100,7 @@
         "z": "e07e4c26beb8b4f7",
         "tdsVersion": "7_4",
         "name": "SQL Server",
-        "server": "DESKTOP-UEMD3BN\\MSSQLSERVER2022",
+        "server": "192.168.1.64",
         "port": "1433",
         "encyption": false,
         "trustServerCertificate": true,
@@ -136,603 +136,43 @@
         "vartable": [
             {
                 "addr": "DB100,X0.0",
-                "name": "ML10_1"
+                "name": "1"
             },
             {
                 "addr": "DB100,X0.1",
-                "name": "ML10_2"
+                "name": "2"
             },
             {
                 "addr": "DB100,X0.2",
-                "name": "ML10_3"
+                "name": "3"
             },
             {
                 "addr": "DB100,X0.3",
-                "name": "ML10_4"
+                "name": "4"
             },
             {
                 "addr": "DB100,X0.4",
-                "name": "ML10_5"
+                "name": "5"
             },
             {
-                "addr": "DB100,X4.5",
-                "name": "ML10_6"
+                "addr": "DB100,X0.5",
+                "name": "6"
             },
             {
-                "addr": "DB100,X5.0",
-                "name": "ML10_7"
+                "addr": "DB100,X0.6",
+                "name": "7"
             },
             {
-                "addr": "DB100,X7.0",
-                "name": "ML10_8"
+                "addr": "DB100,X0.7",
+                "name": "8"
             },
             {
-                "addr": "DB100,X7.1",
-                "name": "ML10_9"
+                "addr": "DB100,X1.0",
+                "name": "9"
             },
             {
-                "addr": "DB100,X7.2",
-                "name": "ML10_10"
-            },
-            {
-                "addr": "DB100,X7.3",
-                "name": "ML10_11"
-            },
-            {
-                "addr": "DB100,X7.4",
-                "name": "ML10_12"
-            },
-            {
-                "addr": "DB100,X7.5",
-                "name": "ML10_13"
-            },
-            {
-                "addr": "DB100,X6.0",
-                "name": "ML10_14"
-            },
-            {
-                "addr": "DB100,X6.1",
-                "name": "ML10_15"
-            },
-            {
-                "addr": "DB100,X6.2",
-                "name": "ML10_16"
-            },
-            {
-                "addr": "DB100,X6.3",
-                "name": "ML10_17"
-            },
-            {
-                "addr": "DB100,X6.4",
-                "name": "ML10_18"
-            },
-            {
-                "addr": "DB100,X27.0",
-                "name": "ML10_19"
-            },
-            {
-                "addr": "DB100,X27.1",
-                "name": "ML10_20"
-            },
-            {
-                "addr": "DB100,X27.2",
-                "name": "ML10_21"
-            },
-            {
-                "addr": "DB100,X27.3",
-                "name": "ML10_22"
-            },
-            {
-                "addr": "DB100,X27.4",
-                "name": "ML10_23"
-            },
-            {
-                "addr": "DB100,X27.5",
-                "name": "ML10_24"
-            },
-            {
-                "addr": "DB100,X27.6",
-                "name": "ML10_25"
-            },
-            {
-                "addr": "DB100,X27.7",
-                "name": "ML10_26"
-            },
-            {
-                "addr": "DB100,X28.0",
-                "name": "ML10_27"
-            },
-            {
-                "addr": "DB100,X28.1",
-                "name": "ML10_28"
-            },
-            {
-                "addr": "DB100,X28.2",
-                "name": "ML10_29"
-            },
-            {
-                "addr": "DB100,X28.3",
-                "name": "ML10_30"
-            },
-            {
-                "addr": "DB100,X39.4",
-                "name": "ML10_31"
-            },
-            {
-                "addr": "DB100,X85.0",
-                "name": "ML10_32"
-            },
-            {
-                "addr": "DB100,X85.1",
-                "name": "ML10_33"
-            },
-            {
-                "addr": "DB100,X85.2",
-                "name": "ML10_34"
-            },
-            {
-                "addr": "DB100,X85.3",
-                "name": "ML10_35"
-            },
-            {
-                "addr": "DB100,X85.4",
-                "name": "ML10_36"
-            },
-            {
-                "addr": "DB100,X85.5",
-                "name": "ML10_37"
-            },
-            {
-                "addr": "DB100,X85.6",
-                "name": "ML10_38"
-            },
-            {
-                "addr": "DB100,X85.7",
-                "name": "ML10_39"
-            },
-            {
-                "addr": "DB100,X86.0",
-                "name": "ML10_40"
-            },
-            {
-                "addr": "DB100,X86.1",
-                "name": "ML10_41"
-            },
-            {
-                "addr": "DB100,X86.2",
-                "name": "ML10_42"
-            },
-            {
-                "addr": "DB100,X86.3",
-                "name": "ML10_43"
-            },
-            {
-                "addr": "DB100,X86.4",
-                "name": "ML10_44"
-            },
-            {
-                "addr": "DB100,X86.5",
-                "name": "ML10_45"
-            },
-            {
-                "addr": "DB100,X86.6",
-                "name": "ML10_46"
-            },
-            {
-                "addr": "DB100,X86.7",
-                "name": "ML10_47"
-            },
-            {
-                "addr": "DB100,X87.0",
-                "name": "ML10_48"
-            },
-            {
-                "addr": "DB100,X87.1",
-                "name": "ML10_49"
-            },
-            {
-                "addr": "DB100,X87.2",
-                "name": "ML10_50"
-            },
-            {
-                "addr": "DB100,X87.3",
-                "name": "ML10_51"
-            },
-            {
-                "addr": "DB100,X87.4",
-                "name": "ML10_52"
-            },
-            {
-                "addr": "DB100,X87.5",
-                "name": "ML10_53"
-            },
-            {
-                "addr": "DB100,X87.6",
-                "name": "ML10_54"
-            },
-            {
-                "addr": "DB100,X87.7",
-                "name": "ML10_55"
-            },
-            {
-                "addr": "DB100,X88.0",
-                "name": "ML10_56"
-            },
-            {
-                "addr": "DB100,X88.1",
-                "name": "ML10_57"
-            },
-            {
-                "addr": "DB100,X88.2",
-                "name": "ML10_58"
-            },
-            {
-                "addr": "DB100,X88.3",
-                "name": "ML10_59"
-            },
-            {
-                "addr": "DB100,X88.4",
-                "name": "ML10_60"
-            },
-            {
-                "addr": "DB100,X88.5",
-                "name": "ML10_61"
-            },
-            {
-                "addr": "DB100,X88.6",
-                "name": "ML10_62"
-            },
-            {
-                "addr": "DB100,X88.7",
-                "name": "ML10_63"
-            },
-            {
-                "addr": "DB100,X89.0",
-                "name": "ML10_64"
-            },
-            {
-                "addr": "DB100,X89.1",
-                "name": "ML10_65"
-            },
-            {
-                "addr": "DB100,X89.2",
-                "name": "ML10_66"
-            },
-            {
-                "addr": "DB100,X89.3",
-                "name": "ML10_67"
-            },
-            {
-                "addr": "DB100,X89.4",
-                "name": "ML10_68"
-            },
-            {
-                "addr": "DB100,X89.5",
-                "name": "ML10_69"
-            },
-            {
-                "addr": "DB100,X89.6",
-                "name": "ML10_70"
-            },
-            {
-                "addr": "DB100,X89.7",
-                "name": "ML10_71"
-            },
-            {
-                "addr": "DB100,X90.0",
-                "name": "ML10_72"
-            },
-            {
-                "addr": "DB100,X90.1",
-                "name": "ML10_73"
-            },
-            {
-                "addr": "DB100,X90.2",
-                "name": "ML10_74"
-            },
-            {
-                "addr": "DB100,X90.3",
-                "name": "ML10_75"
-            },
-            {
-                "addr": "DB100,X90.4",
-                "name": "ML10_76"
-            },
-            {
-                "addr": "DB100,X90.5",
-                "name": "ML10_77"
-            },
-            {
-                "addr": "DB100,X90.6",
-                "name": "ML10_78"
-            },
-            {
-                "addr": "DB100,X90.7",
-                "name": "ML10_79"
-            },
-            {
-                "addr": "DB100,X91.0",
-                "name": "ML10_80"
-            },
-            {
-                "addr": "DB100,X91.1",
-                "name": "ML10_81"
-            },
-            {
-                "addr": "DB100,X91.2",
-                "name": "ML10_82"
-            },
-            {
-                "addr": "DB100,X91.3",
-                "name": "ML10_83"
-            },
-            {
-                "addr": "DB100,X91.4",
-                "name": "ML10_84"
-            },
-            {
-                "addr": "DB100,X91.5",
-                "name": "ML10_85"
-            },
-            {
-                "addr": "DB100,X91.6",
-                "name": "ML10_86"
-            },
-            {
-                "addr": "DB100,X91.7",
-                "name": "ML10_87"
-            },
-            {
-                "addr": "DB100,X92.0",
-                "name": "ML10_88"
-            },
-            {
-                "addr": "DB100,X92.1",
-                "name": "ML10_89"
-            },
-            {
-                "addr": "DB100,X92.2",
-                "name": "ML10_90"
-            },
-            {
-                "addr": "DB100,X92.3",
-                "name": "ML10_91"
-            },
-            {
-                "addr": "DB100,X92.4",
-                "name": "ML10_92"
-            },
-            {
-                "addr": "DB100,X92.5",
-                "name": "ML10_93"
-            },
-            {
-                "addr": "DB100,X92.6",
-                "name": "ML10_94"
-            },
-            {
-                "addr": "DB100,X92.7",
-                "name": "ML10_95"
-            },
-            {
-                "addr": "DB100,X93.0",
-                "name": "ML10_96"
-            },
-            {
-                "addr": "DB100,X93.1",
-                "name": "ML10_97"
-            },
-            {
-                "addr": "DB100,X93.2",
-                "name": "ML10_98"
-            },
-            {
-                "addr": "DB100,X93.3",
-                "name": "ML10_99"
-            },
-            {
-                "addr": "DB100,X93.4",
-                "name": "ML10_100"
-            },
-            {
-                "addr": "DB100,X93.5",
-                "name": "ML10_101"
-            },
-            {
-                "addr": "DB100,X93.6",
-                "name": "ML10_102"
-            },
-            {
-                "addr": "DB100,X93.7",
-                "name": "ML10_103"
-            },
-            {
-                "addr": "DB100,X94.0",
-                "name": "ML10_104"
-            },
-            {
-                "addr": "DB100,X94.1",
-                "name": "ML10_105"
-            },
-            {
-                "addr": "DB100,X94.2",
-                "name": "ML10_106"
-            },
-            {
-                "addr": "DB100,X94.3",
-                "name": "ML10_107"
-            },
-            {
-                "addr": "DB100,X104.0",
-                "name": "ML10_108"
-            },
-            {
-                "addr": "DB100,X104.1",
-                "name": "ML10_109"
-            },
-            {
-                "addr": "DB100,X104.2",
-                "name": "ML10_110"
-            },
-            {
-                "addr": "DB100,X104.3",
-                "name": "ML10_111"
-            },
-            {
-                "addr": "DB100,X106.0",
-                "name": "ML10_112"
-            },
-            {
-                "addr": "DB100,X106.1",
-                "name": "ML10_113"
-            },
-            {
-                "addr": "DB100,X106.2",
-                "name": "ML10_114"
-            },
-            {
-                "addr": "DB100,X106.3",
-                "name": "ML10_115"
-            },
-            {
-                "addr": "DB100,X107.1",
-                "name": "ML10_116"
-            },
-            {
-                "addr": "DB100,X107.2",
-                "name": "ML10_117"
-            },
-            {
-                "addr": "DB100,X107.3",
-                "name": "ML10_118"
-            },
-            {
-                "addr": "DB100,X107.4",
-                "name": "ML10_119"
-            },
-            {
-                "addr": "DB100,X109.1",
-                "name": "ML10_120"
-            },
-            {
-                "addr": "DB100,X109.5",
-                "name": "ML10_121"
-            },
-            {
-                "addr": "DB100,X109.6",
-                "name": "ML10_122"
-            },
-            {
-                "addr": "DB100,X110.5",
-                "name": "ML10_123"
-            },
-            {
-                "addr": "DB303,X0.1",
-                "name": "ML10_124"
-            },
-            {
-                "addr": "DB350,X2.0",
-                "name": "ML10_125"
-            },
-            {
-                "addr": "DB350,X2.1",
-                "name": "ML10_126"
-            },
-            {
-                "addr": "DB350,X2.2",
-                "name": "ML10_127"
-            },
-            {
-                "addr": "DB350,X2.3",
-                "name": "ML10_128"
-            },
-            {
-                "addr": "DB350,X3.6",
-                "name": "ML10_129"
-            },
-            {
-                "addr": "DB350,X6.7",
-                "name": "ML10_130"
-            },
-            {
-                "addr": "DB350,X8.2",
-                "name": "ML10_131"
-            },
-            {
-                "addr": "DB350,X8.3",
-                "name": "ML10_132"
-            },
-            {
-                "addr": "DB395,X0.1",
-                "name": "ML10_133"
-            },
-            {
-                "addr": "DB395,X0.2",
-                "name": "ML10_134"
-            },
-            {
-                "addr": "DB395,X0.3",
-                "name": "ML10_135"
-            },
-            {
-                "addr": "DB395,X0.4",
-                "name": "ML10_136"
-            },
-            {
-                "addr": "DB395,X0.5",
-                "name": "ML10_137"
-            },
-            {
-                "addr": "DB395,X0.6",
-                "name": "ML10_138"
-            },
-            {
-                "addr": "DB395,X6.0",
-                "name": "ML10_139"
-            },
-            {
-                "addr": "DB395,X6.1",
-                "name": "ML10_140"
-            },
-            {
-                "addr": "DB395,X6.2",
-                "name": "ML10_141"
-            },
-            {
-                "addr": "DB395,X6.3",
-                "name": "ML10_142"
-            },
-            {
-                "addr": "DB350,X9.0",
-                "name": "ML10_148"
-            },
-            {
-                "addr": "DB350,X9.1",
-                "name": "ML10_149"
-            },
-            {
-                "addr": "DB350,X9.2",
-                "name": "ML10_150"
-            },
-            {
-                "addr": "DB350,X9.3",
-                "name": "ML10_151"
-            },
-            {
-                "addr": "DB100,X68.4",
-                "name": "ML10_152"
-            },
-            {
-                "addr": "DB100,X68.5",
-                "name": "ML10_153"
-            },
-            {
-                "addr": "DB100,X68.6",
-                "name": "ML10_154"
-            },
-            {
-                "addr": "DB100,X68.7",
-                "name": "ML10_155"
+                "addr": "DB100,X1.1",
+                "name": "10"
             }
         ]
     },
@@ -5110,11 +4550,11 @@
             },
             {
                 "addr": "DB98,I24",
-                "name": "ShiftA_Achieved"
+                "name": "ShiftB_Achieved"
             },
             {
                 "addr": "DB98,I26",
-                "name": "ShiftA_Achieved"
+                "name": "ShiftC_Achieved"
             }
         ]
     },
@@ -5502,6 +4942,56 @@
         "readOnlyIntent": false
     },
     {
+        "id": "463213b138cddbaf",
+        "type": "mqtt-broker",
+        "name": "MQTT Sub",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9ed8749aa8d72479",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "SQL Server",
+        "server": "DESKTOP-UEMD3BN",
+        "port": "1433",
+        "encyption": false,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
         "id": "2caf7da1d841fdb1",
         "type": "debug",
         "z": "e07e4c26beb8b4f7",
@@ -5529,7 +5019,7 @@
         "throwErrors": 1,
         "query": "",
         "modeOpt": "",
-        "modeOptType": "execute",
+        "modeOptType": "query",
         "queryOpt": "payloadd",
         "queryOptType": "msg",
         "paramsOpt": "queryParams",
@@ -5538,7 +5028,7 @@
         "rowsType": "msg",
         "parseMustache": false,
         "params": [],
-        "x": 490,
+        "x": 510,
         "y": 140,
         "wires": [
             [
@@ -5558,12 +5048,10 @@
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"lastAlarms\", undefined);",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 140,
+        "x": 300,
+        "y": 60,
         "wires": [
-            [
-                "36a328d08b9421fc"
-            ]
+            []
         ]
     },
     {
@@ -5579,7 +5067,7 @@
         "y": 140,
         "wires": [
             [
-                "e5b428836bc0c824"
+                "ab6bdf05182c0644"
             ]
         ]
     },
@@ -5653,6 +5141,41 @@
         "x": 630,
         "y": 300,
         "wires": []
+    },
+    {
+        "id": "ab6bdf05182c0644",
+        "type": "function",
+        "z": "e07e4c26beb8b4f7",
+        "name": "function ML_10_New",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet sqlBatch = \"\";\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        sqlBatch += `EXEC SP_Alarm_Insert_ML10 @AlarmCode='${key}'; `;\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        sqlBatch += `EXEC SP_Alarm_Update_ML10 @AlarmCode='${key}'; `;\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\n\n// Send only if something changed\nif (sqlBatch.length > 0) {\n    return [{ payloadd: sqlBatch }];\n} else {\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"lastAlarms\", undefined);",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "36a328d08b9421fc"
+            ]
+        ]
+    },
+    {
+        "id": "a08bda79f84220e0",
+        "type": "s7 in",
+        "z": "e07e4c26beb8b4f7",
+        "endpoint": "ed6e858907750669",
+        "mode": "all",
+        "variable": "Alarm1",
+        "diff": true,
+        "name": "S7 Node ML_10(InhouseTest)",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "a84c4a85c1f20ca4",
@@ -6954,6 +6477,7 @@
         "y": 140,
         "wires": [
             [
+                "029771a0ec3a9c98",
                 "1662686522380adb"
             ]
         ]
@@ -6970,9 +6494,55 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 400,
-        "y": 140,
+        "x": 600,
+        "y": 120,
         "wires": []
+    },
+    {
+        "id": "ff15cbba16842cf7",
+        "type": "MSSQL",
+        "z": "b1091eeb775de1e0",
+        "mssqlCN": "9ed8749aa8d72479",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payloadd",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 580,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "029771a0ec3a9c98",
+        "type": "function",
+        "z": "b1091eeb775de1e0",
+        "name": "function 5",
+        "func": "\n\n// node.warn(\"Topic: \" + msg.topic);\n// node.warn(\"Payload: \" + msg.payload.Name);\n\nmsg.payloadd = \"sp_InsertTable1\";\nmsg.queryParams = [{ name: \"datetime\", value: msg.payload.DateTime }]\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "ff15cbba16842cf7"
+            ]
+        ]
     },
     {
         "id": "c6b9d849bee65878",

@@ -35,7 +35,7 @@
         "id": "77b8f05fc0c712f8",
         "type": "tab",
         "label": "HP_Insert_Update",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -43,7 +43,7 @@
         "id": "047a2ed188a4b718",
         "type": "tab",
         "label": "Robot_health_Status",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -51,14 +51,14 @@
         "id": "a1e07c2d53e4c8ee",
         "type": "tab",
         "label": "Shift_Production_Insert",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
         "id": "d56e9038cfc4ecfb",
         "type": "tab",
         "label": "ACTIntruption_collision",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -66,7 +66,7 @@
         "id": "b225c926a1394a08",
         "type": "tab",
         "label": "Tip_Change_Count",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -74,7 +74,7 @@
         "id": "5872bea43d03ee26",
         "type": "tab",
         "label": "Target_Daily_Monthly",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -90,7 +90,23 @@
         "id": "9dab2313a2f19c0b",
         "type": "tab",
         "label": "Line_Layout",
-        "disabled": false,
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1a84d6e3645699d7",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d2f524c7386c779e",
+        "type": "tab",
+        "label": "cycle Time",
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -4973,13 +4989,39 @@
         "sessionExpiry": ""
     },
     {
-        "id": "9ed8749aa8d72479",
+        "id": "s7-ep",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "",
+        "cycletime": "1000",
+        "timeout": 1500,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB100,X0.0",
+                "name": "Tag1"
+            }
+        ]
+    },
+    {
+        "id": "bb7f0d92f87886ea",
         "type": "MSSQL-CN",
+        "z": "1a84d6e3645699d7",
         "tdsVersion": "7_4",
-        "name": "SQL Server",
-        "server": "DESKTOP-UEMD3BN",
+        "name": "SQL",
+        "server": "DESKTOP-UEMD3BN\\MSSQLSERVER2022",
         "port": "1433",
-        "encyption": false,
+        "encyption": true,
         "trustServerCertificate": true,
         "database": "JBM",
         "useUTC": true,
@@ -4990,6 +5032,64 @@
         "parseJSON": false,
         "enableArithAbort": true,
         "readOnlyIntent": false
+    },
+    {
+        "id": "e7ab784dcec4a0bc",
+        "type": "MSSQL-CN",
+        "z": "d2f524c7386c779e",
+        "tdsVersion": "7_4",
+        "name": "mssql",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "cd869b6594901758",
+        "type": "s7 endpoint",
+        "z": "d2f524c7386c779e",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB428,S248.10",
+                "name": "CabinNo"
+            },
+            {
+                "addr": "DB199,DT24",
+                "name": "StartDate"
+            },
+            {
+                "addr": "DB199,DT32",
+                "name": "EndDate"
+            },
+            {
+                "addr": "DB428,I192",
+                "name": "CycleTime"
+            }
+        ]
     },
     {
         "id": "2caf7da1d841fdb1",
@@ -6502,7 +6602,7 @@
         "id": "ff15cbba16842cf7",
         "type": "MSSQL",
         "z": "b1091eeb775de1e0",
-        "mssqlCN": "9ed8749aa8d72479",
+        "mssqlCN": "",
         "name": "",
         "outField": "payload",
         "returnType": 0,
@@ -6714,6 +6814,274 @@
         "wires": [
             [
                 "42e29c5abd30121c"
+            ]
+        ]
+    },
+    {
+        "id": "86b0b13a0b2c7f68",
+        "type": "s7 in",
+        "z": "1a84d6e3645699d7",
+        "endpoint": "s7-ep",
+        "mode": "all",
+        "variable": "",
+        "diff": false,
+        "name": "Read 300 Tags",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "ea34e3131d953102"
+            ]
+        ]
+    },
+    {
+        "id": "ea34e3131d953102",
+        "type": "function",
+        "z": "1a84d6e3645699d7",
+        "name": "Build Bulk Params",
+        "func": "let rows = [];\nfor (let key in msg.payload) {\n    rows.push({ TagName: key, Value: String(msg.payload[key]) });\n}\n\nnode.warn(JSON.stringify(rows));\nmsg.payload = {\n    query: \"EXEC sp_InsertTagsBulk @Json\",\n    params: [\n        { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    ]\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "5e3510a88df7dde4"
+            ]
+        ]
+    },
+    {
+        "id": "5e3510a88df7dde4",
+        "type": "MSSQL",
+        "z": "1a84d6e3645699d7",
+        "mssqlCN": "bb7f0d92f87886ea",
+        "name": "SQL Bulk Insert",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "query",
+        "queryOpt": "payload.query",
+        "queryOptType": "msg",
+        "paramsOpt": "payload.params",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 600,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "inject_cabin",
+        "type": "inject",
+        "z": "d2f524c7386c779e",
+        "name": "Inject Cabin Data",
+        "props": [
+            {
+                "p": "payload.CabinNo",
+                "v": "102",
+                "vt": "num"
+            },
+            {
+                "p": "payload.Trigger",
+                "v": "true",
+                "vt": "bool"
+            },
+            {
+                "p": "payload.CycleTime",
+                "v": "",
+                "vt": "num"
+            },
+            {
+                "p": "payload.StartDate",
+                "v": "2025-07-25 09:33:33.050",
+                "vt": "str"
+            },
+            {
+                "p": "payload.EndDate",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "func_proc_call"
+            ]
+        ]
+    },
+    {
+        "id": "func_proc_call",
+        "type": "function",
+        "z": "d2f524c7386c779e",
+        "name": "Prepare SP Call",
+        "func": "// Get previous value from flow context\nlet prevCabinNo = flow.get(\"prevCabinNo\") || null;\nlet CabinNo = msg.payload[\"CabinNo\"];\n\n// Check if CabinNo changed\nif (CabinNo !== prevCabinNo) {\n    flow.set(\"prevCabinNo\", CabinNo); // Update last value\n\n    // Prepare SQL data\n    let sqlMsg = {\n        payload: \"USP_Insert_Update_Cabin_Cycle\",\n        queryParams: [\n            { name: \"CabinNo\", value: CabinNo },\n            { name: \"StartDate\", value: msg.payload[\"StartDate\"] },\n            { name: \"EndDate\", value: msg.payload[\"EndDate\"] },\n            { name: \"CycleTime\", value: msg.payload[\"CycleTime\"] }\n        ],\n        queryMode: \"execute\"\n    };\n\n    return sqlMsg;  // Only return when value changed\n}\n\n// No change → don’t send anything\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "mssql_sp"
+            ]
+        ]
+    },
+    {
+        "id": "mssql_sp",
+        "type": "MSSQL",
+        "z": "d2f524c7386c779e",
+        "mssqlCN": "e7ab784dcec4a0bc",
+        "name": "Execute SP",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 640,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "639a78f09824666d",
+        "type": "inject",
+        "z": "d2f524c7386c779e",
+        "name": "Inject Cabin Data",
+        "props": [
+            {
+                "p": "payload.CabinNo",
+                "v": "102",
+                "vt": "num"
+            },
+            {
+                "p": "payload.Trigger",
+                "v": "false",
+                "vt": "bool"
+            },
+            {
+                "p": "payload.CycleTime",
+                "v": "55",
+                "vt": "num"
+            },
+            {
+                "p": "payload.StartDate",
+                "v": "",
+                "vt": "str"
+            },
+            {
+                "p": "payload.EndDate",
+                "v": "2025-07-25 09:45:33.050",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "func_proc_call"
+            ]
+        ]
+    },
+    {
+        "id": "1733551e7bda5e31",
+        "type": "catch",
+        "z": "d2f524c7386c779e",
+        "name": "",
+        "scope": "group",
+        "uncaught": true,
+        "x": 90,
+        "y": 380,
+        "wires": [
+            [
+                "b893b3660daad1a7"
+            ]
+        ]
+    },
+    {
+        "id": "b893b3660daad1a7",
+        "type": "function",
+        "z": "d2f524c7386c779e",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "f3fd20f943fb49ce"
+            ]
+        ]
+    },
+    {
+        "id": "f3fd20f943fb49ce",
+        "type": "file",
+        "z": "d2f524c7386c779e",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\CycleTimeError.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 600,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b8fd6d16f1c0640",
+        "type": "s7 in",
+        "z": "d2f524c7386c779e",
+        "endpoint": "cd869b6594901758",
+        "mode": "single",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "func_proc_call"
             ]
         ]
     }

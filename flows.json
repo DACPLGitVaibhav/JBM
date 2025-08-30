@@ -111,6 +111,14 @@
         "env": []
     },
     {
+        "id": "69c80b9824af6584",
+        "type": "tab",
+        "label": "Spot Count",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "5f5798233d6334e6",
         "type": "MSSQL-CN",
         "z": "e07e4c26beb8b4f7",
@@ -5092,6 +5100,208 @@
         ]
     },
     {
+        "id": "c65f27233e3cd6c7",
+        "type": "s7 endpoint",
+        "z": "69c80b9824af6584",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB428,I0",
+                "name": "ML10_1_Target"
+            },
+            {
+                "addr": "DB428,I2",
+                "name": "ML10_2_Target"
+            },
+            {
+                "addr": "DB428,I4",
+                "name": "ML10_3_Target"
+            },
+            {
+                "addr": "DB428,I6",
+                "name": "ML10_4_Target"
+            },
+            {
+                "addr": "DB428,I8",
+                "name": "ML10_1_Actual"
+            },
+            {
+                "addr": "DB428,I10",
+                "name": "ML10_2_Actual"
+            },
+            {
+                "addr": "DB428,I12",
+                "name": "ML10_3_Actual"
+            },
+            {
+                "addr": "DB428,I14",
+                "name": "ML10_4_Actual"
+            },
+            {
+                "addr": "DB428,I20",
+                "name": "ML20_5_Target"
+            },
+            {
+                "addr": "DB428,I22",
+                "name": "ML20_6_Target"
+            },
+            {
+                "addr": "DB428,I24",
+                "name": "ML20_7_G1_Target"
+            },
+            {
+                "addr": "DB428,I26",
+                "name": "ML20_7_G2_Target"
+            },
+            {
+                "addr": "DB428,I28",
+                "name": "ML20_7_G3_Target"
+            },
+            {
+                "addr": "DB428,I30",
+                "name": "ML20_8_G1_Target"
+            },
+            {
+                "addr": "DB428,I32",
+                "name": "ML20_8_G2_Target"
+            },
+            {
+                "addr": "DB428,I34",
+                "name": "ML20_8_G3_Target"
+            },
+            {
+                "addr": "DB428,I36",
+                "name": "ML20_5_Actual"
+            },
+            {
+                "addr": "DB428,I38",
+                "name": "ML20_6_Actual"
+            },
+            {
+                "addr": "DB428,I40",
+                "name": "ML20_7_G1_Actual"
+            },
+            {
+                "addr": "DB428,I42",
+                "name": "ML20_7_G2_Actual"
+            },
+            {
+                "addr": "DB428,I44",
+                "name": "ML20_7_G3_Actual"
+            },
+            {
+                "addr": "DB428,I46",
+                "name": "ML20_8_G1_Actual"
+            },
+            {
+                "addr": "DB428,I48",
+                "name": "ML20_8_G2_Actual"
+            },
+            {
+                "addr": "DB428,I50",
+                "name": "ML20_8_G3_Actual"
+            },
+            {
+                "addr": "DB428,I52",
+                "name": "ML30_9_Target"
+            },
+            {
+                "addr": "DB428,I54",
+                "name": "ML30_10_Target"
+            },
+            {
+                "addr": "DB428,I56",
+                "name": "ML30_9_Actual"
+            },
+            {
+                "addr": "DB428,I58",
+                "name": "ML30_10_Actual"
+            },
+            {
+                "addr": "DB428,I60",
+                "name": "ML40_11_Target"
+            },
+            {
+                "addr": "DB428,I62",
+                "name": "ML40_12_Target"
+            },
+            {
+                "addr": "DB428,I64",
+                "name": "ML40_13_Target"
+            },
+            {
+                "addr": "DB428,I66",
+                "name": "ML40_14_Target"
+            },
+            {
+                "addr": "DB428,I68",
+                "name": "ML40_11_Actual"
+            },
+            {
+                "addr": "DB428,I70",
+                "name": "ML40_12_Actual"
+            },
+            {
+                "addr": "DB428,I72",
+                "name": "ML40_13_Actual"
+            },
+            {
+                "addr": "DB428,I74",
+                "name": "ML40_14_Actual"
+            },
+            {
+                "addr": "DB428,S194.10",
+                "name": "ML10"
+            },
+            {
+                "addr": "DB428,S212.10",
+                "name": "ML20"
+            },
+            {
+                "addr": "DB428,S230.10",
+                "name": "ML30"
+            },
+            {
+                "addr": "DB428,S248.10",
+                "name": "ML40"
+            }
+        ]
+    },
+    {
+        "id": "c0e07e1d9234d27a",
+        "type": "MSSQL-CN",
+        "z": "69c80b9824af6584",
+        "tdsVersion": "7_4",
+        "name": "SpoCount",
+        "server": "DESKTOP-EPRNPCE",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "JBM",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
         "id": "2caf7da1d841fdb1",
         "type": "debug",
         "z": "e07e4c26beb8b4f7",
@@ -7083,6 +7293,121 @@
             [
                 "func_proc_call"
             ]
+        ]
+    },
+    {
+        "id": "e203f088ac4adadd",
+        "type": "s7 in",
+        "z": "69c80b9824af6584",
+        "endpoint": "c65f27233e3cd6c7",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "64b7817849b9704c"
+            ]
+        ]
+    },
+    {
+        "id": "64b7817849b9704c",
+        "type": "function",
+        "z": "69c80b9824af6584",
+        "name": "function 5",
+        "func": "let data = msg.payload;\nlet last = flow.get(\"lastTriggers\") || {};\n\nlet ML10Previous = last[\"ML10\"];\nlet ML20Previous = last[\"ML20\"];\nlet ML30Previous = last[\"ML30\"];\nlet ML40Previous = last[\"ML40\"];\n\nlet ML10Current = data[\"ML10\"];\nlet ML20Current = data[\"ML20\"];\nlet ML30Current = data[\"ML30\"];\nlet ML40Current = data[\"ML40\"];\n\n// Update context\nlast[\"ML10\"] = ML10Current;\nlast[\"ML20\"] = ML20Current;\nlast[\"ML30\"] = ML30Current;\nlast[\"ML40\"] = ML40Current;\nflow.set(\"lastTriggers\", last);\n\nlet rows = [];\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase,Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// ========== ML10 ========== //\nif (ML10Previous != ML10Current) {\n    const tags = [\"ML10_1\", \"ML10_2\", \"ML10_3\", \"ML10_4\"];\n    tags.forEach(tag => pushTagRow(tag, ML10Current));\n}\n\n// ========== ML20 ========== //\nif (ML20Previous != ML20Current) {\n    const tags = [\"ML20_5\", \"ML20_6\", \"ML20_7_G1\", \"ML20_7_G2\", \"ML20_7_G3\", \"ML20_8_G1\", \"ML20_8_G2\", \"ML20_8_G3\"];\n    tags.forEach(tag => pushTagRow(tag, ML20Current)); \n\n// ========== ML30 ========== //\nif (ML30Previous != ML30Current) {\n    const tags = [\"ML30_9\", \"ML30_10\"];\n    tags.forEach(tag => pushTagRow(tag, ML30Current));\n}\n\n// ========== ML40 ========== //\nif (ML40Previous != ML40Current) {\n    const tags = [\"ML40_11\", \"ML40_12\", \"ML40_13\", \"ML40_14\"];\n    tags.forEach(tag => pushTagRow(tag, ML40Current));\n}\n\n// If any rows to insert\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC sp_InsertSpotCount @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;  // No change\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 3,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "bc1145f5d45b2ce1"
+            ]
+        ]
+    },
+    {
+        "id": "bc1145f5d45b2ce1",
+        "type": "MSSQL",
+        "z": "69c80b9824af6584",
+        "mssqlCN": "c0e07e1d9234d27a",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload.query",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 560,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49dbbe0e8f650b6c",
+        "type": "catch",
+        "z": "69c80b9824af6584",
+        "name": "",
+        "scope": "group",
+        "uncaught": false,
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "40748b0d2a2bc553"
+            ]
+        ]
+    },
+    {
+        "id": "40748b0d2a2bc553",
+        "type": "function",
+        "z": "69c80b9824af6584",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "08b1912e961b4b88"
+            ]
+        ]
+    },
+    {
+        "id": "08b1912e961b4b88",
+        "type": "file",
+        "z": "69c80b9824af6584",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\SpotCount.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 590,
+        "y": 240,
+        "wires": [
+            []
         ]
     }
 ]

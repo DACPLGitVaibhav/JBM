@@ -64,6 +64,22 @@
         "env": []
     },
     {
+        "id": "b225c926a1394a08",
+        "type": "tab",
+        "label": "Tip_Change_Count",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1a84d6e3645699d7",
+        "type": "tab",
+        "label": "Flow_Current_Torque_Temp",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "77b8f05fc0c712f8",
         "type": "tab",
         "label": "HP_Insert_Update",
@@ -95,14 +111,6 @@
         "env": []
     },
     {
-        "id": "b225c926a1394a08",
-        "type": "tab",
-        "label": "Tip_Change_Count",
-        "disabled": true,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "5872bea43d03ee26",
         "type": "tab",
         "label": "Target_Daily_Monthly",
@@ -114,14 +122,6 @@
         "id": "9dab2313a2f19c0b",
         "type": "tab",
         "label": "Line_Layout",
-        "disabled": true,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "1a84d6e3645699d7",
-        "type": "tab",
-        "label": "Flow_Current_Torque_Temp",
         "disabled": true,
         "info": "",
         "env": []
@@ -13146,6 +13146,314 @@
         ]
     },
     {
+        "id": "3ace388f45e1996f",
+        "type": "function",
+        "z": "b225c926a1394a08",
+        "name": "Filter TRUE tags and prepare SQL",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedValue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    \n    if (current[tag] !== previous[tag]) {\n        changedValue.push({\n            name:tag,\n            val:current[tag]\n        });\n        \n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\nlet msgs = [];\n\nfor (let i = 0; i < changedValue.length; i++) {\n   \n        msgs.push({\n            payload: 'SP_Insert_TipChangeCount',\n            queryParams: [\n                { name: \"Name\", value: changedValue[i].name },\n                { name: \"Value\", value: changedValue[i].val },\n                \n            ],\n            queryMode: \"execute\"\n        });\n  \n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 60,
+        "wires": [
+            [
+                "6f4d104c605bbe9f"
+            ]
+        ]
+    },
+    {
+        "id": "6f4d104c605bbe9f",
+        "type": "MSSQL",
+        "z": "b225c926a1394a08",
+        "mssqlCN": "0f28796f53dacafb",
+        "name": "MSSQL",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 780,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "02924357444d71d2",
+        "type": "s7 in",
+        "z": "b225c926a1394a08",
+        "endpoint": "67d6eb1648b017c2",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 180,
+        "y": 60,
+        "wires": [
+            [
+                "3ace388f45e1996f"
+            ]
+        ]
+    },
+    {
+        "id": "db8621b7774af121",
+        "type": "catch",
+        "z": "b225c926a1394a08",
+        "name": "",
+        "scope": "group",
+        "uncaught": false,
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "2104cae33c39f48c"
+            ]
+        ]
+    },
+    {
+        "id": "2104cae33c39f48c",
+        "type": "function",
+        "z": "b225c926a1394a08",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [
+                "e329418541afd4a4"
+            ]
+        ]
+    },
+    {
+        "id": "e329418541afd4a4",
+        "type": "file",
+        "z": "b225c926a1394a08",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\ATCError.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 660,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2e1a69d940d76cf",
+        "type": "inject",
+        "z": "b225c926a1394a08",
+        "name": "inject 1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"1_G1\":\"1\"}",
+        "payloadType": "json",
+        "x": 230,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15dc27dddbed0564",
+        "type": "debug",
+        "z": "b225c926a1394a08",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d3e9118137a8bcfc",
+        "type": "inject",
+        "z": "b225c926a1394a08",
+        "name": "inject 2",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"1_G1\":\"2\"}",
+        "payloadType": "json",
+        "x": 230,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86b0b13a0b2c7f68",
+        "type": "s7 in",
+        "z": "1a84d6e3645699d7",
+        "endpoint": "s7-ep",
+        "mode": "all",
+        "variable": "",
+        "diff": false,
+        "name": "S7",
+        "x": 70,
+        "y": 100,
+        "wires": [
+            [
+                "ea34e3131d953102"
+            ]
+        ]
+    },
+    {
+        "id": "ea34e3131d953102",
+        "type": "function",
+        "z": "1a84d6e3645699d7",
+        "name": "Current_Torque_Temp",
+        "func": "let rows = [];\n\n\nfor (let key in msg.payload) {\n    let now = new Date().toISOString();\n    rows.push({ TagName: key, Value: String(msg.payload[key]),Timestamp:now });\n}\n\nmsg.payload = {\n    query: \"EXEC sp_Insert_RbtOverloadHistory @Json\",\n    params: [\n        { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    ]\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "5e3510a88df7dde4"
+            ]
+        ]
+    },
+    {
+        "id": "5e3510a88df7dde4",
+        "type": "MSSQL",
+        "z": "1a84d6e3645699d7",
+        "mssqlCN": "bb7f0d92f87886ea",
+        "name": "SQL",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "query",
+        "queryOpt": "payload.query",
+        "queryOptType": "msg",
+        "paramsOpt": "payload.params",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 590,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b52f0441220b048d",
+        "type": "debug",
+        "z": "1a84d6e3645699d7",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "54158621427a4d42",
+        "type": "file",
+        "z": "1a84d6e3645699d7",
+        "name": "",
+        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\SpotCount.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 590,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a1d091bbcf8964c",
+        "type": "function",
+        "z": "1a84d6e3645699d7",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "54158621427a4d42"
+            ]
+        ]
+    },
+    {
+        "id": "f422e8fad0973314",
+        "type": "catch",
+        "z": "1a84d6e3645699d7",
+        "name": "",
+        "scope": "group",
+        "uncaught": false,
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "0a1d091bbcf8964c"
+            ]
+        ]
+    },
+    {
         "id": "8550a176364114e3",
         "type": "s7 in",
         "z": "77b8f05fc0c712f8",
@@ -13624,183 +13932,6 @@
         ]
     },
     {
-        "id": "3ace388f45e1996f",
-        "type": "function",
-        "z": "b225c926a1394a08",
-        "name": "Filter TRUE tags and prepare SQL",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedValue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    \n    if (current[tag] !== previous[tag]) {\n        changedValue.push({\n            name:tag,\n            val:current[tag]\n        });\n        \n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\nlet msgs = [];\n\nfor (let i = 0; i < changedValue.length; i++) {\n   \n        msgs.push({\n            payload: 'SP_Insert_TipChangeCount',\n            queryParams: [\n                { name: \"Name\", value: changedValue[i].name },\n                { name: \"Value\", value: changedValue[i].val },\n                \n            ],\n            queryMode: \"execute\"\n        });\n  \n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 480,
-        "y": 60,
-        "wires": [
-            [
-                "6f4d104c605bbe9f"
-            ]
-        ]
-    },
-    {
-        "id": "6f4d104c605bbe9f",
-        "type": "MSSQL",
-        "z": "b225c926a1394a08",
-        "mssqlCN": "0f28796f53dacafb",
-        "name": "MSSQL",
-        "outField": "payload",
-        "returnType": "0",
-        "throwErrors": "1",
-        "query": "",
-        "modeOpt": "",
-        "modeOptType": "execute",
-        "queryOpt": "payload",
-        "queryOptType": "msg",
-        "paramsOpt": "queryParams",
-        "paramsOptType": "msg",
-        "rows": "",
-        "rowsType": "msg",
-        "parseMustache": true,
-        "params": [],
-        "x": 780,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "02924357444d71d2",
-        "type": "s7 in",
-        "z": "b225c926a1394a08",
-        "endpoint": "67d6eb1648b017c2",
-        "mode": "all",
-        "variable": "",
-        "diff": true,
-        "name": "",
-        "x": 180,
-        "y": 60,
-        "wires": [
-            [
-                "3ace388f45e1996f"
-            ]
-        ]
-    },
-    {
-        "id": "db8621b7774af121",
-        "type": "catch",
-        "z": "b225c926a1394a08",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 170,
-        "y": 240,
-        "wires": [
-            [
-                "2104cae33c39f48c"
-            ]
-        ]
-    },
-    {
-        "id": "2104cae33c39f48c",
-        "type": "function",
-        "z": "b225c926a1394a08",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 240,
-        "wires": [
-            [
-                "e329418541afd4a4"
-            ]
-        ]
-    },
-    {
-        "id": "e329418541afd4a4",
-        "type": "file",
-        "z": "b225c926a1394a08",
-        "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\ATCError.txt",
-        "filenameType": "str",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 660,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d2e1a69d940d76cf",
-        "type": "inject",
-        "z": "b225c926a1394a08",
-        "name": "inject 1",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"1_G1\":\"1\"}",
-        "payloadType": "json",
-        "x": 230,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "15dc27dddbed0564",
-        "type": "debug",
-        "z": "b225c926a1394a08",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "d3e9118137a8bcfc",
-        "type": "inject",
-        "z": "b225c926a1394a08",
-        "name": "inject 2",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"1_G1\":\"2\"}",
-        "payloadType": "json",
-        "x": 230,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "d47f0e4fc79e7fbc",
         "type": "s7 in",
         "z": "5872bea43d03ee26",
@@ -14135,137 +14266,6 @@
         "wires": [
             [
                 "42e29c5abd30121c"
-            ]
-        ]
-    },
-    {
-        "id": "86b0b13a0b2c7f68",
-        "type": "s7 in",
-        "z": "1a84d6e3645699d7",
-        "endpoint": "s7-ep",
-        "mode": "all",
-        "variable": "",
-        "diff": false,
-        "name": "S7",
-        "x": 70,
-        "y": 100,
-        "wires": [
-            [
-                "ea34e3131d953102"
-            ]
-        ]
-    },
-    {
-        "id": "ea34e3131d953102",
-        "type": "function",
-        "z": "1a84d6e3645699d7",
-        "name": "Current_Torque_Temp",
-        "func": "let rows = [];\n\n\nfor (let key in msg.payload) {\n    let now = new Date().toISOString();\n    rows.push({ TagName: key, Value: String(msg.payload[key]),Timestamp:now });\n}\n\nmsg.payload = {\n    query: \"EXEC sp_Insert_RbtOverloadHistory @Json\",\n    params: [\n        { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    ]\n};\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 100,
-        "wires": [
-            [
-                "5e3510a88df7dde4"
-            ]
-        ]
-    },
-    {
-        "id": "5e3510a88df7dde4",
-        "type": "MSSQL",
-        "z": "1a84d6e3645699d7",
-        "mssqlCN": "bb7f0d92f87886ea",
-        "name": "SQL",
-        "outField": "payload",
-        "returnType": "0",
-        "throwErrors": "1",
-        "query": "",
-        "modeOpt": "",
-        "modeOptType": "query",
-        "queryOpt": "payload.query",
-        "queryOptType": "msg",
-        "paramsOpt": "payload.params",
-        "paramsOptType": "msg",
-        "rows": "",
-        "rowsType": "msg",
-        "parseMustache": true,
-        "params": [],
-        "x": 590,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b52f0441220b048d",
-        "type": "debug",
-        "z": "1a84d6e3645699d7",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "54158621427a4d42",
-        "type": "file",
-        "z": "1a84d6e3645699d7",
-        "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\SpotCount.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 590,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0a1d091bbcf8964c",
-        "type": "function",
-        "z": "1a84d6e3645699d7",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 300,
-        "y": 180,
-        "wires": [
-            [
-                "54158621427a4d42"
-            ]
-        ]
-    },
-    {
-        "id": "f422e8fad0973314",
-        "type": "catch",
-        "z": "1a84d6e3645699d7",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 90,
-        "y": 180,
-        "wires": [
-            [
-                "0a1d091bbcf8964c"
             ]
         ]
     },

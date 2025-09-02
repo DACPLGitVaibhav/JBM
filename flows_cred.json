@@ -15,5 +15,9 @@
         "username": "sa",
         "password": "dacpl@1234"
     },
-    "sql1": {}
+    "sql1": {},
+    "71544e44785cedfb": {
+        "username": "sa",
+        "password": "dacpl@123"
+    }
 }

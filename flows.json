@@ -151,6 +151,14 @@
         "env": []
     },
     {
+        "id": "91fcc6c4eea2fda6",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "5f5798233d6334e6",
         "type": "MSSQL-CN",
         "z": "e07e4c26beb8b4f7",
@@ -4584,227 +4592,227 @@
         "vartable": [
             {
                 "addr": "DB317,I12.3",
-                "name": "ML10_rbt1_Active"
+                "name": "ML10_1_Active"
             },
             {
                 "addr": "DB299,I12.3",
-                "name": "ML10_rbt2_Active"
+                "name": "ML10_2_Active"
             },
             {
                 "addr": "DB168,I12.3",
-                "name": "ML10_rbt3_Active"
+                "name": "ML10_3_Active"
             },
             {
                 "addr": "DB300,I12.3",
-                "name": "ML10_rbt4_Active"
+                "name": "ML10_4_Active"
             },
             {
                 "addr": "DB3,I12.3",
-                "name": "ML20_rbt5_Active"
+                "name": "ML20_5_Active"
             },
             {
                 "addr": "DB5,I12.3",
-                "name": "ML20_rbt6_Active"
+                "name": "ML20_6_Active"
             },
             {
                 "addr": "DB7,I12.3",
-                "name": "ML20_rbt7_Active"
+                "name": "ML20_7_Active"
             },
             {
                 "addr": "DB9,I12.3",
-                "name": "ML20_rbt8_Active"
+                "name": "ML20_8_Active"
             },
             {
                 "addr": "DB11,I12.3",
-                "name": "ML30_rbt9_Active"
+                "name": "ML30_9_Active"
             },
             {
                 "addr": "DB13,I12.3",
-                "name": "ML30_rbt10_Active"
+                "name": "ML30_10_Active"
             },
             {
                 "addr": "DB374,I12.3",
-                "name": "ML30_rbt11_Active"
+                "name": "ML30_11_Active"
             },
             {
                 "addr": "DB363,I12.3",
-                "name": "ML30_rbt12_Active"
+                "name": "ML30_12_Active"
             },
             {
                 "addr": "DB361,I12.3",
-                "name": "ML40_rbt13_Active"
+                "name": "ML40_13_Active"
             },
             {
                 "addr": "DB373,I12.3",
-                "name": "ML40_rbt14_Active"
+                "name": "ML40_14_Active"
             },
             {
                 "addr": "DB317,I9.4",
-                "name": "ML10_rbt1_Idle"
+                "name": "ML10_1_Idle"
             },
             {
                 "addr": "DB299,I9.4",
-                "name": "ML10_rbt2_Idle"
+                "name": "ML10_2_Idle"
             },
             {
                 "addr": "DB168,I9.4",
-                "name": "ML10_rbt3_Idle"
+                "name": "ML10_3_Idle"
             },
             {
                 "addr": "DB300,I9.4",
-                "name": "ML10_rbt4_Idle"
+                "name": "ML10_4_Idle"
             },
             {
                 "addr": "DB3,I9.4",
-                "name": "ML20_rbt5_Idle"
+                "name": "ML20_5_Idle"
             },
             {
                 "addr": "DB5,I9.4",
-                "name": "ML20_rbt6_Idle"
+                "name": "ML20_6_Idle"
             },
             {
                 "addr": "DB7,I9.4",
-                "name": "ML20_rbt7_Idle"
+                "name": "ML20_7_Idle"
             },
             {
                 "addr": "DB9,I9.4",
-                "name": "ML20_rbt8_Idle"
+                "name": "ML20_8_Idle"
             },
             {
                 "addr": "DB11,I9.4",
-                "name": "ML30_rbt9_Idle"
+                "name": "ML30_9_Idle"
             },
             {
                 "addr": "DB13,I9.4",
-                "name": "ML30_rbt10_Idle"
+                "name": "ML30_10_Idle"
             },
             {
                 "addr": "DB374,I9.4",
-                "name": "ML30_rbt11_Idle"
+                "name": "ML30_11_Idle"
             },
             {
                 "addr": "DB363,I9.4",
-                "name": "ML30_rbt12_Idle"
+                "name": "ML30_12_Idle"
             },
             {
                 "addr": "DB361,I9.4",
-                "name": "ML40_rbt13_Idle"
+                "name": "ML40_13_Idle"
             },
             {
                 "addr": "DB373,I9.4",
-                "name": "ML40_rbt14_Idle"
+                "name": "ML40_14_Idle"
             },
             {
                 "addr": "DB317,I46.2",
-                "name": "ML10_rbt1_Breakdown"
+                "name": "ML10_1_Breakdown"
             },
             {
                 "addr": "DB299,I46.2",
-                "name": "ML10_rbt2_Breakdown"
+                "name": "ML10_2_Breakdown"
             },
             {
                 "addr": "DB168,I46.2",
-                "name": "ML10_rbt3_Breakdown"
+                "name": "ML10_3_Breakdown"
             },
             {
                 "addr": "DB300,I46.2",
-                "name": "ML10_rbt4_Breakdown"
+                "name": "ML10_4_Breakdown"
             },
             {
                 "addr": "DB3,I46.2",
-                "name": "ML20_rbt5_Breakdown"
+                "name": "ML20_5_Breakdown"
             },
             {
                 "addr": "DB5,I46.2",
-                "name": "ML20_rbt6_Breakdown"
+                "name": "ML20_6_Breakdown"
             },
             {
                 "addr": "DB7,I46.2",
-                "name": "ML20_rbt7_Breakdown"
+                "name": "ML20_7_Breakdown"
             },
             {
                 "addr": "DB9,I46.2",
-                "name": "ML20_rbt8_Breakdown"
+                "name": "ML20_8_Breakdown"
             },
             {
                 "addr": "DB11,I46.2",
-                "name": "ML30_rbt9_Breakdown"
+                "name": "ML30_9_Breakdown"
             },
             {
                 "addr": "DB13,I46.2",
-                "name": "ML30_rbt10_Breakdown"
+                "name": "ML30_10_Breakdown"
             },
             {
                 "addr": "DB374,I46.2",
-                "name": "ML30_rbt11_Breakdown"
+                "name": "ML30_11_Breakdown"
             },
             {
                 "addr": "DB363,I46.2",
-                "name": "ML30_rbt12_Breakdown"
+                "name": "ML30_12_Breakdown"
             },
             {
                 "addr": "DB361,I46.2",
-                "name": "ML40_rbt13_Breakdown"
+                "name": "ML40_13_Breakdown"
             },
             {
                 "addr": "DB373,I46.2",
-                "name": "ML40_rbt14_Breakdown"
+                "name": "ML40_14_Breakdown"
             },
             {
                 "addr": "DB317,I46.3",
-                "name": "ML10_rbt1_Battery"
+                "name": "ML10_1_Battery"
             },
             {
                 "addr": "DB299,I46.3",
-                "name": "ML10_rbt2_Battery"
+                "name": "ML10_2_Battery"
             },
             {
                 "addr": "DB168,I46.3",
-                "name": "ML10_rbt3_Battery"
+                "name": "ML10_3_Battery"
             },
             {
                 "addr": "DB300,I46.3",
-                "name": "ML10_rbt4_Battery"
+                "name": "ML10_4_Battery"
             },
             {
                 "addr": "DB3,I46.3",
-                "name": "ML20_rbt5_Battery"
+                "name": "ML20_5_Battery"
             },
             {
                 "addr": "DB5,I46.3",
-                "name": "ML20_rbt6_Battery"
+                "name": "ML20_6_Battery"
             },
             {
                 "addr": "DB7,I46.3",
-                "name": "ML20_rbt7_Battery"
+                "name": "ML20_7_Battery"
             },
             {
                 "addr": "DB9,I46.3",
-                "name": "ML20_rbt8_Battery"
+                "name": "ML20_8_Battery"
             },
             {
                 "addr": "DB11,I46.3",
-                "name": "ML30_rbt9_Battery"
+                "name": "ML30_9_Battery"
             },
             {
                 "addr": "DB13,I46.3",
-                "name": "ML30_rbt10_Battery"
+                "name": "ML30_10_Battery"
             },
             {
                 "addr": "DB374,I46.3",
-                "name": "ML30_rbt11_Battery"
+                "name": "ML30_11_Battery"
             },
             {
                 "addr": "DB363,I46.3",
-                "name": "ML30_rbt12_Battery"
+                "name": "ML30_12_Battery"
             },
             {
                 "addr": "DB361,I46.3",
-                "name": "ML40_rbt13_Battery"
+                "name": "ML40_13_Battery"
             },
             {
                 "addr": "DB373,I46.3",
-                "name": "ML40_rbt14_Battery"
+                "name": "ML40_14_Battery"
             }
         ]
     },
@@ -4915,8 +4923,8 @@
         "type": "MSSQL-CN",
         "z": "a1e07c2d53e4c8ee",
         "tdsVersion": "7_4",
-        "name": "MSSQL JBM",
-        "server": "DESKTOP-EPRNPCE",
+        "name": "SQL",
+        "server": "DESKTOP-UEMD3BN",
         "port": "1433",
         "encyption": false,
         "trustServerCertificate": true,
@@ -5608,2004 +5616,1348 @@
         "name": "",
         "vartable": [
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag1"
+                "addr": "DB471,I2",
+                "name": "rbt01_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag2"
+                "addr": "DB471,I4",
+                "name": "rbt01_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag3"
+                "addr": "DB471,I6",
+                "name": "rbt01_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag4"
+                "addr": "DB471,I8",
+                "name": "rbt01_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag5"
+                "addr": "DB471,I10",
+                "name": "rbt01_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag6"
+                "addr": "DB471,I12",
+                "name": "rbt01_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag7"
+                "addr": "DB471,I14",
+                "name": "rbt01_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag8"
+                "addr": "DB471,I16",
+                "name": "rbt01_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag9"
+                "addr": "DB471,I18",
+                "name": "rbt01_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag10"
+                "addr": "DB471,I20",
+                "name": "rbt01_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag11"
+                "addr": "DB471,I22",
+                "name": "rbt01_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag12"
+                "addr": "DB471,I24",
+                "name": "rbt01_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag13"
+                "addr": "DB471,I26",
+                "name": "rbt01_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag14"
+                "addr": "DB471,I28",
+                "name": "rbt01_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag15"
+                "addr": "DB471,I30",
+                "name": "rbt01_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag16"
+                "addr": "DB471,I32",
+                "name": "rbt01_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag17"
+                "addr": "DB471,B34",
+                "name": "rbt01_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag18"
+                "addr": "DB471,B35",
+                "name": "rbt01_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag19"
+                "addr": "DB471,B36",
+                "name": "rbt01_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag20"
+                "addr": "DB471,B37",
+                "name": "rbt01_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag21"
+                "addr": "DB471,B38",
+                "name": "rbt01_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag22"
+                "addr": "DB471,B39",
+                "name": "rbt01_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag23"
+                "addr": "DB471,B40",
+                "name": "rbt01_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag24"
+                "addr": "DB471,B41",
+                "name": "rbt01_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag25"
+                "addr": "DB472,I2",
+                "name": "rbt02_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag26"
+                "addr": "DB472,I4",
+                "name": "rbt02_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag27"
+                "addr": "DB472,I6",
+                "name": "rbt02_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag28"
+                "addr": "DB472,I8",
+                "name": "rbt02_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag29"
+                "addr": "DB472,I10",
+                "name": "rbt02_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag30"
+                "addr": "DB472,I12",
+                "name": "rbt02_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag31"
+                "addr": "DB472,I14",
+                "name": "rbt02_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag32"
+                "addr": "DB472,I16",
+                "name": "rbt02_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag33"
+                "addr": "DB472,I18",
+                "name": "rbt02_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag34"
+                "addr": "DB472,I20",
+                "name": "rbt02_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag35"
+                "addr": "DB472,I22",
+                "name": "rbt02_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag36"
+                "addr": "DB472,I24",
+                "name": "rbt02_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag37"
+                "addr": "DB472,I26",
+                "name": "rbt02_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag38"
+                "addr": "DB472,I28",
+                "name": "rbt02_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag39"
+                "addr": "DB472,I30",
+                "name": "rbt02_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag40"
+                "addr": "DB472,I32",
+                "name": "rbt02_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag41"
+                "addr": "DB472,B34",
+                "name": "rbt02_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag42"
+                "addr": "DB472,B35",
+                "name": "rbt02_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag43"
+                "addr": "DB472,B36",
+                "name": "rbt02_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag44"
+                "addr": "DB472,B37",
+                "name": "rbt02_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag45"
+                "addr": "DB472,B38",
+                "name": "rbt02_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag46"
+                "addr": "DB472,B39",
+                "name": "rbt02_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag47"
+                "addr": "DB472,B40",
+                "name": "rbt02_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag48"
+                "addr": "DB472,B41",
+                "name": "rbt02_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag49"
+                "addr": "DB473,I2",
+                "name": "rbt03_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag50"
+                "addr": "DB473,I4",
+                "name": "rbt03_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag51"
+                "addr": "DB473,I6",
+                "name": "rbt03_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag52"
+                "addr": "DB473,I8",
+                "name": "rbt03_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag53"
+                "addr": "DB473,I10",
+                "name": "rbt03_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag54"
+                "addr": "DB473,I12",
+                "name": "rbt03_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag55"
+                "addr": "DB473,I14",
+                "name": "rbt03_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag56"
+                "addr": "DB473,I16",
+                "name": "rbt03_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag57"
+                "addr": "DB473,I18",
+                "name": "rbt03_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag58"
+                "addr": "DB473,I20",
+                "name": "rbt03_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag59"
+                "addr": "DB473,I22",
+                "name": "rbt03_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag60"
+                "addr": "DB473,I24",
+                "name": "rbt03_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag61"
+                "addr": "DB473,I26",
+                "name": "rbt03_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag62"
+                "addr": "DB473,I28",
+                "name": "rbt03_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag63"
+                "addr": "DB473,I30",
+                "name": "rbt03_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag64"
+                "addr": "DB473,I32",
+                "name": "rbt03_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag65"
+                "addr": "DB473,B34",
+                "name": "rbt03_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag66"
+                "addr": "DB473,B35",
+                "name": "rbt03_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag67"
+                "addr": "DB473,B36",
+                "name": "rbt03_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag68"
+                "addr": "DB473,B37",
+                "name": "rbt03_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag69"
+                "addr": "DB473,B38",
+                "name": "rbt03_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag70"
+                "addr": "DB473,B39",
+                "name": "rbt03_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag71"
+                "addr": "DB473,B40",
+                "name": "rbt03_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag72"
+                "addr": "DB473,B41",
+                "name": "rbt03_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag73"
+                "addr": "DB470,I2",
+                "name": "rbt04_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag74"
+                "addr": "DB470,I4",
+                "name": "rbt04_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag75"
+                "addr": "DB470,I6",
+                "name": "rbt04_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag76"
+                "addr": "DB470,I8",
+                "name": "rbt04_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag77"
+                "addr": "DB470,I10",
+                "name": "rbt04_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag78"
+                "addr": "DB470,I12",
+                "name": "rbt04_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag79"
+                "addr": "DB470,I14",
+                "name": "rbt04_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag80"
+                "addr": "DB470,I16",
+                "name": "rbt04_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag81"
+                "addr": "DB470,I18",
+                "name": "rbt04_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag82"
+                "addr": "DB470,I20",
+                "name": "rbt04_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag83"
+                "addr": "DB470,I22",
+                "name": "rbt04_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag84"
+                "addr": "DB470,I24",
+                "name": "rbt04_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag85"
+                "addr": "DB470,I26",
+                "name": "rbt04_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag86"
+                "addr": "DB470,I28",
+                "name": "rbt04_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag87"
+                "addr": "DB470,I30",
+                "name": "rbt04_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag88"
+                "addr": "DB470,I32",
+                "name": "rbt04_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag89"
+                "addr": "DB470,B34",
+                "name": "rbt04_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag90"
+                "addr": "DB470,B35",
+                "name": "rbt04_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag91"
+                "addr": "DB470,B36",
+                "name": "rbt04_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag92"
+                "addr": "DB470,B37",
+                "name": "rbt04_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag93"
+                "addr": "DB470,B38",
+                "name": "rbt04_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag94"
+                "addr": "DB470,B39",
+                "name": "rbt04_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag95"
+                "addr": "DB470,B40",
+                "name": "rbt04_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag96"
+                "addr": "DB470,B41",
+                "name": "rbt04_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag97"
+                "addr": "DB480,I2",
+                "name": "rbt05_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag98"
+                "addr": "DB480,I4",
+                "name": "rbt05_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag99"
+                "addr": "DB480,I6",
+                "name": "rbt05_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag100"
+                "addr": "DB480,I8",
+                "name": "rbt05_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag101"
+                "addr": "DB480,I10",
+                "name": "rbt05_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag102"
+                "addr": "DB480,I12",
+                "name": "rbt05_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag103"
+                "addr": "DB480,I14",
+                "name": "rbt05_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag104"
+                "addr": "DB480,I16",
+                "name": "rbt05_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag105"
+                "addr": "DB480,I18",
+                "name": "rbt05_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag106"
+                "addr": "DB480,I20",
+                "name": "rbt05_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag107"
+                "addr": "DB480,I22",
+                "name": "rbt05_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag108"
+                "addr": "DB480,I24",
+                "name": "rbt05_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag109"
+                "addr": "DB480,I26",
+                "name": "rbt05_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag110"
+                "addr": "DB480,I28",
+                "name": "rbt05_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag111"
+                "addr": "DB480,I30",
+                "name": "rbt05_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag112"
+                "addr": "DB480,I32",
+                "name": "rbt05_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag113"
+                "addr": "DB480,B34",
+                "name": "rbt05_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag114"
+                "addr": "DB480,B35",
+                "name": "rbt05_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag115"
+                "addr": "DB480,B36",
+                "name": "rbt05_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag116"
+                "addr": "DB480,B37",
+                "name": "rbt05_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag117"
+                "addr": "DB480,B38",
+                "name": "rbt05_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag118"
+                "addr": "DB480,B39",
+                "name": "rbt05_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag119"
+                "addr": "DB480,B40",
+                "name": "rbt05_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag120"
+                "addr": "DB480,B41",
+                "name": "rbt05_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag121"
+                "addr": "DB484,I2",
+                "name": "rbt06_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag122"
+                "addr": "DB484,I4",
+                "name": "rbt06_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag123"
+                "addr": "DB484,I6",
+                "name": "rbt06_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag124"
+                "addr": "DB484,I8",
+                "name": "rbt06_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag125"
+                "addr": "DB484,I10",
+                "name": "rbt06_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag126"
+                "addr": "DB484,I12",
+                "name": "rbt06_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag127"
+                "addr": "DB484,I14",
+                "name": "rbt06_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag128"
+                "addr": "DB484,I16",
+                "name": "rbt06_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag129"
+                "addr": "DB484,I18",
+                "name": "rbt06_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag130"
+                "addr": "DB484,I20",
+                "name": "rbt06_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag131"
+                "addr": "DB484,I22",
+                "name": "rbt06_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag132"
+                "addr": "DB484,I24",
+                "name": "rbt06_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag133"
+                "addr": "DB484,I26",
+                "name": "rbt06_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag134"
+                "addr": "DB484,I28",
+                "name": "rbt06_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag135"
+                "addr": "DB484,I30",
+                "name": "rbt06_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag136"
+                "addr": "DB484,I32",
+                "name": "rbt06_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag137"
+                "addr": "DB484,B34",
+                "name": "rbt06_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag138"
+                "addr": "DB484,B35",
+                "name": "rbt06_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag139"
+                "addr": "DB484,B36",
+                "name": "rbt06_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag140"
+                "addr": "DB484,B37",
+                "name": "rbt06_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag141"
+                "addr": "DB484,B38",
+                "name": "rbt06_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag142"
+                "addr": "DB484,B39",
+                "name": "rbt06_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag143"
+                "addr": "DB484,B40",
+                "name": "rbt06_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag144"
+                "addr": "DB484,B41",
+                "name": "rbt06_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag145"
+                "addr": "DB489,I2",
+                "name": "rbt07_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag146"
+                "addr": "DB489,I4",
+                "name": "rbt07_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag147"
+                "addr": "DB489,I6",
+                "name": "rbt07_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag148"
+                "addr": "DB489,I8",
+                "name": "rbt07_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag149"
+                "addr": "DB489,I10",
+                "name": "rbt07_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag150"
+                "addr": "DB489,I12",
+                "name": "rbt07_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag151"
+                "addr": "DB489,I14",
+                "name": "rbt07_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag152"
+                "addr": "DB489,I16",
+                "name": "rbt07_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag153"
+                "addr": "DB489,I18",
+                "name": "rbt07_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag154"
+                "addr": "DB489,I20",
+                "name": "rbt07_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag155"
+                "addr": "DB489,I22",
+                "name": "rbt07_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag156"
+                "addr": "DB489,I24",
+                "name": "rbt07_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag157"
+                "addr": "DB489,I26",
+                "name": "rbt07_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag158"
+                "addr": "DB489,I28",
+                "name": "rbt07_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag159"
+                "addr": "DB489,I30",
+                "name": "rbt07_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag160"
+                "addr": "DB489,I32",
+                "name": "rbt07_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag161"
+                "addr": "DB489,B34",
+                "name": "rbt07_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag162"
+                "addr": "DB489,B35",
+                "name": "rbt07_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag163"
+                "addr": "DB489,B36",
+                "name": "rbt07_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag164"
+                "addr": "DB489,B37",
+                "name": "rbt07_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag165"
+                "addr": "DB489,B38",
+                "name": "rbt07_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag166"
+                "addr": "DB489,B39",
+                "name": "rbt07_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag167"
+                "addr": "DB489,B40",
+                "name": "rbt07_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag168"
+                "addr": "DB489,B41",
+                "name": "rbt07_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag169"
+                "addr": "DB490,I2",
+                "name": "rbt08_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag170"
+                "addr": "DB490,I4",
+                "name": "rbt08_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag171"
+                "addr": "DB490,I6",
+                "name": "rbt08_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag172"
+                "addr": "DB490,I8",
+                "name": "rbt08_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag173"
+                "addr": "DB490,I10",
+                "name": "rbt08_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag174"
+                "addr": "DB490,I12",
+                "name": "rbt08_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag175"
+                "addr": "DB490,I14",
+                "name": "rbt08_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag176"
+                "addr": "DB490,I16",
+                "name": "rbt08_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag177"
+                "addr": "DB490,I18",
+                "name": "rbt08_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag178"
+                "addr": "DB490,I20",
+                "name": "rbt08_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag179"
+                "addr": "DB490,I22",
+                "name": "rbt08_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag180"
+                "addr": "DB490,I24",
+                "name": "rbt08_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag181"
+                "addr": "DB490,I26",
+                "name": "rbt08_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag182"
+                "addr": "DB490,I28",
+                "name": "rbt08_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag183"
+                "addr": "DB490,I30",
+                "name": "rbt08_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag184"
+                "addr": "DB490,I32",
+                "name": "rbt08_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag185"
+                "addr": "DB490,B34",
+                "name": "rbt08_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag186"
+                "addr": "DB490,B35",
+                "name": "rbt08_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag187"
+                "addr": "DB490,B36",
+                "name": "rbt08_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag188"
+                "addr": "DB490,B37",
+                "name": "rbt08_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag189"
+                "addr": "DB490,B38",
+                "name": "rbt08_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag190"
+                "addr": "DB490,B39",
+                "name": "rbt08_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag191"
+                "addr": "DB490,B40",
+                "name": "rbt08_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag192"
+                "addr": "DB490,B41",
+                "name": "rbt08_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag193"
+                "addr": "DB491,I2",
+                "name": "rbt09_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag194"
+                "addr": "DB491,I4",
+                "name": "rbt09_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag195"
+                "addr": "DB491,I6",
+                "name": "rbt09_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag196"
+                "addr": "DB491,I8",
+                "name": "rbt09_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag197"
+                "addr": "DB491,I10",
+                "name": "rbt09_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag198"
+                "addr": "DB491,I12",
+                "name": "rbt09_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag199"
+                "addr": "DB491,I14",
+                "name": "rbt09_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag200"
+                "addr": "DB491,I16",
+                "name": "rbt09_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag201"
+                "addr": "DB491,I18",
+                "name": "rbt09_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag202"
+                "addr": "DB491,I20",
+                "name": "rbt09_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag203"
+                "addr": "DB491,I22",
+                "name": "rbt09_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag204"
+                "addr": "DB491,I24",
+                "name": "rbt09_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag205"
+                "addr": "DB491,I26",
+                "name": "rbt09_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag206"
+                "addr": "DB491,I28",
+                "name": "rbt09_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag207"
+                "addr": "DB491,I30",
+                "name": "rbt09_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag208"
+                "addr": "DB491,I32",
+                "name": "rbt09_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag209"
+                "addr": "DB491,B34",
+                "name": "rbt09_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag210"
+                "addr": "DB491,B35",
+                "name": "rbt09_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag211"
+                "addr": "DB491,B36",
+                "name": "rbt09_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag212"
+                "addr": "DB491,B37",
+                "name": "rbt09_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag213"
+                "addr": "DB491,B38",
+                "name": "rbt09_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag214"
+                "addr": "DB491,B39",
+                "name": "rbt09_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag215"
+                "addr": "DB491,B40",
+                "name": "rbt09_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag216"
+                "addr": "DB491,B41",
+                "name": "rbt09_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag217"
+                "addr": "DB492,I2",
+                "name": "rbt10_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag218"
+                "addr": "DB492,I4",
+                "name": "rbt10_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag219"
+                "addr": "DB492,I6",
+                "name": "rbt10_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag220"
+                "addr": "DB492,I8",
+                "name": "rbt10_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag221"
+                "addr": "DB492,I10",
+                "name": "rbt10_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag222"
+                "addr": "DB492,I12",
+                "name": "rbt10_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag223"
+                "addr": "DB492,I14",
+                "name": "rbt10_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag224"
+                "addr": "DB492,I16",
+                "name": "rbt10_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag225"
+                "addr": "DB492,I18",
+                "name": "rbt10_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag226"
+                "addr": "DB492,I20",
+                "name": "rbt10_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag227"
+                "addr": "DB492,I22",
+                "name": "rbt10_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag228"
+                "addr": "DB492,I24",
+                "name": "rbt10_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag229"
+                "addr": "DB492,I26",
+                "name": "rbt10_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag230"
+                "addr": "DB492,I28",
+                "name": "rbt10_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag231"
+                "addr": "DB492,I30",
+                "name": "rbt10_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag232"
+                "addr": "DB492,I32",
+                "name": "rbt10_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag233"
+                "addr": "DB492,B34",
+                "name": "rbt10_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag234"
+                "addr": "DB492,B35",
+                "name": "rbt10_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag235"
+                "addr": "DB492,B36",
+                "name": "rbt10_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag236"
+                "addr": "DB492,B37",
+                "name": "rbt10_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag237"
+                "addr": "DB492,B38",
+                "name": "rbt10_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag238"
+                "addr": "DB492,B39",
+                "name": "rbt10_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag239"
+                "addr": "DB492,B40",
+                "name": "rbt10_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag240"
+                "addr": "DB492,B41",
+                "name": "rbt10_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag241"
+                "addr": "DB493,I2",
+                "name": "rbt11_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag242"
+                "addr": "DB493,I4",
+                "name": "rbt11_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag243"
+                "addr": "DB493,I6",
+                "name": "rbt11_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag244"
+                "addr": "DB493,I8",
+                "name": "rbt11_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag245"
+                "addr": "DB493,I10",
+                "name": "rbt11_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag246"
+                "addr": "DB493,I12",
+                "name": "rbt11_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag247"
+                "addr": "DB493,I14",
+                "name": "rbt11_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag248"
+                "addr": "DB493,I16",
+                "name": "rbt11_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag249"
+                "addr": "DB493,I18",
+                "name": "rbt11_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag250"
+                "addr": "DB493,I20",
+                "name": "rbt11_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag251"
+                "addr": "DB493,I22",
+                "name": "rbt11_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag252"
+                "addr": "DB493,I24",
+                "name": "rbt11_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag253"
+                "addr": "DB493,I26",
+                "name": "rbt11_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag254"
+                "addr": "DB493,I28",
+                "name": "rbt11_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag255"
+                "addr": "DB493,I30",
+                "name": "rbt11_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag256"
+                "addr": "DB493,I32",
+                "name": "rbt11_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag257"
+                "addr": "DB493,B34",
+                "name": "rbt11_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag258"
+                "addr": "DB493,B35",
+                "name": "rbt11_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag259"
+                "addr": "DB493,B36",
+                "name": "rbt11_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag260"
+                "addr": "DB493,B37",
+                "name": "rbt11_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag261"
+                "addr": "DB493,B38",
+                "name": "rbt11_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag262"
+                "addr": "DB493,B39",
+                "name": "rbt11_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag263"
+                "addr": "DB493,B40",
+                "name": "rbt11_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag264"
+                "addr": "DB493,B41",
+                "name": "rbt11_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag265"
+                "addr": "DB494,I2",
+                "name": "rbt12_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag266"
+                "addr": "DB494,I4",
+                "name": "rbt12_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag267"
+                "addr": "DB494,I6",
+                "name": "rbt12_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag268"
+                "addr": "DB494,I8",
+                "name": "rbt12_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag269"
+                "addr": "DB494,I10",
+                "name": "rbt12_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag270"
+                "addr": "DB494,I12",
+                "name": "rbt12_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag271"
+                "addr": "DB494,I14",
+                "name": "rbt12_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag272"
+                "addr": "DB494,I16",
+                "name": "rbt12_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag273"
+                "addr": "DB494,I18",
+                "name": "rbt12_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag274"
+                "addr": "DB494,I20",
+                "name": "rbt12_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag275"
+                "addr": "DB494,I22",
+                "name": "rbt12_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag276"
+                "addr": "DB494,I24",
+                "name": "rbt12_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag277"
+                "addr": "DB494,I26",
+                "name": "rbt12_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag278"
+                "addr": "DB494,I28",
+                "name": "rbt12_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag279"
+                "addr": "DB494,I30",
+                "name": "rbt12_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag280"
+                "addr": "DB494,I32",
+                "name": "rbt12_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag281"
+                "addr": "DB494,B34",
+                "name": "rbt12_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag282"
+                "addr": "DB494,B35",
+                "name": "rbt12_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag283"
+                "addr": "DB494,B36",
+                "name": "rbt12_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag284"
+                "addr": "DB494,B37",
+                "name": "rbt12_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag285"
+                "addr": "DB494,B38",
+                "name": "rbt12_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag286"
+                "addr": "DB494,B39",
+                "name": "rbt12_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag287"
+                "addr": "DB494,B40",
+                "name": "rbt12_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag288"
+                "addr": "DB494,B41",
+                "name": "rbt12_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag289"
+                "addr": "DB495,I2",
+                "name": "rbt13_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag290"
+                "addr": "DB495,I4",
+                "name": "rbt13_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag291"
+                "addr": "DB495,I6",
+                "name": "rbt13_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag292"
+                "addr": "DB495,I8",
+                "name": "rbt13_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag293"
+                "addr": "DB495,I10",
+                "name": "rbt13_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag294"
+                "addr": "DB495,I12",
+                "name": "rbt13_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag295"
+                "addr": "DB495,I14",
+                "name": "rbt13_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag296"
+                "addr": "DB495,I16",
+                "name": "rbt13_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag297"
+                "addr": "DB495,I18",
+                "name": "rbt13_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag298"
+                "addr": "DB495,I20",
+                "name": "rbt13_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag299"
+                "addr": "DB495,I22",
+                "name": "rbt13_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag300"
+                "addr": "DB495,I24",
+                "name": "rbt13_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag301"
+                "addr": "DB495,I26",
+                "name": "rbt13_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag302"
+                "addr": "DB495,I28",
+                "name": "rbt13_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag303"
+                "addr": "DB495,I30",
+                "name": "rbt13_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag304"
+                "addr": "DB495,I32",
+                "name": "rbt13_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag305"
+                "addr": "DB495,B34",
+                "name": "rbt13_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag306"
+                "addr": "DB495,B35",
+                "name": "rbt13_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag307"
+                "addr": "DB495,B36",
+                "name": "rbt13_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag308"
+                "addr": "DB495,B37",
+                "name": "rbt13_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag309"
+                "addr": "DB495,B38",
+                "name": "rbt13_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag310"
+                "addr": "DB495,B39",
+                "name": "rbt13_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag311"
+                "addr": "DB495,B40",
+                "name": "rbt13_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag312"
+                "addr": "DB495,B41",
+                "name": "rbt13_Temp_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag313"
+                "addr": "DB497,I2",
+                "name": "rbt14_Curr_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag314"
+                "addr": "DB497,I4",
+                "name": "rbt14_Curr_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag315"
+                "addr": "DB497,I6",
+                "name": "rbt14_Curr_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag316"
+                "addr": "DB497,I8",
+                "name": "rbt14_Curr_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag317"
+                "addr": "DB497,I10",
+                "name": "rbt14_Curr_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag318"
+                "addr": "DB497,I12",
+                "name": "rbt14_Curr_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag319"
+                "addr": "DB497,I14",
+                "name": "rbt14_Curr_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag320"
+                "addr": "DB497,I16",
+                "name": "rbt14_Curr_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag321"
+                "addr": "DB497,I18",
+                "name": "rbt14_Torq_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag322"
+                "addr": "DB497,I20",
+                "name": "rbt14_Torq_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag323"
+                "addr": "DB497,I22",
+                "name": "rbt14_Torq_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag324"
+                "addr": "DB497,I24",
+                "name": "rbt14_Torq_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag325"
+                "addr": "DB497,I26",
+                "name": "rbt14_Torq_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag326"
+                "addr": "DB497,I28",
+                "name": "rbt14_Torq_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag327"
+                "addr": "DB497,I30",
+                "name": "rbt14_Torq_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag328"
+                "addr": "DB497,I32",
+                "name": "rbt14_Torq_Axis8"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag329"
+                "addr": "DB497,B34",
+                "name": "rbt14_Temp_Axis1"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag330"
+                "addr": "DB497,B35",
+                "name": "rbt14_Temp_Axis2"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag331"
+                "addr": "DB497,B36",
+                "name": "rbt14_Temp_Axis3"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag332"
+                "addr": "DB497,B37",
+                "name": "rbt14_Temp_Axis4"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag333"
+                "addr": "DB497,B38",
+                "name": "rbt14_Temp_Axis5"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag334"
+                "addr": "DB497,B39",
+                "name": "rbt14_Temp_Axis6"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag335"
+                "addr": "DB497,B40",
+                "name": "rbt14_Temp_Axis7"
             },
             {
-                "addr": "DB100,X0.0",
-                "name": "Tag336"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag337"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag338"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag339"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag340"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag341"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag342"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag343"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag344"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag345"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag346"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag347"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag348"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag349"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag350"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag351"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag352"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag353"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag354"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag355"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag356"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag357"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag358"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag359"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag360"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag361"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag362"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag363"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag364"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag365"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag366"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag367"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag368"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag369"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag370"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag371"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag372"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag373"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag374"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag375"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag376"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag377"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag378"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag379"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag380"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag381"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag382"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag383"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag384"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag385"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag386"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag387"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag388"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag389"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag390"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag391"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag392"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag393"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag394"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag395"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag396"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag397"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag398"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag399"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag400"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag401"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag402"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag403"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag404"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag405"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag406"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag407"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag408"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag409"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag410"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag411"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag412"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag413"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag414"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag415"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag416"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag417"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag418"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag419"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag420"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag421"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag422"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag423"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag424"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag425"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag426"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag427"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag428"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag429"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag430"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag431"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag432"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag433"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag434"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag435"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag436"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag437"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag438"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag439"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag440"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag441"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag442"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag443"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag444"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag445"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag446"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag447"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag448"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag449"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag450"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag451"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag452"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag453"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag454"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag455"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag456"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag457"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag458"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag459"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag460"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag461"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag462"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag463"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag464"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag465"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag466"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag467"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag468"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag469"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag470"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag471"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag472"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag473"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag474"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag475"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag476"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag477"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag478"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag479"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag480"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag481"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag482"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag483"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag484"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag485"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag486"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag487"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag488"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag489"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag490"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag491"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag492"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag493"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag494"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag495"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag496"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag497"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag498"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag499"
-            },
-            {
-                "addr": "DB100,X0.0",
-                "name": "Tag500"
+                "addr": "DB497,B41",
+                "name": "rbt14_Temp_Axis8"
             }
         ]
     },
@@ -7634,8 +6986,8 @@
         "type": "MSSQL-CN",
         "z": "d2f524c7386c779e",
         "tdsVersion": "7_4",
-        "name": "mssql",
-        "server": "DESKTOP-EPRNPCE",
+        "name": "SQL",
+        "server": "DESKTOP-UEMD3BN\\MSSQLSERVER2022",
         "port": "1433",
         "encyption": true,
         "trustServerCertificate": true,
@@ -7709,43 +7061,43 @@
         "vartable": [
             {
                 "addr": "DB428,I0",
-                "name": "ML10_1_Target"
+                "name": "ML10_1_G1_Target"
             },
             {
                 "addr": "DB428,I2",
-                "name": "ML10_2_Target"
+                "name": "ML10_2_G1_Target"
             },
             {
                 "addr": "DB428,I4",
-                "name": "ML10_3_Target"
+                "name": "ML10_3_G1_Target"
             },
             {
                 "addr": "DB428,I6",
-                "name": "ML10_4_Target"
+                "name": "ML10_4_G1_Target"
             },
             {
                 "addr": "DB428,I8",
-                "name": "ML10_1_Actual"
+                "name": "ML10_1_G1_Actual"
             },
             {
                 "addr": "DB428,I10",
-                "name": "ML10_2_Actual"
+                "name": "ML10_2_G1_Actual"
             },
             {
                 "addr": "DB428,I12",
-                "name": "ML10_3_Actual"
+                "name": "ML10_3_G1_Actual"
             },
             {
                 "addr": "DB428,I14",
-                "name": "ML10_4_Actual"
+                "name": "ML10_4_G1_Actual"
             },
             {
                 "addr": "DB428,I20",
-                "name": "ML20_5_Target"
+                "name": "ML20_5_G1_Target"
             },
             {
                 "addr": "DB428,I22",
-                "name": "ML20_6_Target"
+                "name": "ML20_6_G1_Target"
             },
             {
                 "addr": "DB428,I24",
@@ -7773,11 +7125,11 @@
             },
             {
                 "addr": "DB428,I36",
-                "name": "ML20_5_Actual"
+                "name": "ML20_5_G1_Actual"
             },
             {
                 "addr": "DB428,I38",
-                "name": "ML20_6_Actual"
+                "name": "ML20_6_G1_Actual"
             },
             {
                 "addr": "DB428,I40",
@@ -7805,66 +7157,66 @@
             },
             {
                 "addr": "DB428,I52",
-                "name": "ML30_9_Target"
+                "name": "ML30_9_G1_Target"
             },
             {
                 "addr": "DB428,I54",
-                "name": "ML30_10_Target"
+                "name": "ML30_10_G1_Target"
             },
             {
                 "addr": "DB428,I56",
-                "name": "ML30_9_Actual"
+                "name": "ML30_9_G1_Actual"
             },
             {
                 "addr": "DB428,I58",
-                "name": "ML30_10_Actual"
+                "name": "ML30_10_G1_Actual"
             },
             {
                 "addr": "DB428,I60",
-                "name": "ML40_11_Target"
+                "name": "ML40_11_G1_Target"
             },
             {
                 "addr": "DB428,I62",
-                "name": "ML40_12_Target"
+                "name": "ML40_12_G1_Target"
             },
             {
                 "addr": "DB428,I64",
-                "name": "ML40_13_Target"
+                "name": "ML40_13_G1_Target"
             },
             {
                 "addr": "DB428,I66",
-                "name": "ML40_14_Target"
+                "name": "ML40_14_G1_Target"
             },
             {
                 "addr": "DB428,I68",
-                "name": "ML40_11_Actual"
+                "name": "ML40_11_G1_Actual"
             },
             {
                 "addr": "DB428,I70",
-                "name": "ML40_12_Actual"
+                "name": "ML40_12_G1_Actual"
             },
             {
                 "addr": "DB428,I72",
-                "name": "ML40_13_Actual"
+                "name": "ML40_13_G1_Actual"
             },
             {
                 "addr": "DB428,I74",
-                "name": "ML40_14_Actual"
+                "name": "ML40_14_G1_Actual"
             },
             {
-                "addr": "DB428,S194.10",
+                "addr": "DB428,I194",
                 "name": "ML10"
             },
             {
-                "addr": "DB428,S212.10",
+                "addr": "DB428,I212",
                 "name": "ML20"
             },
             {
-                "addr": "DB428,S230.10",
+                "addr": "DB428,I230",
                 "name": "ML30"
             },
             {
-                "addr": "DB428,S248.10",
+                "addr": "DB428,I248",
                 "name": "ML40"
             }
         ]
@@ -7874,8 +7226,8 @@
         "type": "MSSQL-CN",
         "z": "69c80b9824af6584",
         "tdsVersion": "7_4",
-        "name": "SpoCount",
-        "server": "DESKTOP-EPRNPCE",
+        "name": "SQL",
+        "server": "DESKTOP-UEMD3BN",
         "port": "1433",
         "encyption": true,
         "trustServerCertificate": true,
@@ -13711,57 +13063,13 @@
         "diff": false,
         "name": "Read PLC Tags",
         "x": 160,
-        "y": 140,
+        "y": 260,
         "wires": [
             [
-                "7f07cbcfcb9e73a6"
+                "349d171e0be9b349",
+                "15dd4348d34556c9",
+                "f981d84456b2f761"
             ]
-        ]
-    },
-    {
-        "id": "7f07cbcfcb9e73a6",
-        "type": "function",
-        "z": "a1e07c2d53e4c8ee",
-        "name": "Detect Shift & Prepare SP Params",
-        "func": "let data = msg.payload;\n\n// Previous state storage\nlet prev = flow.get('prevShiftState') || {\n    SHIFT_A: true,\n    SHIFT_B: true,\n    SHIFT_C: true\n};\n\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count :0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n\n// Detect falling edge (1 -> 0)\n//\nif (prev.SHIFT_A === true && data.SHIFT_A === false) {\n    shift = \"SHIFT_A\";\n    params.Target_Count = data.TARGETA || 0;\n    params.Actual_CountLH = data.ACTUALLHA || 0;\n     params.Actual_CountRH = data.ACTUALRHA || 0;\n    params.Actual_Count = data.Actual_CountA || 0;\n} else if (prev.SHIFT_B === true && data.SHIFT_B === false) {\n    shift = \"SHIFT_B\";\n     params.Target_Count = data.TARGETB || 0;\n    params.Actual_CountLH = data.ACTUALLHB || 0;\n     params.Actual_CountRH = data.ACTUALRHB || 0;\n     params.Actual_Count = data.Actual_CountB || 0;\n} else if (prev.SHIFT_C === true && data.SHIFT_C === false) {\n    shift = \"SHIFT_C\";\n     params.Target_Count = data.TARGETB || 0;\n    params.Actual_CountLH = data.ACTUALLHB || 0;\n     params.Actual_CountRH = data.ACTUALRHB || 0;\n     params.Actual_Count = data.Actual_CountC || 0;\n} else {\n    // Update state and exit\n    flow.set('prevShiftState', {\n        SHIFT_A: data.SHIFT_A,\n        SHIFT_B: data.SHIFT_B,\n        SHIFT_C: data.SHIFT_C\n    });\n    return null;\n}\n\n// Update previous state\nflow.set('prevShiftState', {\n    SHIFT_A: data.SHIFT_A,\n    SHIFT_B: data.SHIFT_B,\n    SHIFT_C: data.SHIFT_C\n});\n\n// Output for MSSQL\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n{ name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 440,
-        "y": 140,
-        "wires": [
-            [
-                "fc703e98303739a6"
-            ]
-        ]
-    },
-    {
-        "id": "fc703e98303739a6",
-        "type": "MSSQL",
-        "z": "a1e07c2d53e4c8ee",
-        "mssqlCN": "a066e5382d89db51",
-        "name": "Call sp_USP_Shift_Production",
-        "outField": "payload",
-        "returnType": "0",
-        "throwErrors": "1",
-        "query": "EXEC sp_USP_Shift_Production @Shift=?, @Target_Count=?, @Actual_Count=?, @ReJection_Count=?, @Ok_Count=?, @Within_Cycle=?, @Exceeded_Cycle=?",
-        "modeOpt": "",
-        "modeOptType": "execute",
-        "queryOpt": "payload.query",
-        "queryOptType": "msg",
-        "paramsOpt": "payload.queryParams",
-        "paramsOptType": "msg",
-        "rows": "",
-        "rowsType": "msg",
-        "parseMustache": true,
-        "params": [],
-        "x": 750,
-        "y": 140,
-        "wires": [
-            []
         ]
     },
     {
@@ -13771,8 +13079,8 @@
         "name": "",
         "scope": "group",
         "uncaught": false,
-        "x": 110,
-        "y": 220,
+        "x": 170,
+        "y": 580,
         "wires": [
             [
                 "0f1885f3c2a2ba7a"
@@ -13791,8 +13099,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 220,
+        "x": 380,
+        "y": 580,
         "wires": [
             [
                 "767599ffc87e6df3"
@@ -13810,8 +13118,292 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 660,
-        "y": 220,
+        "x": 720,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f55c2e7d849ae91",
+        "type": "inject",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Test Shift A Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"SHIFT_A\":true,\"TARGETA\":100,\"ACTUALLHA\":101,\"ACTUALRHA\":102,\"Actual_CountA\":203}",
+        "payloadType": "json",
+        "x": 120,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "349d171e0be9b349",
+        "type": "rbe",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Shift A",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.SHIFT_A",
+        "topi": "topic",
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "753ae9414ad99a7c"
+            ]
+        ]
+    },
+    {
+        "id": "15dd4348d34556c9",
+        "type": "rbe",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Shift B",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.SHIFT_B",
+        "topi": "topic",
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "6d65d443228d2183"
+            ]
+        ]
+    },
+    {
+        "id": "f981d84456b2f761",
+        "type": "rbe",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Shift C",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.SHIFT_C",
+        "topi": "topic",
+        "x": 390,
+        "y": 360,
+        "wires": [
+            [
+                "8c23ce57eb8056fa"
+            ]
+        ]
+    },
+    {
+        "id": "b94a691b159d511a",
+        "type": "inject",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Test Shift A Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"SHIFT_A\":false,\"TARGETA\":120,\"ACTUALLHA\":58,\"ACTUALRHA\":59,\"Actual_CountA\":117}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90fd55a39f29f4f7",
+        "type": "inject",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Test Shift C Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"SHIFT_C\":true,\"TARGETC\":400,\"ACTUALLHC\":401,\"ACTUALRHC\":402,\"Actual_CountC\":803}",
+        "payloadType": "json",
+        "x": 160,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "edcd902fb8ba70ce",
+        "type": "inject",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Test Shift C Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"SHIFT_C\":false,\"TARGETC\":120,\"ACTUALLHC\":58,\"ACTUALRHC\":59,\"Actual_CountC\":117}",
+        "payloadType": "json",
+        "x": 180,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b402b412d968e402",
+        "type": "inject",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Test Shift B Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"SHIFT_B\":true,\"TARGETB\":300,\"ACTUALLHB\":301,\"ACTUALRHB\":302,\"Actual_CountB\":603}",
+        "payloadType": "json",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2cb4294cf5cd179e",
+        "type": "inject",
+        "z": "a1e07c2d53e4c8ee",
+        "name": "Test Shift B Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"SHIFT_B\":false,\"TARGETB\":120,\"ACTUALLHB\":58,\"ACTUALRHB\":59,\"Actual_CountB\":117}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "753ae9414ad99a7c",
+        "type": "function",
+        "z": "a1e07c2d53e4c8ee",
+        "name": " Shift Production",
+        "func": "let data = msg.payload;\nif (data.SHIFT_A===true)\n{\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count: 0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n\n    params.Target_Count = data.TARGETA || 0;\n    params.Actual_CountLH = data.ACTUALLHA || 0;\n     params.Actual_CountRH = data.ACTUALRHA || 0;\n    params.Actual_Count = data.Actual_CountA || 0;\n   shift = \"A\";\n// Output for MSSQL\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n        { name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "30afabfe57b517bd"
+            ]
+        ]
+    },
+    {
+        "id": "6d65d443228d2183",
+        "type": "function",
+        "z": "a1e07c2d53e4c8ee",
+        "name": " Shift Production",
+        "func": "let data = msg.payload;\n\nif (data.SHIFT_B === true) {\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count :0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n\n     shift = \"B\";\n     params.Target_Count = data.TARGETB || 0;\n     params.Actual_CountLH = data.ACTUALLHB || 0;\n     params.Actual_CountRH = data.ACTUALRHB || 0;\n     params.Actual_Count = data.Actual_CountB || 0;\n\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n{ name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 320,
+        "wires": [
+            [
+                "30afabfe57b517bd"
+            ]
+        ]
+    },
+    {
+        "id": "8c23ce57eb8056fa",
+        "type": "function",
+        "z": "a1e07c2d53e4c8ee",
+        "name": " Shift Production",
+        "func": "let data = msg.payload;\n\nif (data.SHIFT_C === true) {\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count :0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n     shift = \"C\";\n     params.Target_Count = data.TARGETC || 0;\n     params.Actual_CountLH = data.ACTUALLHC || 0;\n     params.Actual_CountRH = data.ACTUALRHC || 0;\n     params.Actual_Count = data.Actual_CountC || 0;\n\n// Output for MSSQL\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n        { name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 360,
+        "wires": [
+            [
+                "30afabfe57b517bd"
+            ]
+        ]
+    },
+    {
+        "id": "30afabfe57b517bd",
+        "type": "MSSQL",
+        "z": "a1e07c2d53e4c8ee",
+        "mssqlCN": "a066e5382d89db51",
+        "name": "SQL",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "EXEC sp_USP_Shift_Production @Shift=?, @Target_Count=?, @Actual_Count=?, @ReJection_Count=?, @Ok_Count=?, @Within_Cycle=?, @Exceeded_Cycle=?",
+        "modeOpt": "",
+        "modeOptType": "execute",
+        "queryOpt": "payload.query",
+        "queryOptType": "msg",
+        "paramsOpt": "payload.queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 770,
+        "y": 320,
         "wires": [
             []
         ]
@@ -14276,29 +13868,7 @@
         "name": "Inject Cabin Data",
         "props": [
             {
-                "p": "payload.CabinNo",
-                "v": "102",
-                "vt": "num"
-            },
-            {
-                "p": "payload.Trigger",
-                "v": "true",
-                "vt": "bool"
-            },
-            {
-                "p": "payload.CycleTime",
-                "v": "",
-                "vt": "num"
-            },
-            {
-                "p": "payload.StartDate",
-                "v": "2025-07-25 09:33:33.050",
-                "vt": "str"
-            },
-            {
-                "p": "payload.EndDate",
-                "v": "",
-                "vt": "str"
+                "p": "payload"
             }
         ],
         "repeat": "",
@@ -14306,12 +13876,12 @@
         "once": false,
         "onceDelay": "",
         "topic": "",
+        "payload": "{\"CabinNo\":1,\"StartDate\":\"2025-09-04T14:00:00\",\"EndDate\":\"2025-09-04T14:10:00\",\"CycleTime\":100}",
+        "payloadType": "json",
         "x": 160,
         "y": 80,
         "wires": [
-            [
-                "func_proc_call"
-            ]
+            []
         ]
     },
     {
@@ -14319,14 +13889,14 @@
         "type": "function",
         "z": "d2f524c7386c779e",
         "name": "Prepare SP Call",
-        "func": "// Get previous value from flow context\nlet prevCabinNo = flow.get(\"prevCabinNo\") || null;\nlet CabinNo = msg.payload[\"CabinNo\"];\n\n// Check if CabinNo changed\nif (CabinNo !== prevCabinNo) {\n    flow.set(\"prevCabinNo\", CabinNo); // Update last value\n\n    // Prepare SQL data\n    let sqlMsg = {\n        payload: \"USP_Insert_Update_Cabin_Cycle\",\n        queryParams: [\n            { name: \"CabinNo\", value: CabinNo },\n            { name: \"StartDate\", value: msg.payload[\"StartDate\"] },\n            { name: \"EndDate\", value: msg.payload[\"EndDate\"] },\n            { name: \"CycleTime\", value: msg.payload[\"CycleTime\"] }\n        ],\n        queryMode: \"execute\"\n    };\n\n    return sqlMsg;  // Only return when value changed\n}\n\n// No change → don’t send anything\nreturn null;\n",
+        "func": "\nlet data = msg.payload;\nnode.warn(data);\n\n    // Prepare SQL data\n    let sqlMsg = {\n        payload: \"USP_Insert_Update_Cabin_Cycle\",\n        queryParams: [\n            {   name: \"CabinNo\", value: data.CabinNo },\n            {   name: \"StartDate\", value: data.StartDate },\n            {   name: \"EndDate\", value: data.EndDate },\n            {   name: \"CycleTime\", value: data.CycleTime }\n        ],\n        queryMode: \"execute\"\n    };\n\n    return sqlMsg;  // Only return when value changed\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
+        "x": 520,
         "y": 160,
         "wires": [
             [
@@ -14354,55 +13924,10 @@
         "rowsType": "msg",
         "parseMustache": true,
         "params": [],
-        "x": 640,
+        "x": 790,
         "y": 160,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "639a78f09824666d",
-        "type": "inject",
-        "z": "d2f524c7386c779e",
-        "name": "Inject Cabin Data",
-        "props": [
-            {
-                "p": "payload.CabinNo",
-                "v": "102",
-                "vt": "num"
-            },
-            {
-                "p": "payload.Trigger",
-                "v": "false",
-                "vt": "bool"
-            },
-            {
-                "p": "payload.CycleTime",
-                "v": "55",
-                "vt": "num"
-            },
-            {
-                "p": "payload.StartDate",
-                "v": "",
-                "vt": "str"
-            },
-            {
-                "p": "payload.EndDate",
-                "v": "2025-07-25 09:45:33.050",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "topic": "",
-        "x": 160,
-        "y": 240,
-        "wires": [
-            [
-                "func_proc_call"
-            ]
         ]
     },
     {
@@ -14466,12 +13991,71 @@
         "variable": "",
         "diff": true,
         "name": "",
-        "x": 160,
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "5cb5e92877211704"
+            ]
+        ]
+    },
+    {
+        "id": "5cb5e92877211704",
+        "type": "rbe",
+        "z": "d2f524c7386c779e",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.CabinNo",
+        "topi": "topic",
+        "x": 330,
         "y": 160,
         "wires": [
             [
                 "func_proc_call"
             ]
+        ]
+    },
+    {
+        "id": "dcb67c1897af8ee8",
+        "type": "debug",
+        "z": "d2f524c7386c779e",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "66bba6ee10c1fb07",
+        "type": "inject",
+        "z": "d2f524c7386c779e",
+        "name": "Inject Cabin Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"CabinNo\":2,\"StartDate\":\"2025-09-04T14:00:00\",\"EndDate\":\"2025-09-04T14:10:00\",\"CycleTime\":100}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            []
         ]
     },
     {
@@ -14483,11 +14067,14 @@
         "variable": "",
         "diff": true,
         "name": "",
-        "x": 140,
-        "y": 160,
+        "x": 120,
+        "y": 180,
         "wires": [
             [
-                "64b7817849b9704c"
+                "1a8c0ecd51390be7",
+                "7a78b6e0655ee75a",
+                "f35cc0e015ca9710",
+                "a96ea519b23e5034"
             ]
         ]
     },
@@ -14495,46 +14082,20 @@
         "id": "64b7817849b9704c",
         "type": "function",
         "z": "69c80b9824af6584",
-        "name": "function 5",
-        "func": "let data = msg.payload;\nlet last = flow.get(\"lastTriggers\") || {};\n\nlet ML10Previous = last[\"ML10\"];\nlet ML20Previous = last[\"ML20\"];\nlet ML30Previous = last[\"ML30\"];\nlet ML40Previous = last[\"ML40\"];\n\nlet ML10Current = data[\"ML10\"];\nlet ML20Current = data[\"ML20\"];\nlet ML30Current = data[\"ML30\"];\nlet ML40Current = data[\"ML40\"];\n\n// Update context\nlast[\"ML10\"] = ML10Current;\nlast[\"ML20\"] = ML20Current;\nlast[\"ML30\"] = ML30Current;\nlast[\"ML40\"] = ML40Current;\nflow.set(\"lastTriggers\", last);\n\nlet rows = [];\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase,Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// ========== ML10 ========== //\nif (ML10Previous != ML10Current) {\n    const tags = [\"ML10_1\", \"ML10_2\", \"ML10_3\", \"ML10_4\"];\n    tags.forEach(tag => pushTagRow(tag, ML10Current));\n}\n\n// ========== ML20 ========== //\nif (ML20Previous != ML20Current) {\n    const tags = [\"ML20_5\", \"ML20_6\", \"ML20_7_G1\", \"ML20_7_G2\", \"ML20_7_G3\", \"ML20_8_G1\", \"ML20_8_G2\", \"ML20_8_G3\"];\n    tags.forEach(tag => pushTagRow(tag, ML20Current)); \n\n// ========== ML30 ========== //\nif (ML30Previous != ML30Current) {\n    const tags = [\"ML30_9\", \"ML30_10\"];\n    tags.forEach(tag => pushTagRow(tag, ML30Current));\n}\n\n// ========== ML40 ========== //\nif (ML40Previous != ML40Current) {\n    const tags = [\"ML40_11\", \"ML40_12\", \"ML40_13\", \"ML40_14\"];\n    tags.forEach(tag => pushTagRow(tag, ML40Current));\n}\n\n// If any rows to insert\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC sp_InsertSpotCount @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;  // No change\n}\n",
+        "name": "function ML10",
+        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML10 ========== //\n\nconst tags = [\"ML10_1_G1\", \"ML10_2_G1\", \"ML10_3_G1\", \"ML10_4_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML10));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
         "outputs": 1,
         "timeout": 0,
-        "noerr": 3,
+        "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 160,
+        "x": 560,
+        "y": 80,
         "wires": [
             [
-                "bc1145f5d45b2ce1"
+                "6da1b8ff2c847249"
             ]
-        ]
-    },
-    {
-        "id": "bc1145f5d45b2ce1",
-        "type": "MSSQL",
-        "z": "69c80b9824af6584",
-        "mssqlCN": "c0e07e1d9234d27a",
-        "name": "",
-        "outField": "payload",
-        "returnType": 0,
-        "throwErrors": 1,
-        "query": "",
-        "modeOpt": "queryMode",
-        "modeOptType": "query",
-        "queryOpt": "payload.query",
-        "queryOptType": "msg",
-        "paramsOpt": "queryParams",
-        "paramsOptType": "msg",
-        "rows": "rows",
-        "rowsType": "msg",
-        "parseMustache": true,
-        "params": [],
-        "x": 560,
-        "y": 160,
-        "wires": [
-            []
         ]
     },
     {
@@ -14544,8 +14105,8 @@
         "name": "",
         "scope": "group",
         "uncaught": false,
-        "x": 90,
-        "y": 240,
+        "x": 110,
+        "y": 380,
         "wires": [
             [
                 "40748b0d2a2bc553"
@@ -14564,8 +14125,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 240,
+        "x": 320,
+        "y": 380,
         "wires": [
             [
                 "08b1912e961b4b88"
@@ -14583,10 +14144,238 @@
         "createDir": false,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 590,
-        "y": 240,
+        "x": 610,
+        "y": 380,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "5e5dde605a0a00d9",
+        "type": "inject",
+        "z": "69c80b9824af6584",
+        "name": "Inject Cabin Data ML10",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"ML10\":1,\"ML10_1_G1_Target\":\"100\",\"ML10_2_G1_Target\":\"100\",\"ML10_3_G1_Target\":\"100\",\"ML10_4_G1_Target\":\"100\",\"ML10_1_G1_Actual\":\"80\",\"ML10_2_G1_Actual\":\"80\",\"ML10_3_G1_Actual\":\"80\",\"ML10_4_G1_Actual\":\"80\"}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9df60becea1b2919",
+        "type": "inject",
+        "z": "69c80b9824af6584",
+        "name": "Inject Cabin Data ML10",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"ML10\":2,\"ML10_1_G1_Target\":\"100\",\"ML10_2_G1_Target\":\"100\",\"ML10_3_G1_Target\":\"100\",\"ML10_4_G1_Target\":\"100\",\"ML10_1_G1_Actual\":\"80\",\"ML10_2_G1_Actual\":\"80\",\"ML10_3_G1_Actual\":\"80\",\"ML10_4_G1_Actual\":\"80\"}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a96ea519b23e5034",
+        "type": "rbe",
+        "z": "69c80b9824af6584",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.ML10",
+        "topi": "topic",
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "64b7817849b9704c"
+            ]
+        ]
+    },
+    {
+        "id": "d60693068c3492d0",
+        "type": "debug",
+        "z": "69c80b9824af6584",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6da1b8ff2c847249",
+        "type": "MSSQL",
+        "z": "69c80b9824af6584",
+        "mssqlCN": "c0e07e1d9234d27a",
+        "name": "Execute SP",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "1",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 890,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a8c0ecd51390be7",
+        "type": "rbe",
+        "z": "69c80b9824af6584",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.ML20",
+        "topi": "topic",
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "cf96cc69cf8e5442"
+            ]
+        ]
+    },
+    {
+        "id": "cf96cc69cf8e5442",
+        "type": "function",
+        "z": "69c80b9824af6584",
+        "name": "function ML20",
+        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML20 ========== //\nconst tags = [\"ML20_5_G1\", \"ML20_6_G1\", \"ML20_7_G1\", \"ML20_7_G2\", \"ML20_7_G3\", \"ML20_8_G1\", \"ML20_8_G2\", \"ML20_8_G3\"];\ntags.forEach(tag => pushTagRow(tag, data.ML20)); \n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "6da1b8ff2c847249"
+            ]
+        ]
+    },
+    {
+        "id": "7a78b6e0655ee75a",
+        "type": "rbe",
+        "z": "69c80b9824af6584",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.ML30",
+        "topi": "topic",
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "c3f1f9b993bf3970"
+            ]
+        ]
+    },
+    {
+        "id": "7c83042e0102d610",
+        "type": "function",
+        "z": "69c80b9824af6584",
+        "name": "function ML40",
+        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML40 ========== //\nconst tags = [\"ML40_11_G1\", \"ML40_12_G1\", \"ML40_13_G1\", \"ML40_14_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML40));\n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "6da1b8ff2c847249"
+            ]
+        ]
+    },
+    {
+        "id": "c3f1f9b993bf3970",
+        "type": "function",
+        "z": "69c80b9824af6584",
+        "name": "function ML30",
+        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML30 ========== //\n\nconst tags = [\"ML30_9_G1\", \"ML30_10_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML30));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 200,
+        "wires": [
+            [
+                "6da1b8ff2c847249"
+            ]
+        ]
+    },
+    {
+        "id": "f35cc0e015ca9710",
+        "type": "rbe",
+        "z": "69c80b9824af6584",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.ML40",
+        "topi": "topic",
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "7c83042e0102d610"
+            ]
         ]
     },
     {
@@ -14668,5 +14457,160 @@
         "x": 560,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "plc_in",
+        "type": "inject",
+        "z": "91fcc6c4eea2fda6",
+        "name": "Simulate PLC Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"ML10\":1,\"cycletime\":10,\"timestamp\":\"2025-09-04T14:00:00\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "rbe_biwno"
+            ]
+        ]
+    },
+    {
+        "id": "rbe_biwno",
+        "type": "rbe",
+        "z": "91fcc6c4eea2fda6",
+        "name": "Only on biwno change",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.ML10",
+        "topi": "topic",
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "debug_out"
+            ]
+        ]
+    },
+    {
+        "id": "debug_out",
+        "type": "debug",
+        "z": "91fcc6c4eea2fda6",
+        "name": "Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 590,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "16613ce65ee5cbc4",
+        "type": "inject",
+        "z": "91fcc6c4eea2fda6",
+        "name": "Simulate PLC Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"ML20\":1,\"cycletime\":10,\"timestamp\":\"2025-09-04T14:00:00\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "fdf5c0f76505cbd0"
+            ]
+        ]
+    },
+    {
+        "id": "fdf5c0f76505cbd0",
+        "type": "rbe",
+        "z": "91fcc6c4eea2fda6",
+        "name": "Only on biwno change",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.ML20",
+        "topi": "topic",
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "debug_out"
+            ]
+        ]
+    },
+    {
+        "id": "31d7f8d95a35427f",
+        "type": "inject",
+        "z": "91fcc6c4eea2fda6",
+        "name": "Simulate PLC Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"ML10\":2,\"cycletime\":10,\"timestamp\":\"2025-09-04T14:00:00\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "rbe_biwno"
+            ]
+        ]
+    },
+    {
+        "id": "2c97083fbef687d3",
+        "type": "inject",
+        "z": "91fcc6c4eea2fda6",
+        "name": "Simulate PLC Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"ML20\":2,\"cycletime\":10,\"timestamp\":\"2025-09-04T14:00:00\"}",
+        "payloadType": "json",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "fdf5c0f76505cbd0"
+            ]
+        ]
     }
 ]

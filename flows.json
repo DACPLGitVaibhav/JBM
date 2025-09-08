@@ -129,7 +129,7 @@
     {
         "id": "d2f524c7386c779e",
         "type": "tab",
-        "label": "cycle Time",
+        "label": "cycle_Time",
         "disabled": true,
         "info": "",
         "env": []
@@ -137,7 +137,7 @@
     {
         "id": "69c80b9824af6584",
         "type": "tab",
-        "label": "Spot Count",
+        "label": "Spot_Count",
         "disabled": true,
         "info": "",
         "env": []
@@ -151,10 +151,10 @@
         "env": []
     },
     {
-        "id": "91fcc6c4eea2fda6",
+        "id": "502c7cc05ab695d2",
         "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
+        "label": "PLC_Status",
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -703,7 +703,7 @@
                 "name": "ML10_126"
             },
             {
-                "addr": "DB350,X2..2",
+                "addr": "DB350,X2.2",
                 "name": "ML10_127"
             },
             {
@@ -4458,7 +4458,7 @@
         "z": "77b8f05fc0c712f8",
         "tdsVersion": "7_4",
         "name": "Mssql Connection",
-        "server": "DESKTOP-EPRNPCE",
+        "server": "DESKTOP-UEMD3BN\\MSSQLSERVER2022",
         "port": "1433",
         "encyption": true,
         "trustServerCertificate": true,
@@ -4490,7 +4490,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": 2000,
-        "name": "",
+        "name": "Tip Change Count",
         "vartable": [
             {
                 "addr": "DB428,I132",
@@ -4588,7 +4588,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": 2000,
-        "name": "",
+        "name": "Robot Health Status",
         "vartable": [
             {
                 "addr": "DB317,I12.3",
@@ -4822,7 +4822,7 @@
         "z": "047a2ed188a4b718",
         "tdsVersion": "7_4",
         "name": "Robot Health",
-        "server": "DESKTOP-EPRNPCE",
+        "server": "DESKTOP-UEMD3BN\\MSSQLSERVER2022",
         "port": "1433",
         "encyption": true,
         "trustServerCertificate": true,
@@ -4854,7 +4854,7 @@
         "busaddr": "",
         "cycletime": "1000",
         "timeout": 1500,
-        "name": "",
+        "name": "Shift Production",
         "vartable": [
             {
                 "addr": "DB99,X40.0",
@@ -4897,7 +4897,7 @@
                 "name": "TARGETA"
             },
             {
-                "addr": " DB98,I6",
+                "addr": "DB98,I6",
                 "name": "TARGETB"
             },
             {
@@ -4944,7 +4944,7 @@
         "z": "d56e9038cfc4ecfb",
         "tdsVersion": "7_4",
         "name": "",
-        "server": "DESKTOP-EPRNPCE",
+        "server": "DESKTOP-UEMD3BN",
         "port": "1433",
         "encyption": true,
         "trustServerCertificate": true,
@@ -4976,7 +4976,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": 2000,
-        "name": "",
+        "name": "ATC Collision",
         "vartable": [
             {
                 "addr": "DB428,X130.0",
@@ -5146,7 +5146,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": 2000,
-        "name": "",
+        "name": "Target Monthly Daily",
         "vartable": [
             {
                 "addr": "DB98,I0",
@@ -5188,7 +5188,7 @@
         "z": "5872bea43d03ee26",
         "tdsVersion": "7_4",
         "name": "MSSQl",
-        "server": "DESKTOP-EPRNPCE",
+        "server": "DESKTOP-UEMD3BN",
         "port": "1433",
         "encyption": true,
         "trustServerCertificate": true,
@@ -5201,35 +5201,6 @@
         "parseJSON": false,
         "enableArithAbort": true,
         "readOnlyIntent": false
-    },
-    {
-        "id": "89fe3d04833d07b8",
-        "type": "s7 endpoint",
-        "transport": "iso-on-tcp",
-        "address": "192.168.1.51",
-        "port": "102",
-        "rack": "0",
-        "slot": "1",
-        "localtsaphi": "01",
-        "localtsaplo": "00",
-        "remotetsaphi": "01",
-        "remotetsaplo": "00",
-        "connmode": "rack-slot",
-        "adapter": "",
-        "busaddr": 2,
-        "cycletime": 1000,
-        "timeout": 2000,
-        "name": "",
-        "vartable": [
-            {
-                "addr": "DB100,DT18",
-                "name": "DateTime"
-            },
-            {
-                "addr": "DB100,DTL4",
-                "name": "DTL"
-            }
-        ]
     },
     {
         "id": "b0512d1c226ceb67",
@@ -5249,7 +5220,7 @@
         "busaddr": 2,
         "cycletime": "100",
         "timeout": 2000,
-        "name": "",
+        "name": "Line Layout",
         "vartable": [
             {
                 "addr": "DB428,X170.0",
@@ -5412,7 +5383,7 @@
                 "name": "EMGML10TopPLC"
             },
             {
-                "addr": "DB428,X175",
+                "addr": "DB428,X175.0",
                 "name": "EMGML10BottomPLC"
             },
             {
@@ -5551,7 +5522,7 @@
         "z": "9dab2313a2f19c0b",
         "tdsVersion": "7_4",
         "name": "LineLayout",
-        "server": "DESKTOP-EPRNPCE",
+        "server": "DESKTOP-UEMD3BN",
         "port": "1433",
         "encyption": true,
         "trustServerCertificate": true,
@@ -5566,39 +5537,9 @@
         "readOnlyIntent": false
     },
     {
-        "id": "463213b138cddbaf",
-        "type": "mqtt-broker",
-        "name": "MQTT Sub",
-        "broker": "127.0.0.1",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
         "id": "s7-ep",
         "type": "s7 endpoint",
+        "z": "1a84d6e3645699d7",
         "transport": "iso-on-tcp",
         "address": "192.168.1.50",
         "port": "102",
@@ -5613,1351 +5554,1351 @@
         "busaddr": "",
         "cycletime": "5000",
         "timeout": 1500,
-        "name": "",
+        "name": "Current Torqe Temp",
         "vartable": [
             {
                 "addr": "DB471,I2",
-                "name": "rbt01_Curr_Axis1"
+                "name": "01_Curr_Axis1"
             },
             {
                 "addr": "DB471,I4",
-                "name": "rbt01_Curr_Axis2"
+                "name": "01_Curr_Axis2"
             },
             {
                 "addr": "DB471,I6",
-                "name": "rbt01_Curr_Axis3"
+                "name": "01_Curr_Axis3"
             },
             {
                 "addr": "DB471,I8",
-                "name": "rbt01_Curr_Axis4"
+                "name": "01_Curr_Axis4"
             },
             {
                 "addr": "DB471,I10",
-                "name": "rbt01_Curr_Axis5"
+                "name": "01_Curr_Axis5"
             },
             {
                 "addr": "DB471,I12",
-                "name": "rbt01_Curr_Axis6"
+                "name": "01_Curr_Axis6"
             },
             {
                 "addr": "DB471,I14",
-                "name": "rbt01_Curr_Axis7"
+                "name": "01_Curr_Axis7"
             },
             {
                 "addr": "DB471,I16",
-                "name": "rbt01_Curr_Axis8"
+                "name": "01_Curr_Axis8"
             },
             {
                 "addr": "DB471,I18",
-                "name": "rbt01_Torq_Axis1"
+                "name": "01_Torq_Axis1"
             },
             {
                 "addr": "DB471,I20",
-                "name": "rbt01_Torq_Axis2"
+                "name": "01_Torq_Axis2"
             },
             {
                 "addr": "DB471,I22",
-                "name": "rbt01_Torq_Axis3"
+                "name": "01_Torq_Axis3"
             },
             {
                 "addr": "DB471,I24",
-                "name": "rbt01_Torq_Axis4"
+                "name": "01_Torq_Axis4"
             },
             {
                 "addr": "DB471,I26",
-                "name": "rbt01_Torq_Axis5"
+                "name": "01_Torq_Axis5"
             },
             {
                 "addr": "DB471,I28",
-                "name": "rbt01_Torq_Axis6"
+                "name": "01_Torq_Axis6"
             },
             {
                 "addr": "DB471,I30",
-                "name": "rbt01_Torq_Axis7"
+                "name": "01_Torq_Axis7"
             },
             {
                 "addr": "DB471,I32",
-                "name": "rbt01_Torq_Axis8"
+                "name": "01_Torq_Axis8"
             },
             {
                 "addr": "DB471,B34",
-                "name": "rbt01_Temp_Axis1"
+                "name": "01_Temp_Axis1"
             },
             {
                 "addr": "DB471,B35",
-                "name": "rbt01_Temp_Axis2"
+                "name": "01_Temp_Axis2"
             },
             {
                 "addr": "DB471,B36",
-                "name": "rbt01_Temp_Axis3"
+                "name": "01_Temp_Axis3"
             },
             {
                 "addr": "DB471,B37",
-                "name": "rbt01_Temp_Axis4"
+                "name": "01_Temp_Axis4"
             },
             {
                 "addr": "DB471,B38",
-                "name": "rbt01_Temp_Axis5"
+                "name": "01_Temp_Axis5"
             },
             {
                 "addr": "DB471,B39",
-                "name": "rbt01_Temp_Axis6"
+                "name": "01_Temp_Axis6"
             },
             {
                 "addr": "DB471,B40",
-                "name": "rbt01_Temp_Axis7"
+                "name": "01_Temp_Axis7"
             },
             {
                 "addr": "DB471,B41",
-                "name": "rbt01_Temp_Axis8"
+                "name": "01_Temp_Axis8"
             },
             {
                 "addr": "DB472,I2",
-                "name": "rbt02_Curr_Axis1"
+                "name": "02_Curr_Axis1"
             },
             {
                 "addr": "DB472,I4",
-                "name": "rbt02_Curr_Axis2"
+                "name": "02_Curr_Axis2"
             },
             {
                 "addr": "DB472,I6",
-                "name": "rbt02_Curr_Axis3"
+                "name": "02_Curr_Axis3"
             },
             {
                 "addr": "DB472,I8",
-                "name": "rbt02_Curr_Axis4"
+                "name": "02_Curr_Axis4"
             },
             {
                 "addr": "DB472,I10",
-                "name": "rbt02_Curr_Axis5"
+                "name": "02_Curr_Axis5"
             },
             {
                 "addr": "DB472,I12",
-                "name": "rbt02_Curr_Axis6"
+                "name": "02_Curr_Axis6"
             },
             {
                 "addr": "DB472,I14",
-                "name": "rbt02_Curr_Axis7"
+                "name": "02_Curr_Axis7"
             },
             {
                 "addr": "DB472,I16",
-                "name": "rbt02_Curr_Axis8"
+                "name": "02_Curr_Axis8"
             },
             {
                 "addr": "DB472,I18",
-                "name": "rbt02_Torq_Axis1"
+                "name": "02_Torq_Axis1"
             },
             {
                 "addr": "DB472,I20",
-                "name": "rbt02_Torq_Axis2"
+                "name": "02_Torq_Axis2"
             },
             {
                 "addr": "DB472,I22",
-                "name": "rbt02_Torq_Axis3"
+                "name": "02_Torq_Axis3"
             },
             {
                 "addr": "DB472,I24",
-                "name": "rbt02_Torq_Axis4"
+                "name": "02_Torq_Axis4"
             },
             {
                 "addr": "DB472,I26",
-                "name": "rbt02_Torq_Axis5"
+                "name": "02_Torq_Axis5"
             },
             {
                 "addr": "DB472,I28",
-                "name": "rbt02_Torq_Axis6"
+                "name": "02_Torq_Axis6"
             },
             {
                 "addr": "DB472,I30",
-                "name": "rbt02_Torq_Axis7"
+                "name": "02_Torq_Axis7"
             },
             {
                 "addr": "DB472,I32",
-                "name": "rbt02_Torq_Axis8"
+                "name": "02_Torq_Axis8"
             },
             {
                 "addr": "DB472,B34",
-                "name": "rbt02_Temp_Axis1"
+                "name": "02_Temp_Axis1"
             },
             {
                 "addr": "DB472,B35",
-                "name": "rbt02_Temp_Axis2"
+                "name": "02_Temp_Axis2"
             },
             {
                 "addr": "DB472,B36",
-                "name": "rbt02_Temp_Axis3"
+                "name": "02_Temp_Axis3"
             },
             {
                 "addr": "DB472,B37",
-                "name": "rbt02_Temp_Axis4"
+                "name": "02_Temp_Axis4"
             },
             {
                 "addr": "DB472,B38",
-                "name": "rbt02_Temp_Axis5"
+                "name": "02_Temp_Axis5"
             },
             {
                 "addr": "DB472,B39",
-                "name": "rbt02_Temp_Axis6"
+                "name": "02_Temp_Axis6"
             },
             {
                 "addr": "DB472,B40",
-                "name": "rbt02_Temp_Axis7"
+                "name": "02_Temp_Axis7"
             },
             {
                 "addr": "DB472,B41",
-                "name": "rbt02_Temp_Axis8"
+                "name": "02_Temp_Axis8"
             },
             {
                 "addr": "DB473,I2",
-                "name": "rbt03_Curr_Axis1"
+                "name": "03_Curr_Axis1"
             },
             {
                 "addr": "DB473,I4",
-                "name": "rbt03_Curr_Axis2"
+                "name": "03_Curr_Axis2"
             },
             {
                 "addr": "DB473,I6",
-                "name": "rbt03_Curr_Axis3"
+                "name": "03_Curr_Axis3"
             },
             {
                 "addr": "DB473,I8",
-                "name": "rbt03_Curr_Axis4"
+                "name": "03_Curr_Axis4"
             },
             {
                 "addr": "DB473,I10",
-                "name": "rbt03_Curr_Axis5"
+                "name": "03_Curr_Axis5"
             },
             {
                 "addr": "DB473,I12",
-                "name": "rbt03_Curr_Axis6"
+                "name": "03_Curr_Axis6"
             },
             {
                 "addr": "DB473,I14",
-                "name": "rbt03_Curr_Axis7"
+                "name": "03_Curr_Axis7"
             },
             {
                 "addr": "DB473,I16",
-                "name": "rbt03_Curr_Axis8"
+                "name": "03_Curr_Axis8"
             },
             {
                 "addr": "DB473,I18",
-                "name": "rbt03_Torq_Axis1"
+                "name": "03_Torq_Axis1"
             },
             {
                 "addr": "DB473,I20",
-                "name": "rbt03_Torq_Axis2"
+                "name": "03_Torq_Axis2"
             },
             {
                 "addr": "DB473,I22",
-                "name": "rbt03_Torq_Axis3"
+                "name": "03_Torq_Axis3"
             },
             {
                 "addr": "DB473,I24",
-                "name": "rbt03_Torq_Axis4"
+                "name": "03_Torq_Axis4"
             },
             {
                 "addr": "DB473,I26",
-                "name": "rbt03_Torq_Axis5"
+                "name": "03_Torq_Axis5"
             },
             {
                 "addr": "DB473,I28",
-                "name": "rbt03_Torq_Axis6"
+                "name": "03_Torq_Axis6"
             },
             {
                 "addr": "DB473,I30",
-                "name": "rbt03_Torq_Axis7"
+                "name": "03_Torq_Axis7"
             },
             {
                 "addr": "DB473,I32",
-                "name": "rbt03_Torq_Axis8"
+                "name": "03_Torq_Axis8"
             },
             {
                 "addr": "DB473,B34",
-                "name": "rbt03_Temp_Axis1"
+                "name": "03_Temp_Axis1"
             },
             {
                 "addr": "DB473,B35",
-                "name": "rbt03_Temp_Axis2"
+                "name": "03_Temp_Axis2"
             },
             {
                 "addr": "DB473,B36",
-                "name": "rbt03_Temp_Axis3"
+                "name": "03_Temp_Axis3"
             },
             {
                 "addr": "DB473,B37",
-                "name": "rbt03_Temp_Axis4"
+                "name": "03_Temp_Axis4"
             },
             {
                 "addr": "DB473,B38",
-                "name": "rbt03_Temp_Axis5"
+                "name": "03_Temp_Axis5"
             },
             {
                 "addr": "DB473,B39",
-                "name": "rbt03_Temp_Axis6"
+                "name": "03_Temp_Axis6"
             },
             {
                 "addr": "DB473,B40",
-                "name": "rbt03_Temp_Axis7"
+                "name": "03_Temp_Axis7"
             },
             {
                 "addr": "DB473,B41",
-                "name": "rbt03_Temp_Axis8"
+                "name": "03_Temp_Axis8"
             },
             {
                 "addr": "DB470,I2",
-                "name": "rbt04_Curr_Axis1"
+                "name": "04_Curr_Axis1"
             },
             {
                 "addr": "DB470,I4",
-                "name": "rbt04_Curr_Axis2"
+                "name": "04_Curr_Axis2"
             },
             {
                 "addr": "DB470,I6",
-                "name": "rbt04_Curr_Axis3"
+                "name": "04_Curr_Axis3"
             },
             {
                 "addr": "DB470,I8",
-                "name": "rbt04_Curr_Axis4"
+                "name": "04_Curr_Axis4"
             },
             {
                 "addr": "DB470,I10",
-                "name": "rbt04_Curr_Axis5"
+                "name": "04_Curr_Axis5"
             },
             {
                 "addr": "DB470,I12",
-                "name": "rbt04_Curr_Axis6"
+                "name": "04_Curr_Axis6"
             },
             {
                 "addr": "DB470,I14",
-                "name": "rbt04_Curr_Axis7"
+                "name": "04_Curr_Axis7"
             },
             {
                 "addr": "DB470,I16",
-                "name": "rbt04_Curr_Axis8"
+                "name": "04_Curr_Axis8"
             },
             {
                 "addr": "DB470,I18",
-                "name": "rbt04_Torq_Axis1"
+                "name": "04_Torq_Axis1"
             },
             {
                 "addr": "DB470,I20",
-                "name": "rbt04_Torq_Axis2"
+                "name": "04_Torq_Axis2"
             },
             {
                 "addr": "DB470,I22",
-                "name": "rbt04_Torq_Axis3"
+                "name": "04_Torq_Axis3"
             },
             {
                 "addr": "DB470,I24",
-                "name": "rbt04_Torq_Axis4"
+                "name": "04_Torq_Axis4"
             },
             {
                 "addr": "DB470,I26",
-                "name": "rbt04_Torq_Axis5"
+                "name": "04_Torq_Axis5"
             },
             {
                 "addr": "DB470,I28",
-                "name": "rbt04_Torq_Axis6"
+                "name": "04_Torq_Axis6"
             },
             {
                 "addr": "DB470,I30",
-                "name": "rbt04_Torq_Axis7"
+                "name": "04_Torq_Axis7"
             },
             {
                 "addr": "DB470,I32",
-                "name": "rbt04_Torq_Axis8"
+                "name": "04_Torq_Axis8"
             },
             {
                 "addr": "DB470,B34",
-                "name": "rbt04_Temp_Axis1"
+                "name": "04_Temp_Axis1"
             },
             {
                 "addr": "DB470,B35",
-                "name": "rbt04_Temp_Axis2"
+                "name": "04_Temp_Axis2"
             },
             {
                 "addr": "DB470,B36",
-                "name": "rbt04_Temp_Axis3"
+                "name": "04_Temp_Axis3"
             },
             {
                 "addr": "DB470,B37",
-                "name": "rbt04_Temp_Axis4"
+                "name": "04_Temp_Axis4"
             },
             {
                 "addr": "DB470,B38",
-                "name": "rbt04_Temp_Axis5"
+                "name": "04_Temp_Axis5"
             },
             {
                 "addr": "DB470,B39",
-                "name": "rbt04_Temp_Axis6"
+                "name": "04_Temp_Axis6"
             },
             {
                 "addr": "DB470,B40",
-                "name": "rbt04_Temp_Axis7"
+                "name": "04_Temp_Axis7"
             },
             {
                 "addr": "DB470,B41",
-                "name": "rbt04_Temp_Axis8"
+                "name": "04_Temp_Axis8"
             },
             {
                 "addr": "DB480,I2",
-                "name": "rbt05_Curr_Axis1"
+                "name": "05_Curr_Axis1"
             },
             {
                 "addr": "DB480,I4",
-                "name": "rbt05_Curr_Axis2"
+                "name": "05_Curr_Axis2"
             },
             {
                 "addr": "DB480,I6",
-                "name": "rbt05_Curr_Axis3"
+                "name": "05_Curr_Axis3"
             },
             {
                 "addr": "DB480,I8",
-                "name": "rbt05_Curr_Axis4"
+                "name": "05_Curr_Axis4"
             },
             {
                 "addr": "DB480,I10",
-                "name": "rbt05_Curr_Axis5"
+                "name": "05_Curr_Axis5"
             },
             {
                 "addr": "DB480,I12",
-                "name": "rbt05_Curr_Axis6"
+                "name": "05_Curr_Axis6"
             },
             {
                 "addr": "DB480,I14",
-                "name": "rbt05_Curr_Axis7"
+                "name": "05_Curr_Axis7"
             },
             {
                 "addr": "DB480,I16",
-                "name": "rbt05_Curr_Axis8"
+                "name": "05_Curr_Axis8"
             },
             {
                 "addr": "DB480,I18",
-                "name": "rbt05_Torq_Axis1"
+                "name": "05_Torq_Axis1"
             },
             {
                 "addr": "DB480,I20",
-                "name": "rbt05_Torq_Axis2"
+                "name": "05_Torq_Axis2"
             },
             {
                 "addr": "DB480,I22",
-                "name": "rbt05_Torq_Axis3"
+                "name": "05_Torq_Axis3"
             },
             {
                 "addr": "DB480,I24",
-                "name": "rbt05_Torq_Axis4"
+                "name": "05_Torq_Axis4"
             },
             {
                 "addr": "DB480,I26",
-                "name": "rbt05_Torq_Axis5"
+                "name": "05_Torq_Axis5"
             },
             {
                 "addr": "DB480,I28",
-                "name": "rbt05_Torq_Axis6"
+                "name": "05_Torq_Axis6"
             },
             {
                 "addr": "DB480,I30",
-                "name": "rbt05_Torq_Axis7"
+                "name": "05_Torq_Axis7"
             },
             {
                 "addr": "DB480,I32",
-                "name": "rbt05_Torq_Axis8"
+                "name": "05_Torq_Axis8"
             },
             {
                 "addr": "DB480,B34",
-                "name": "rbt05_Temp_Axis1"
+                "name": "05_Temp_Axis1"
             },
             {
                 "addr": "DB480,B35",
-                "name": "rbt05_Temp_Axis2"
+                "name": "05_Temp_Axis2"
             },
             {
                 "addr": "DB480,B36",
-                "name": "rbt05_Temp_Axis3"
+                "name": "05_Temp_Axis3"
             },
             {
                 "addr": "DB480,B37",
-                "name": "rbt05_Temp_Axis4"
+                "name": "05_Temp_Axis4"
             },
             {
                 "addr": "DB480,B38",
-                "name": "rbt05_Temp_Axis5"
+                "name": "05_Temp_Axis5"
             },
             {
                 "addr": "DB480,B39",
-                "name": "rbt05_Temp_Axis6"
+                "name": "05_Temp_Axis6"
             },
             {
                 "addr": "DB480,B40",
-                "name": "rbt05_Temp_Axis7"
+                "name": "05_Temp_Axis7"
             },
             {
                 "addr": "DB480,B41",
-                "name": "rbt05_Temp_Axis8"
+                "name": "05_Temp_Axis8"
             },
             {
                 "addr": "DB484,I2",
-                "name": "rbt06_Curr_Axis1"
+                "name": "06_Curr_Axis1"
             },
             {
                 "addr": "DB484,I4",
-                "name": "rbt06_Curr_Axis2"
+                "name": "06_Curr_Axis2"
             },
             {
                 "addr": "DB484,I6",
-                "name": "rbt06_Curr_Axis3"
+                "name": "06_Curr_Axis3"
             },
             {
                 "addr": "DB484,I8",
-                "name": "rbt06_Curr_Axis4"
+                "name": "06_Curr_Axis4"
             },
             {
                 "addr": "DB484,I10",
-                "name": "rbt06_Curr_Axis5"
+                "name": "06_Curr_Axis5"
             },
             {
                 "addr": "DB484,I12",
-                "name": "rbt06_Curr_Axis6"
+                "name": "06_Curr_Axis6"
             },
             {
                 "addr": "DB484,I14",
-                "name": "rbt06_Curr_Axis7"
+                "name": "06_Curr_Axis7"
             },
             {
                 "addr": "DB484,I16",
-                "name": "rbt06_Curr_Axis8"
+                "name": "06_Curr_Axis8"
             },
             {
                 "addr": "DB484,I18",
-                "name": "rbt06_Torq_Axis1"
+                "name": "06_Torq_Axis1"
             },
             {
                 "addr": "DB484,I20",
-                "name": "rbt06_Torq_Axis2"
+                "name": "06_Torq_Axis2"
             },
             {
                 "addr": "DB484,I22",
-                "name": "rbt06_Torq_Axis3"
+                "name": "06_Torq_Axis3"
             },
             {
                 "addr": "DB484,I24",
-                "name": "rbt06_Torq_Axis4"
+                "name": "06_Torq_Axis4"
             },
             {
                 "addr": "DB484,I26",
-                "name": "rbt06_Torq_Axis5"
+                "name": "06_Torq_Axis5"
             },
             {
                 "addr": "DB484,I28",
-                "name": "rbt06_Torq_Axis6"
+                "name": "06_Torq_Axis6"
             },
             {
                 "addr": "DB484,I30",
-                "name": "rbt06_Torq_Axis7"
+                "name": "06_Torq_Axis7"
             },
             {
                 "addr": "DB484,I32",
-                "name": "rbt06_Torq_Axis8"
+                "name": "06_Torq_Axis8"
             },
             {
                 "addr": "DB484,B34",
-                "name": "rbt06_Temp_Axis1"
+                "name": "06_Temp_Axis1"
             },
             {
                 "addr": "DB484,B35",
-                "name": "rbt06_Temp_Axis2"
+                "name": "06_Temp_Axis2"
             },
             {
                 "addr": "DB484,B36",
-                "name": "rbt06_Temp_Axis3"
+                "name": "06_Temp_Axis3"
             },
             {
                 "addr": "DB484,B37",
-                "name": "rbt06_Temp_Axis4"
+                "name": "06_Temp_Axis4"
             },
             {
                 "addr": "DB484,B38",
-                "name": "rbt06_Temp_Axis5"
+                "name": "06_Temp_Axis5"
             },
             {
                 "addr": "DB484,B39",
-                "name": "rbt06_Temp_Axis6"
+                "name": "06_Temp_Axis6"
             },
             {
                 "addr": "DB484,B40",
-                "name": "rbt06_Temp_Axis7"
+                "name": "06_Temp_Axis7"
             },
             {
                 "addr": "DB484,B41",
-                "name": "rbt06_Temp_Axis8"
+                "name": "06_Temp_Axis8"
             },
             {
                 "addr": "DB489,I2",
-                "name": "rbt07_Curr_Axis1"
+                "name": "07_Curr_Axis1"
             },
             {
                 "addr": "DB489,I4",
-                "name": "rbt07_Curr_Axis2"
+                "name": "07_Curr_Axis2"
             },
             {
                 "addr": "DB489,I6",
-                "name": "rbt07_Curr_Axis3"
+                "name": "07_Curr_Axis3"
             },
             {
                 "addr": "DB489,I8",
-                "name": "rbt07_Curr_Axis4"
+                "name": "07_Curr_Axis4"
             },
             {
                 "addr": "DB489,I10",
-                "name": "rbt07_Curr_Axis5"
+                "name": "07_Curr_Axis5"
             },
             {
                 "addr": "DB489,I12",
-                "name": "rbt07_Curr_Axis6"
+                "name": "07_Curr_Axis6"
             },
             {
                 "addr": "DB489,I14",
-                "name": "rbt07_Curr_Axis7"
+                "name": "07_Curr_Axis7"
             },
             {
                 "addr": "DB489,I16",
-                "name": "rbt07_Curr_Axis8"
+                "name": "07_Curr_Axis8"
             },
             {
                 "addr": "DB489,I18",
-                "name": "rbt07_Torq_Axis1"
+                "name": "07_Torq_Axis1"
             },
             {
                 "addr": "DB489,I20",
-                "name": "rbt07_Torq_Axis2"
+                "name": "07_Torq_Axis2"
             },
             {
                 "addr": "DB489,I22",
-                "name": "rbt07_Torq_Axis3"
+                "name": "07_Torq_Axis3"
             },
             {
                 "addr": "DB489,I24",
-                "name": "rbt07_Torq_Axis4"
+                "name": "07_Torq_Axis4"
             },
             {
                 "addr": "DB489,I26",
-                "name": "rbt07_Torq_Axis5"
+                "name": "07_Torq_Axis5"
             },
             {
                 "addr": "DB489,I28",
-                "name": "rbt07_Torq_Axis6"
+                "name": "07_Torq_Axis6"
             },
             {
                 "addr": "DB489,I30",
-                "name": "rbt07_Torq_Axis7"
+                "name": "07_Torq_Axis7"
             },
             {
                 "addr": "DB489,I32",
-                "name": "rbt07_Torq_Axis8"
+                "name": "07_Torq_Axis8"
             },
             {
                 "addr": "DB489,B34",
-                "name": "rbt07_Temp_Axis1"
+                "name": "07_Temp_Axis1"
             },
             {
                 "addr": "DB489,B35",
-                "name": "rbt07_Temp_Axis2"
+                "name": "07_Temp_Axis2"
             },
             {
                 "addr": "DB489,B36",
-                "name": "rbt07_Temp_Axis3"
+                "name": "07_Temp_Axis3"
             },
             {
                 "addr": "DB489,B37",
-                "name": "rbt07_Temp_Axis4"
+                "name": "07_Temp_Axis4"
             },
             {
                 "addr": "DB489,B38",
-                "name": "rbt07_Temp_Axis5"
+                "name": "07_Temp_Axis5"
             },
             {
                 "addr": "DB489,B39",
-                "name": "rbt07_Temp_Axis6"
+                "name": "07_Temp_Axis6"
             },
             {
                 "addr": "DB489,B40",
-                "name": "rbt07_Temp_Axis7"
+                "name": "07_Temp_Axis7"
             },
             {
                 "addr": "DB489,B41",
-                "name": "rbt07_Temp_Axis8"
+                "name": "07_Temp_Axis8"
             },
             {
                 "addr": "DB490,I2",
-                "name": "rbt08_Curr_Axis1"
+                "name": "08_Curr_Axis1"
             },
             {
                 "addr": "DB490,I4",
-                "name": "rbt08_Curr_Axis2"
+                "name": "08_Curr_Axis2"
             },
             {
                 "addr": "DB490,I6",
-                "name": "rbt08_Curr_Axis3"
+                "name": "08_Curr_Axis3"
             },
             {
                 "addr": "DB490,I8",
-                "name": "rbt08_Curr_Axis4"
+                "name": "08_Curr_Axis4"
             },
             {
                 "addr": "DB490,I10",
-                "name": "rbt08_Curr_Axis5"
+                "name": "08_Curr_Axis5"
             },
             {
                 "addr": "DB490,I12",
-                "name": "rbt08_Curr_Axis6"
+                "name": "08_Curr_Axis6"
             },
             {
                 "addr": "DB490,I14",
-                "name": "rbt08_Curr_Axis7"
+                "name": "08_Curr_Axis7"
             },
             {
                 "addr": "DB490,I16",
-                "name": "rbt08_Curr_Axis8"
+                "name": "08_Curr_Axis8"
             },
             {
                 "addr": "DB490,I18",
-                "name": "rbt08_Torq_Axis1"
+                "name": "08_Torq_Axis1"
             },
             {
                 "addr": "DB490,I20",
-                "name": "rbt08_Torq_Axis2"
+                "name": "08_Torq_Axis2"
             },
             {
                 "addr": "DB490,I22",
-                "name": "rbt08_Torq_Axis3"
+                "name": "08_Torq_Axis3"
             },
             {
                 "addr": "DB490,I24",
-                "name": "rbt08_Torq_Axis4"
+                "name": "08_Torq_Axis4"
             },
             {
                 "addr": "DB490,I26",
-                "name": "rbt08_Torq_Axis5"
+                "name": "08_Torq_Axis5"
             },
             {
                 "addr": "DB490,I28",
-                "name": "rbt08_Torq_Axis6"
+                "name": "08_Torq_Axis6"
             },
             {
                 "addr": "DB490,I30",
-                "name": "rbt08_Torq_Axis7"
+                "name": "08_Torq_Axis7"
             },
             {
                 "addr": "DB490,I32",
-                "name": "rbt08_Torq_Axis8"
+                "name": "08_Torq_Axis8"
             },
             {
                 "addr": "DB490,B34",
-                "name": "rbt08_Temp_Axis1"
+                "name": "08_Temp_Axis1"
             },
             {
                 "addr": "DB490,B35",
-                "name": "rbt08_Temp_Axis2"
+                "name": "08_Temp_Axis2"
             },
             {
                 "addr": "DB490,B36",
-                "name": "rbt08_Temp_Axis3"
+                "name": "08_Temp_Axis3"
             },
             {
                 "addr": "DB490,B37",
-                "name": "rbt08_Temp_Axis4"
+                "name": "08_Temp_Axis4"
             },
             {
                 "addr": "DB490,B38",
-                "name": "rbt08_Temp_Axis5"
+                "name": "08_Temp_Axis5"
             },
             {
                 "addr": "DB490,B39",
-                "name": "rbt08_Temp_Axis6"
+                "name": "08_Temp_Axis6"
             },
             {
                 "addr": "DB490,B40",
-                "name": "rbt08_Temp_Axis7"
+                "name": "08_Temp_Axis7"
             },
             {
                 "addr": "DB490,B41",
-                "name": "rbt08_Temp_Axis8"
+                "name": "08_Temp_Axis8"
             },
             {
                 "addr": "DB491,I2",
-                "name": "rbt09_Curr_Axis1"
+                "name": "09_Curr_Axis1"
             },
             {
                 "addr": "DB491,I4",
-                "name": "rbt09_Curr_Axis2"
+                "name": "09_Curr_Axis2"
             },
             {
                 "addr": "DB491,I6",
-                "name": "rbt09_Curr_Axis3"
+                "name": "09_Curr_Axis3"
             },
             {
                 "addr": "DB491,I8",
-                "name": "rbt09_Curr_Axis4"
+                "name": "09_Curr_Axis4"
             },
             {
                 "addr": "DB491,I10",
-                "name": "rbt09_Curr_Axis5"
+                "name": "09_Curr_Axis5"
             },
             {
                 "addr": "DB491,I12",
-                "name": "rbt09_Curr_Axis6"
+                "name": "09_Curr_Axis6"
             },
             {
                 "addr": "DB491,I14",
-                "name": "rbt09_Curr_Axis7"
+                "name": "09_Curr_Axis7"
             },
             {
                 "addr": "DB491,I16",
-                "name": "rbt09_Curr_Axis8"
+                "name": "09_Curr_Axis8"
             },
             {
                 "addr": "DB491,I18",
-                "name": "rbt09_Torq_Axis1"
+                "name": "09_Torq_Axis1"
             },
             {
                 "addr": "DB491,I20",
-                "name": "rbt09_Torq_Axis2"
+                "name": "09_Torq_Axis2"
             },
             {
                 "addr": "DB491,I22",
-                "name": "rbt09_Torq_Axis3"
+                "name": "09_Torq_Axis3"
             },
             {
                 "addr": "DB491,I24",
-                "name": "rbt09_Torq_Axis4"
+                "name": "09_Torq_Axis4"
             },
             {
                 "addr": "DB491,I26",
-                "name": "rbt09_Torq_Axis5"
+                "name": "09_Torq_Axis5"
             },
             {
                 "addr": "DB491,I28",
-                "name": "rbt09_Torq_Axis6"
+                "name": "09_Torq_Axis6"
             },
             {
                 "addr": "DB491,I30",
-                "name": "rbt09_Torq_Axis7"
+                "name": "09_Torq_Axis7"
             },
             {
                 "addr": "DB491,I32",
-                "name": "rbt09_Torq_Axis8"
+                "name": "09_Torq_Axis8"
             },
             {
                 "addr": "DB491,B34",
-                "name": "rbt09_Temp_Axis1"
+                "name": "09_Temp_Axis1"
             },
             {
                 "addr": "DB491,B35",
-                "name": "rbt09_Temp_Axis2"
+                "name": "09_Temp_Axis2"
             },
             {
                 "addr": "DB491,B36",
-                "name": "rbt09_Temp_Axis3"
+                "name": "09_Temp_Axis3"
             },
             {
                 "addr": "DB491,B37",
-                "name": "rbt09_Temp_Axis4"
+                "name": "09_Temp_Axis4"
             },
             {
                 "addr": "DB491,B38",
-                "name": "rbt09_Temp_Axis5"
+                "name": "09_Temp_Axis5"
             },
             {
                 "addr": "DB491,B39",
-                "name": "rbt09_Temp_Axis6"
+                "name": "09_Temp_Axis6"
             },
             {
                 "addr": "DB491,B40",
-                "name": "rbt09_Temp_Axis7"
+                "name": "09_Temp_Axis7"
             },
             {
                 "addr": "DB491,B41",
-                "name": "rbt09_Temp_Axis8"
+                "name": "09_Temp_Axis8"
             },
             {
                 "addr": "DB492,I2",
-                "name": "rbt10_Curr_Axis1"
+                "name": "10_Curr_Axis1"
             },
             {
                 "addr": "DB492,I4",
-                "name": "rbt10_Curr_Axis2"
+                "name": "10_Curr_Axis2"
             },
             {
                 "addr": "DB492,I6",
-                "name": "rbt10_Curr_Axis3"
+                "name": "10_Curr_Axis3"
             },
             {
                 "addr": "DB492,I8",
-                "name": "rbt10_Curr_Axis4"
+                "name": "10_Curr_Axis4"
             },
             {
                 "addr": "DB492,I10",
-                "name": "rbt10_Curr_Axis5"
+                "name": "10_Curr_Axis5"
             },
             {
                 "addr": "DB492,I12",
-                "name": "rbt10_Curr_Axis6"
+                "name": "10_Curr_Axis6"
             },
             {
                 "addr": "DB492,I14",
-                "name": "rbt10_Curr_Axis7"
+                "name": "10_Curr_Axis7"
             },
             {
                 "addr": "DB492,I16",
-                "name": "rbt10_Curr_Axis8"
+                "name": "10_Curr_Axis8"
             },
             {
                 "addr": "DB492,I18",
-                "name": "rbt10_Torq_Axis1"
+                "name": "10_Torq_Axis1"
             },
             {
                 "addr": "DB492,I20",
-                "name": "rbt10_Torq_Axis2"
+                "name": "10_Torq_Axis2"
             },
             {
                 "addr": "DB492,I22",
-                "name": "rbt10_Torq_Axis3"
+                "name": "10_Torq_Axis3"
             },
             {
                 "addr": "DB492,I24",
-                "name": "rbt10_Torq_Axis4"
+                "name": "10_Torq_Axis4"
             },
             {
                 "addr": "DB492,I26",
-                "name": "rbt10_Torq_Axis5"
+                "name": "10_Torq_Axis5"
             },
             {
                 "addr": "DB492,I28",
-                "name": "rbt10_Torq_Axis6"
+                "name": "10_Torq_Axis6"
             },
             {
                 "addr": "DB492,I30",
-                "name": "rbt10_Torq_Axis7"
+                "name": "10_Torq_Axis7"
             },
             {
                 "addr": "DB492,I32",
-                "name": "rbt10_Torq_Axis8"
+                "name": "10_Torq_Axis8"
             },
             {
                 "addr": "DB492,B34",
-                "name": "rbt10_Temp_Axis1"
+                "name": "10_Temp_Axis1"
             },
             {
                 "addr": "DB492,B35",
-                "name": "rbt10_Temp_Axis2"
+                "name": "10_Temp_Axis2"
             },
             {
                 "addr": "DB492,B36",
-                "name": "rbt10_Temp_Axis3"
+                "name": "10_Temp_Axis3"
             },
             {
                 "addr": "DB492,B37",
-                "name": "rbt10_Temp_Axis4"
+                "name": "10_Temp_Axis4"
             },
             {
                 "addr": "DB492,B38",
-                "name": "rbt10_Temp_Axis5"
+                "name": "10_Temp_Axis5"
             },
             {
                 "addr": "DB492,B39",
-                "name": "rbt10_Temp_Axis6"
+                "name": "10_Temp_Axis6"
             },
             {
                 "addr": "DB492,B40",
-                "name": "rbt10_Temp_Axis7"
+                "name": "10_Temp_Axis7"
             },
             {
                 "addr": "DB492,B41",
-                "name": "rbt10_Temp_Axis8"
+                "name": "10_Temp_Axis8"
             },
             {
                 "addr": "DB493,I2",
-                "name": "rbt11_Curr_Axis1"
+                "name": "11_Curr_Axis1"
             },
             {
                 "addr": "DB493,I4",
-                "name": "rbt11_Curr_Axis2"
+                "name": "11_Curr_Axis2"
             },
             {
                 "addr": "DB493,I6",
-                "name": "rbt11_Curr_Axis3"
+                "name": "11_Curr_Axis3"
             },
             {
                 "addr": "DB493,I8",
-                "name": "rbt11_Curr_Axis4"
+                "name": "11_Curr_Axis4"
             },
             {
                 "addr": "DB493,I10",
-                "name": "rbt11_Curr_Axis5"
+                "name": "11_Curr_Axis5"
             },
             {
                 "addr": "DB493,I12",
-                "name": "rbt11_Curr_Axis6"
+                "name": "11_Curr_Axis6"
             },
             {
                 "addr": "DB493,I14",
-                "name": "rbt11_Curr_Axis7"
+                "name": "11_Curr_Axis7"
             },
             {
                 "addr": "DB493,I16",
-                "name": "rbt11_Curr_Axis8"
+                "name": "11_Curr_Axis8"
             },
             {
                 "addr": "DB493,I18",
-                "name": "rbt11_Torq_Axis1"
+                "name": "11_Torq_Axis1"
             },
             {
                 "addr": "DB493,I20",
-                "name": "rbt11_Torq_Axis2"
+                "name": "11_Torq_Axis2"
             },
             {
                 "addr": "DB493,I22",
-                "name": "rbt11_Torq_Axis3"
+                "name": "11_Torq_Axis3"
             },
             {
                 "addr": "DB493,I24",
-                "name": "rbt11_Torq_Axis4"
+                "name": "11_Torq_Axis4"
             },
             {
                 "addr": "DB493,I26",
-                "name": "rbt11_Torq_Axis5"
+                "name": "11_Torq_Axis5"
             },
             {
                 "addr": "DB493,I28",
-                "name": "rbt11_Torq_Axis6"
+                "name": "11_Torq_Axis6"
             },
             {
                 "addr": "DB493,I30",
-                "name": "rbt11_Torq_Axis7"
+                "name": "11_Torq_Axis7"
             },
             {
                 "addr": "DB493,I32",
-                "name": "rbt11_Torq_Axis8"
+                "name": "11_Torq_Axis8"
             },
             {
                 "addr": "DB493,B34",
-                "name": "rbt11_Temp_Axis1"
+                "name": "11_Temp_Axis1"
             },
             {
                 "addr": "DB493,B35",
-                "name": "rbt11_Temp_Axis2"
+                "name": "11_Temp_Axis2"
             },
             {
                 "addr": "DB493,B36",
-                "name": "rbt11_Temp_Axis3"
+                "name": "11_Temp_Axis3"
             },
             {
                 "addr": "DB493,B37",
-                "name": "rbt11_Temp_Axis4"
+                "name": "11_Temp_Axis4"
             },
             {
                 "addr": "DB493,B38",
-                "name": "rbt11_Temp_Axis5"
+                "name": "11_Temp_Axis5"
             },
             {
                 "addr": "DB493,B39",
-                "name": "rbt11_Temp_Axis6"
+                "name": "11_Temp_Axis6"
             },
             {
                 "addr": "DB493,B40",
-                "name": "rbt11_Temp_Axis7"
+                "name": "11_Temp_Axis7"
             },
             {
                 "addr": "DB493,B41",
-                "name": "rbt11_Temp_Axis8"
+                "name": "11_Temp_Axis8"
             },
             {
                 "addr": "DB494,I2",
-                "name": "rbt12_Curr_Axis1"
+                "name": "12_Curr_Axis1"
             },
             {
                 "addr": "DB494,I4",
-                "name": "rbt12_Curr_Axis2"
+                "name": "12_Curr_Axis2"
             },
             {
                 "addr": "DB494,I6",
-                "name": "rbt12_Curr_Axis3"
+                "name": "12_Curr_Axis3"
             },
             {
                 "addr": "DB494,I8",
-                "name": "rbt12_Curr_Axis4"
+                "name": "12_Curr_Axis4"
             },
             {
                 "addr": "DB494,I10",
-                "name": "rbt12_Curr_Axis5"
+                "name": "12_Curr_Axis5"
             },
             {
                 "addr": "DB494,I12",
-                "name": "rbt12_Curr_Axis6"
+                "name": "12_Curr_Axis6"
             },
             {
                 "addr": "DB494,I14",
-                "name": "rbt12_Curr_Axis7"
+                "name": "12_Curr_Axis7"
             },
             {
                 "addr": "DB494,I16",
-                "name": "rbt12_Curr_Axis8"
+                "name": "12_Curr_Axis8"
             },
             {
                 "addr": "DB494,I18",
-                "name": "rbt12_Torq_Axis1"
+                "name": "12_Torq_Axis1"
             },
             {
                 "addr": "DB494,I20",
-                "name": "rbt12_Torq_Axis2"
+                "name": "12_Torq_Axis2"
             },
             {
                 "addr": "DB494,I22",
-                "name": "rbt12_Torq_Axis3"
+                "name": "12_Torq_Axis3"
             },
             {
                 "addr": "DB494,I24",
-                "name": "rbt12_Torq_Axis4"
+                "name": "12_Torq_Axis4"
             },
             {
                 "addr": "DB494,I26",
-                "name": "rbt12_Torq_Axis5"
+                "name": "12_Torq_Axis5"
             },
             {
                 "addr": "DB494,I28",
-                "name": "rbt12_Torq_Axis6"
+                "name": "12_Torq_Axis6"
             },
             {
                 "addr": "DB494,I30",
-                "name": "rbt12_Torq_Axis7"
+                "name": "12_Torq_Axis7"
             },
             {
                 "addr": "DB494,I32",
-                "name": "rbt12_Torq_Axis8"
+                "name": "12_Torq_Axis8"
             },
             {
                 "addr": "DB494,B34",
-                "name": "rbt12_Temp_Axis1"
+                "name": "12_Temp_Axis1"
             },
             {
                 "addr": "DB494,B35",
-                "name": "rbt12_Temp_Axis2"
+                "name": "12_Temp_Axis2"
             },
             {
                 "addr": "DB494,B36",
-                "name": "rbt12_Temp_Axis3"
+                "name": "12_Temp_Axis3"
             },
             {
                 "addr": "DB494,B37",
-                "name": "rbt12_Temp_Axis4"
+                "name": "12_Temp_Axis4"
             },
             {
                 "addr": "DB494,B38",
-                "name": "rbt12_Temp_Axis5"
+                "name": "12_Temp_Axis5"
             },
             {
                 "addr": "DB494,B39",
-                "name": "rbt12_Temp_Axis6"
+                "name": "12_Temp_Axis6"
             },
             {
                 "addr": "DB494,B40",
-                "name": "rbt12_Temp_Axis7"
+                "name": "12_Temp_Axis7"
             },
             {
                 "addr": "DB494,B41",
-                "name": "rbt12_Temp_Axis8"
+                "name": "12_Temp_Axis8"
             },
             {
                 "addr": "DB495,I2",
-                "name": "rbt13_Curr_Axis1"
+                "name": "13_Curr_Axis1"
             },
             {
                 "addr": "DB495,I4",
-                "name": "rbt13_Curr_Axis2"
+                "name": "13_Curr_Axis2"
             },
             {
                 "addr": "DB495,I6",
-                "name": "rbt13_Curr_Axis3"
+                "name": "13_Curr_Axis3"
             },
             {
                 "addr": "DB495,I8",
-                "name": "rbt13_Curr_Axis4"
+                "name": "13_Curr_Axis4"
             },
             {
                 "addr": "DB495,I10",
-                "name": "rbt13_Curr_Axis5"
+                "name": "13_Curr_Axis5"
             },
             {
                 "addr": "DB495,I12",
-                "name": "rbt13_Curr_Axis6"
+                "name": "13_Curr_Axis6"
             },
             {
                 "addr": "DB495,I14",
-                "name": "rbt13_Curr_Axis7"
+                "name": "13_Curr_Axis7"
             },
             {
                 "addr": "DB495,I16",
-                "name": "rbt13_Curr_Axis8"
+                "name": "13_Curr_Axis8"
             },
             {
                 "addr": "DB495,I18",
-                "name": "rbt13_Torq_Axis1"
+                "name": "13_Torq_Axis1"
             },
             {
                 "addr": "DB495,I20",
-                "name": "rbt13_Torq_Axis2"
+                "name": "13_Torq_Axis2"
             },
             {
                 "addr": "DB495,I22",
-                "name": "rbt13_Torq_Axis3"
+                "name": "13_Torq_Axis3"
             },
             {
                 "addr": "DB495,I24",
-                "name": "rbt13_Torq_Axis4"
+                "name": "13_Torq_Axis4"
             },
             {
                 "addr": "DB495,I26",
-                "name": "rbt13_Torq_Axis5"
+                "name": "13_Torq_Axis5"
             },
             {
                 "addr": "DB495,I28",
-                "name": "rbt13_Torq_Axis6"
+                "name": "13_Torq_Axis6"
             },
             {
                 "addr": "DB495,I30",
-                "name": "rbt13_Torq_Axis7"
+                "name": "13_Torq_Axis7"
             },
             {
                 "addr": "DB495,I32",
-                "name": "rbt13_Torq_Axis8"
+                "name": "13_Torq_Axis8"
             },
             {
                 "addr": "DB495,B34",
-                "name": "rbt13_Temp_Axis1"
+                "name": "13_Temp_Axis1"
             },
             {
                 "addr": "DB495,B35",
-                "name": "rbt13_Temp_Axis2"
+                "name": "13_Temp_Axis2"
             },
             {
                 "addr": "DB495,B36",
-                "name": "rbt13_Temp_Axis3"
+                "name": "13_Temp_Axis3"
             },
             {
                 "addr": "DB495,B37",
-                "name": "rbt13_Temp_Axis4"
+                "name": "13_Temp_Axis4"
             },
             {
                 "addr": "DB495,B38",
-                "name": "rbt13_Temp_Axis5"
+                "name": "13_Temp_Axis5"
             },
             {
                 "addr": "DB495,B39",
-                "name": "rbt13_Temp_Axis6"
+                "name": "13_Temp_Axis6"
             },
             {
                 "addr": "DB495,B40",
-                "name": "rbt13_Temp_Axis7"
+                "name": "13_Temp_Axis7"
             },
             {
                 "addr": "DB495,B41",
-                "name": "rbt13_Temp_Axis8"
+                "name": "13_Temp_Axis8"
             },
             {
                 "addr": "DB497,I2",
-                "name": "rbt14_Curr_Axis1"
+                "name": "14_Curr_Axis1"
             },
             {
                 "addr": "DB497,I4",
-                "name": "rbt14_Curr_Axis2"
+                "name": "14_Curr_Axis2"
             },
             {
                 "addr": "DB497,I6",
-                "name": "rbt14_Curr_Axis3"
+                "name": "14_Curr_Axis3"
             },
             {
                 "addr": "DB497,I8",
-                "name": "rbt14_Curr_Axis4"
+                "name": "14_Curr_Axis4"
             },
             {
                 "addr": "DB497,I10",
-                "name": "rbt14_Curr_Axis5"
+                "name": "14_Curr_Axis5"
             },
             {
                 "addr": "DB497,I12",
-                "name": "rbt14_Curr_Axis6"
+                "name": "14_Curr_Axis6"
             },
             {
                 "addr": "DB497,I14",
-                "name": "rbt14_Curr_Axis7"
+                "name": "14_Curr_Axis7"
             },
             {
                 "addr": "DB497,I16",
-                "name": "rbt14_Curr_Axis8"
+                "name": "14_Curr_Axis8"
             },
             {
                 "addr": "DB497,I18",
-                "name": "rbt14_Torq_Axis1"
+                "name": "14_Torq_Axis1"
             },
             {
                 "addr": "DB497,I20",
-                "name": "rbt14_Torq_Axis2"
+                "name": "14_Torq_Axis2"
             },
             {
                 "addr": "DB497,I22",
-                "name": "rbt14_Torq_Axis3"
+                "name": "14_Torq_Axis3"
             },
             {
                 "addr": "DB497,I24",
-                "name": "rbt14_Torq_Axis4"
+                "name": "14_Torq_Axis4"
             },
             {
                 "addr": "DB497,I26",
-                "name": "rbt14_Torq_Axis5"
+                "name": "14_Torq_Axis5"
             },
             {
                 "addr": "DB497,I28",
-                "name": "rbt14_Torq_Axis6"
+                "name": "14_Torq_Axis6"
             },
             {
                 "addr": "DB497,I30",
-                "name": "rbt14_Torq_Axis7"
+                "name": "14_Torq_Axis7"
             },
             {
                 "addr": "DB497,I32",
-                "name": "rbt14_Torq_Axis8"
+                "name": "14_Torq_Axis8"
             },
             {
                 "addr": "DB497,B34",
-                "name": "rbt14_Temp_Axis1"
+                "name": "14_Temp_Axis1"
             },
             {
                 "addr": "DB497,B35",
-                "name": "rbt14_Temp_Axis2"
+                "name": "14_Temp_Axis2"
             },
             {
                 "addr": "DB497,B36",
-                "name": "rbt14_Temp_Axis3"
+                "name": "14_Temp_Axis3"
             },
             {
                 "addr": "DB497,B37",
-                "name": "rbt14_Temp_Axis4"
+                "name": "14_Temp_Axis4"
             },
             {
                 "addr": "DB497,B38",
-                "name": "rbt14_Temp_Axis5"
+                "name": "14_Temp_Axis5"
             },
             {
                 "addr": "DB497,B39",
-                "name": "rbt14_Temp_Axis6"
+                "name": "14_Temp_Axis6"
             },
             {
                 "addr": "DB497,B40",
-                "name": "rbt14_Temp_Axis7"
+                "name": "14_Temp_Axis7"
             },
             {
                 "addr": "DB497,B41",
-                "name": "rbt14_Temp_Axis8"
+                "name": "14_Temp_Axis8"
             }
         ]
     },
@@ -6967,7 +6908,7 @@
         "z": "1a84d6e3645699d7",
         "tdsVersion": "7_4",
         "name": "SQL",
-        "server": "DESKTOP-UEMD3BN\\MSSQLSERVER2022",
+        "server": "192.168.1.64",
         "port": "1433",
         "encyption": true,
         "trustServerCertificate": true,
@@ -7019,7 +6960,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": 2000,
-        "name": "",
+        "name": "Cycle Time",
         "vartable": [
             {
                 "addr": "DB428,S248.10",
@@ -7057,7 +6998,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": 2000,
-        "name": "",
+        "name": "Spot Count",
         "vartable": [
             {
                 "addr": "DB428,I0",
@@ -7259,7 +7200,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": "1000",
-        "name": "",
+        "name": "ML 10 New",
         "vartable": [
             {
                 "addr": "DB100,X0.0",
@@ -7766,7 +7707,7 @@
                 "name": "ML10_126"
             },
             {
-                "addr": "DB350,X2..2",
+                "addr": "DB350,X2.2",
                 "name": "ML10_127"
             },
             {
@@ -7884,49 +7825,6 @@
         "readOnlyIntent": false
     },
     {
-        "id": "plc1",
-        "type": "s7 endpoint",
-        "transport": "iso-on-tcp",
-        "address": "192.168.1.50",
-        "port": "102",
-        "rack": "0",
-        "slot": "1",
-        "localtsaphi": "01",
-        "localtsaplo": "00",
-        "remotetsaphi": "01",
-        "remotetsaplo": "00",
-        "connmode": "rack-slot",
-        "adapter": "",
-        "busaddr": "",
-        "cycletime": "",
-        "timeout": 1500,
-        "name": "Siemens PLC",
-        "vartable": [
-            {
-                "addr": "DB100,X2.3",
-                "name": "ABC"
-            }
-        ]
-    },
-    {
-        "id": "sql1",
-        "type": "MSSQL-CN",
-        "name": "SQL Connection",
-        "server": "YOUR_SQL_SERVER",
-        "port": "1433",
-        "encyption": false,
-        "trustServerCertificate": false,
-        "database": "YOUR_DB",
-        "useUTC": true,
-        "connectTimeout": "15000",
-        "requestTimeout": "15000",
-        "cancelTimeout": "5000",
-        "pool": "5",
-        "parseJSON": false,
-        "enableArithAbort": true,
-        "readOnlyIntent": false
-    },
-    {
         "id": "71544e44785cedfb",
         "type": "MSSQL-CN",
         "z": "fdbb4441f79199f2",
@@ -7964,7 +7862,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": "1000",
-        "name": "",
+        "name": "ML 20 New",
         "vartable": [
             {
                 "addr": "DB100,X0.5",
@@ -9742,7 +9640,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": "1000",
-        "name": "",
+        "name": "ML 30 New",
         "vartable": [
             {
                 "addr": "DB100,X4.0",
@@ -10820,7 +10718,7 @@
         "busaddr": 2,
         "cycletime": 1000,
         "timeout": "1000",
-        "name": "",
+        "name": "Flow ML 40 new",
         "vartable": [
             {
                 "addr": "DB100,X5.2",
@@ -11361,6 +11259,18 @@
             {
                 "addr": "DB350,X10.5",
                 "name": "ML40_139"
+            },
+            {
+                "addr": "DB303,X1.6",
+                "name": "Misc_1"
+            },
+            {
+                "addr": "DB395,X0.0",
+                "name": "Misc_2"
+            },
+            {
+                "addr": "DB395,X3.7",
+                "name": "Misc_3"
             }
         ]
     },
@@ -11383,6 +11293,112 @@
         "parseJSON": false,
         "enableArithAbort": true,
         "readOnlyIntent": false
+    },
+    {
+        "id": "s7endpoint1",
+        "type": "s7 endpoint",
+        "z": "1a84d6e3645699d7",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "",
+        "cycletime": "5000",
+        "timeout": 1500,
+        "name": "Current Torqe Temp",
+        "vartable": [
+            {
+                "addr": "DB120,R10",
+                "name": "Load"
+            }
+        ]
+    },
+    {
+        "id": "7dd5cd65d6bef1e2",
+        "type": "s7 endpoint",
+        "z": "502c7cc05ab695d2",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "",
+        "cycletime": "5000",
+        "timeout": 1500,
+        "name": "PLC Status",
+        "vartable": [
+            {
+                "addr": "DB120,R10",
+                "name": "Load"
+            }
+        ]
+    },
+    {
+        "id": "927afbcac95a5477",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "ABC",
+        "vartable": [
+            {
+                "addr": "DB100,X0.0",
+                "name": "Tag1"
+            },
+            {
+                "addr": "DB100,X0.1",
+                "name": "Tag11"
+            }
+        ]
+    },
+    {
+        "id": "698332a4fb1999c3",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "ABC",
+        "vartable": [
+            {
+                "addr": "DB100,X2.3",
+                "name": "Tag2"
+            }
+        ]
     },
     {
         "id": "2caf7da1d841fdb1",
@@ -11835,7 +11851,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
+        "x": 670,
         "y": 220,
         "wires": []
     },
@@ -12047,7 +12063,7 @@
         "diff": true,
         "name": "S7 Node ML_10",
         "x": 80,
-        "y": 100,
+        "y": 140,
         "wires": [
             [
                 "022a93c79ec28ea1"
@@ -12074,8 +12090,8 @@
         "rowsType": "msg",
         "parseMustache": false,
         "params": [],
-        "x": 490,
-        "y": 100,
+        "x": 530,
+        "y": 140,
         "wires": [
             []
         ]
@@ -12085,7 +12101,7 @@
         "type": "function",
         "z": "4130cccc0fa67e06",
         "name": "function ML_10",
-        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\" });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\" });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\nnode.warn(JSON.stringify(rows));\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML10 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\",Timestamp:new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\nnode.warn(rows)\n\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML10 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -12093,7 +12109,7 @@
         "finalize": "",
         "libs": [],
         "x": 300,
-        "y": 100,
+        "y": 140,
         "wires": [
             [
                 "8b024b73670566b5"
@@ -12153,6 +12169,52 @@
         ]
     },
     {
+        "id": "4720de6d2b901b69",
+        "type": "inject",
+        "z": "4130cccc0fa67e06",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ML10_1\":true}",
+        "payloadType": "json",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e746b7f9fa552bac",
+        "type": "inject",
+        "z": "4130cccc0fa67e06",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ML10_1\":false}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "24a420bddcf8bb38",
         "type": "s7 in",
         "z": "48c45cbe6bb6019f",
@@ -12200,7 +12262,7 @@
         "type": "function",
         "z": "48c45cbe6bb6019f",
         "name": "function ML_20",
-        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\" });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\" });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\nnode.warn(JSON.stringify(rows));\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML20 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\", Timestamp: new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\nnode.warn(JSON.stringify(rows));\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML20 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -12268,6 +12330,52 @@
         ]
     },
     {
+        "id": "af1dcef54c5449fa",
+        "type": "inject",
+        "z": "48c45cbe6bb6019f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ML20_1\":true}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53e9907628e80e22",
+        "type": "inject",
+        "z": "48c45cbe6bb6019f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ML20_1\":false}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "712e5c82d7985d58",
         "type": "s7 in",
         "z": "4cb0b90ae176b7d1",
@@ -12315,7 +12423,7 @@
         "type": "function",
         "z": "4cb0b90ae176b7d1",
         "name": "function ML_30",
-        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\" });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\" });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\nnode.warn(JSON.stringify(rows));\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML30 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\", Timestamp: new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\nnode.warn(JSON.stringify(rows));\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML30 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -12383,6 +12491,52 @@
         ]
     },
     {
+        "id": "86b7dd3ac009cbd9",
+        "type": "inject",
+        "z": "4cb0b90ae176b7d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ML30_1\":false}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31d4ddbf1a7f133d",
+        "type": "inject",
+        "z": "4cb0b90ae176b7d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ML30_1\":true}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "0354bda002545e27",
         "type": "s7 in",
         "z": "bc2aab26b1ba020d",
@@ -12419,7 +12573,7 @@
         "rowsType": "msg",
         "parseMustache": false,
         "params": [],
-        "x": 490,
+        "x": 510,
         "y": 100,
         "wires": [
             []
@@ -12430,7 +12584,7 @@
         "type": "function",
         "z": "bc2aab26b1ba020d",
         "name": "function ML_40",
-        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\" });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\" });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\nnode.warn(JSON.stringify(rows));\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML40 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\", Timestamp: new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\nnode.warn(JSON.stringify(rows));\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML40 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -12498,11 +12652,57 @@
         ]
     },
     {
+        "id": "a28a0446ca5e4b90",
+        "type": "inject",
+        "z": "bc2aab26b1ba020d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Misc_1\":true}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c10429788c50eb1",
+        "type": "inject",
+        "z": "bc2aab26b1ba020d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Misc_1\":false}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "3ace388f45e1996f",
         "type": "function",
         "z": "b225c926a1394a08",
         "name": "Filter TRUE tags and prepare SQL",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedValue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    \n    if (current[tag] !== previous[tag]) {\n        changedValue.push({\n            name:tag,\n            val:current[tag]\n        });\n        \n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\nlet msgs = [];\n\nfor (let i = 0; i < changedValue.length; i++) {\n   \n        msgs.push({\n            payload: 'SP_Insert_TipChangeCount',\n            queryParams: [\n                { name: \"Name\", value: changedValue[i].name },\n                { name: \"Value\", value: changedValue[i].val },\n                \n            ],\n            queryMode: \"execute\"\n        });\n  \n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedValue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    \n    if (current[tag] !== previous[tag]) {\n        changedValue.push({\n            name:tag,\n            val:current[tag]\n        });\n        \n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\nlet msgs = [];\n\nfor (let i = 0; i < changedValue.length; i++) {\n   \n        msgs.push({\n            payload: 'SP_Insert_TipChangeCount',\n            queryParams: [\n                { name: \"Name\", value: changedValue[i].name },\n                { name: \"Value\", value: changedValue[i].val },\n                 { name: \"TimeStamp\", value: new Date().toISOString() }\n            ],\n            queryMode: \"execute\"\n        });\n  \n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -12551,8 +12751,8 @@
         "mode": "all",
         "variable": "",
         "diff": true,
-        "name": "",
-        "x": 180,
+        "name": "Tip Change Count",
+        "x": 170,
         "y": 60,
         "wires": [
             [
@@ -12600,13 +12800,13 @@
         "type": "file",
         "z": "b225c926a1394a08",
         "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\ATCError.txt",
+        "filename": "D:\\JBM\\Log\\Tip_Change_Count.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 660,
+        "x": 640,
         "y": 240,
         "wires": [
             []
@@ -12683,7 +12883,7 @@
         "variable": "",
         "diff": false,
         "name": "S7",
-        "x": 70,
+        "x": 90,
         "y": 100,
         "wires": [
             [
@@ -12696,7 +12896,7 @@
         "type": "function",
         "z": "1a84d6e3645699d7",
         "name": "Current_Torque_Temp",
-        "func": "let rows = [];\n\n\nfor (let key in msg.payload) {\n    let now = new Date().toISOString();\n    rows.push({ TagName: key, Value: String(msg.payload[key]),Timestamp:now });\n}\n\nmsg.payload = {\n    query: \"EXEC sp_Insert_RbtOverloadHistory @Json\",\n    params: [\n        { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    ]\n};\nreturn msg;\n",
+        "func": "msg.payload = {\n    value: msg.payload,\n    timestamp: new Date().toISOString()  // milliseconds since 1970\n};\n\n// let rows = [];\n\n\n// for (let key in msg.payload) {\n//     let now = new Date().toISOString();\n//     rows.push({ TagName: key, Value: String(msg.payload[key]),Timestamp:now });\n// }\n\nmsg.payload = {\n    query: \"EXEC sp_Insert_RbtOverloadHistory @Json\",\n    params: [\n        { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(msg.payload) }\n    ]\n};\nreturn msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -12738,40 +12938,32 @@
         ]
     },
     {
-        "id": "b52f0441220b048d",
-        "type": "debug",
+        "id": "661bc01da0729634",
+        "type": "inject",
         "z": "1a84d6e3645699d7",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
+        "name": "Inject Cabin Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"01_Curr_Axis1\":123,\"01_Torq_Axis1\":987,\"01_Temp_Axis1\":32,\"01_Curr_Axis2\":124,\"01_Torq_Axis2\":988,\"01_Temp_Axis2\":33,\"01_Curr_Axis3\":125,\"01_Torq_Axis3\":989,\"01_Temp_Axis3\":34,\"01_Curr_Axis4\":126,\"01_Torq_Axis4\":990,\"01_Temp_Axis4\":35,\"01_Curr_Axis5\":127,\"01_Torq_Axis5\":991,\"01_Temp_Axis5\":36,\"01_Curr_Axis6\":128,\"01_Torq_Axis6\":992,\"01_Temp_Axis6\":37,\"01_Curr_Axis7\":129,\"01_Torq_Axis7\":993,\"01_Temp_Axis7\":38,\"01_Curr_Axis8\":130,\"01_Torq_Axis8\":994,\"01_Temp_Axis8\":39,\"02_Curr_Axis1\":11,\"02_Torq_Axis1\":11,\"02_Temp_Axis1\":11,\"02_Curr_Axis2\":11,\"02_Torq_Axis2\":11,\"02_Temp_Axis2\":11,\"02_Curr_Axis3\":11,\"02_Torq_Axis3\":11,\"02_Temp_Axis3\":11,\"02_Curr_Axis4\":11,\"02_Torq_Axis4\":11,\"02_Temp_Axis4\":11,\"02_Curr_Axis5\":11,\"02_Torq_Axis5\":11,\"02_Temp_Axis5\":11,\"02_Curr_Axis6\":11,\"02_Torq_Axis6\":11,\"02_Temp_Axis6\":11,\"02_Curr_Axis7\":11,\"02_Torq_Axis7\":11,\"02_Temp_Axis7\":11,\"02_Curr_Axis8\":11,\"02_Torq_Axis8\":11,\"02_Temp_Axis8\":11,\"03_Curr_Axis1\":12,\"03_Torq_Axis1\":12,\"03_Temp_Axis1\":12,\"03_Curr_Axis2\":12,\"03_Torq_Axis2\":12,\"03_Temp_Axis2\":12,\"03_Curr_Axis3\":12,\"03_Torq_Axis3\":12,\"03_Temp_Axis3\":12,\"03_Curr_Axis4\":12,\"03_Torq_Axis4\":12,\"03_Temp_Axis4\":12,\"03_Curr_Axis5\":12,\"03_Torq_Axis5\":12,\"03_Temp_Axis5\":12,\"03_Curr_Axis6\":12,\"03_Torq_Axis6\":12,\"03_Temp_Axis6\":12,\"03_Curr_Axis7\":12,\"03_Torq_Axis7\":12,\"03_Temp_Axis7\":12,\"03_Curr_Axis8\":12,\"03_Torq_Axis8\":12,\"03_Temp_Axis8\":12}",
+        "payloadType": "json",
+        "x": 110,
         "y": 40,
-        "wires": []
-    },
-    {
-        "id": "54158621427a4d42",
-        "type": "file",
-        "z": "1a84d6e3645699d7",
-        "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\SpotCount.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 590,
-        "y": 180,
         "wires": [
-            []
+            [
+                "ea34e3131d953102"
+            ]
         ]
     },
     {
-        "id": "0a1d091bbcf8964c",
+        "id": "76279a7f6718e1ac",
         "type": "function",
         "z": "1a84d6e3645699d7",
         "name": "ERROR FUNCTION",
@@ -12783,26 +12975,43 @@
         "finalize": "",
         "libs": [],
         "x": 300,
-        "y": 180,
+        "y": 220,
         "wires": [
             [
-                "54158621427a4d42"
+                "5af90ae4fad3b29a"
             ]
         ]
     },
     {
-        "id": "f422e8fad0973314",
+        "id": "fc8edf9deb11c8e6",
         "type": "catch",
         "z": "1a84d6e3645699d7",
         "name": "",
         "scope": "group",
         "uncaught": false,
         "x": 90,
-        "y": 180,
+        "y": 220,
         "wires": [
             [
-                "0a1d091bbcf8964c"
+                "76279a7f6718e1ac"
             ]
+        ]
+    },
+    {
+        "id": "5af90ae4fad3b29a",
+        "type": "file",
+        "z": "1a84d6e3645699d7",
+        "name": "",
+        "filename": "D:\\JBM\\Log\\Flow_Current_Torque_Temp.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 590,
+        "y": 220,
+        "wires": [
+            []
         ]
     },
     {
@@ -12813,7 +13022,7 @@
         "mode": "all",
         "variable": "01",
         "diff": true,
-        "name": "",
+        "name": "Hourly Production",
         "x": 90,
         "y": 180,
         "wires": [
@@ -12827,7 +13036,7 @@
         "type": "function",
         "z": "77b8f05fc0c712f8",
         "name": "function 2",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Save current values for next time\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date();\n    let currentDate = now.getFullYear() + '-' +\n        String(now.getMonth() + 1).padStart(2, '0') + '-' +\n        String(now.getDate()).padStart(2, '0') + ' ' +\n        String(now.getHours()).padStart(2, '0') + ':' +\n        String(now.getMinutes()).padStart(2, '0') + ':' +\n        String(now.getSeconds()).padStart(2, '0');\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_HourlyProduction\",\n                queryParams: [\n                    { name: \"Name\", value: c.name },\n                    { name: \"Production_Count\", value: c.value },\n                    { name: \"Timestamp\", value: currentDate }\n                ],\n                queryMode: \"execute\"\n            });\n       console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Save current values for next time\nflow.set('previousTags', current);\nnode.warn(changed);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date().toISOString();\n    // let currentDate = now.getFullYear() + '-' +\n    //     String(now.getMonth() + 1).padStart(2, '0') + '-' +\n    //     String(now.getDate()).padStart(2, '0') + ' ' +\n    //     String(now.getHours()).padStart(2, '0') + ':' +\n    //     String(now.getMinutes()).padStart(2, '0') + ':' +\n    //     String(now.getSeconds()).padStart(2, '0');\n\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_HourlyProduction\",\n                queryParams: [\n                    { name: \"Name\", value: c.name },\n                    { name: \"Production_Count\", value: c.value },\n                    { name: \"Timestamp\", value: now }\n                ],\n                queryMode: \"execute\"\n            });\n       console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": "120",
         "noerr": 0,
@@ -12838,7 +13047,8 @@
         "y": 180,
         "wires": [
             [
-                "3e053b2c09523811"
+                "3e053b2c09523811",
+                "e754287c373e329f"
             ]
         ]
     },
@@ -12865,9 +13075,7 @@
         "x": 460,
         "y": 180,
         "wires": [
-            [
-                "e754287c373e329f"
-            ]
+            []
         ]
     },
     {
@@ -12910,13 +13118,13 @@
         "type": "file",
         "z": "77b8f05fc0c712f8",
         "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\Error.txt",
+        "filename": "D:\\JBM\\Log\\HP_Insert_Update.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 590,
+        "x": 580,
         "y": 260,
         "wires": [
             []
@@ -12934,16 +13142,62 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
-        "y": 180,
+        "x": 520,
+        "y": 100,
         "wires": []
+    },
+    {
+        "id": "673eb79b18be7e2d",
+        "type": "inject",
+        "z": "77b8f05fc0c712f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"01_RH\":\"20\",\"01_LH\":\"30\"}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "685bb85616311404",
+        "type": "inject",
+        "z": "77b8f05fc0c712f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"01_RH\":\"10\",\"01_LH\":\"20\"}",
+        "payloadType": "json",
+        "x": 90,
+        "y": 100,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "b682b57b8c5bee3e",
         "type": "function",
         "z": "047a2ed188a4b718",
         "name": "function 3",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changes\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Update stored tag states\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date();\n    \n\n    for (let i = 0; i < changed.length; i++) {\n        let tag = changed[i];\n\n        msgs.push({\n            payload:  \"sp_RobotHealthStatus\",\n            queryParams: [\n                { name:\"TagName\" , value:tag.name },\n                { name:\"Status\" ,value:tag.value},\n                { name:\"TimeStamp\",value:now}\n               \n            ],\n            queryMode: \"execute\"\n        });\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changes\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Update stored tag states\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date().toISOString();\n    \n\n    for (let i = 0; i < changed.length; i++) {\n        let tag = changed[i];\n\n        msgs.push({\n            payload:  \"sp_RobotHealthStatus\",\n            queryParams: [\n                { name:\"TagName\" , value:tag.name },\n                { name:\"Status\" ,value:tag.value},\n                { name:\"TimeStamp\",value:now}\n               \n            ],\n            queryMode: \"execute\"\n        });\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -12966,8 +13220,8 @@
         "mode": "all",
         "variable": "",
         "diff": true,
-        "name": "",
-        "x": 120,
+        "name": "Robot health Status",
+        "x": 110,
         "y": 140,
         "wires": [
             [
@@ -13006,13 +13260,13 @@
         "type": "file",
         "z": "047a2ed188a4b718",
         "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\RobotHealthError.txt",
+        "filename": "D:\\JBM\\Log\\Robot_health_Status.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 570,
+        "x": 530,
         "y": 240,
         "wires": [
             []
@@ -13054,6 +13308,52 @@
         ]
     },
     {
+        "id": "10806e42120858f9",
+        "type": "inject",
+        "z": "047a2ed188a4b718",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ML10_1_Active\":true}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d57f859170d17a17",
+        "type": "inject",
+        "z": "047a2ed188a4b718",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"ML10_1_Active\":false}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "8477498de13bfc7a",
         "type": "s7 in",
         "z": "a1e07c2d53e4c8ee",
@@ -13061,7 +13361,7 @@
         "mode": "single",
         "variable": "",
         "diff": false,
-        "name": "Read PLC Tags",
+        "name": "Shift Production",
         "x": 160,
         "y": 260,
         "wires": [
@@ -13112,13 +13412,13 @@
         "type": "file",
         "z": "a1e07c2d53e4c8ee",
         "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\ProductionError.txt",
+        "filename": "D:\\JBM\\Log\\Shift_Production_Insert.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 720,
+        "x": 690,
         "y": 580,
         "wires": [
             []
@@ -13141,10 +13441,12 @@
         "topic": "",
         "payload": "{\"SHIFT_A\":true,\"TARGETA\":100,\"ACTUALLHA\":101,\"ACTUALRHA\":102,\"Actual_CountA\":203}",
         "payloadType": "json",
-        "x": 120,
+        "x": 140,
         "y": 320,
         "wires": [
-            []
+            [
+                "349d171e0be9b349"
+            ]
         ]
     },
     {
@@ -13227,7 +13529,9 @@
         "x": 140,
         "y": 360,
         "wires": [
-            []
+            [
+                "349d171e0be9b349"
+            ]
         ]
     },
     {
@@ -13327,7 +13631,7 @@
         "type": "function",
         "z": "a1e07c2d53e4c8ee",
         "name": " Shift Production",
-        "func": "let data = msg.payload;\nif (data.SHIFT_A===true)\n{\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count: 0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n\n    params.Target_Count = data.TARGETA || 0;\n    params.Actual_CountLH = data.ACTUALLHA || 0;\n     params.Actual_CountRH = data.ACTUALRHA || 0;\n    params.Actual_Count = data.Actual_CountA || 0;\n   shift = \"A\";\n// Output for MSSQL\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n        { name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n}\n",
+        "func": "let data = msg.payload;\nif (data.SHIFT_A===false)\n{\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count: 0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n\n    params.Target_Count = data.TARGETA || 0;\n    params.Actual_CountLH = data.ACTUALLHA || 0;\n     params.Actual_CountRH = data.ACTUALRHA || 0;\n    params.Actual_Count = data.Actual_CountA || 0;\n   shift = \"A\";\n// Output for MSSQL\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n        { name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n}\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -13347,7 +13651,7 @@
         "type": "function",
         "z": "a1e07c2d53e4c8ee",
         "name": " Shift Production",
-        "func": "let data = msg.payload;\n\nif (data.SHIFT_B === true) {\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count :0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n\n     shift = \"B\";\n     params.Target_Count = data.TARGETB || 0;\n     params.Actual_CountLH = data.ACTUALLHB || 0;\n     params.Actual_CountRH = data.ACTUALRHB || 0;\n     params.Actual_Count = data.Actual_CountB || 0;\n\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n{ name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n}\n",
+        "func": "let data = msg.payload;\n\nif (data.SHIFT_B === false) {\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count :0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n\n     shift = \"B\";\n     params.Target_Count = data.TARGETB || 0;\n     params.Actual_CountLH = data.ACTUALLHB || 0;\n     params.Actual_CountRH = data.ACTUALRHB || 0;\n     params.Actual_Count = data.Actual_CountB || 0;\n\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n{ name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n}\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -13367,7 +13671,7 @@
         "type": "function",
         "z": "a1e07c2d53e4c8ee",
         "name": " Shift Production",
-        "func": "let data = msg.payload;\n\nif (data.SHIFT_C === true) {\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count :0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n     shift = \"C\";\n     params.Target_Count = data.TARGETC || 0;\n     params.Actual_CountLH = data.ACTUALLHC || 0;\n     params.Actual_CountRH = data.ACTUALRHC || 0;\n     params.Actual_Count = data.Actual_CountC || 0;\n\n// Output for MSSQL\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n        { name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n}\n",
+        "func": "let data = msg.payload;\n\nif (data.SHIFT_C === false) {\nlet shift = \"\";\nlet params = {\n    Target_Count: 0,\n    Actual_Count :0,\n    Actual_CountLH: 0,\n    Actual_CountRH: 0,\n};\n     shift = \"C\";\n     params.Target_Count = data.TARGETC || 0;\n     params.Actual_CountLH = data.ACTUALLHC || 0;\n     params.Actual_CountRH = data.ACTUALRHC || 0;\n     params.Actual_Count = data.Actual_CountC || 0;\n\n// Output for MSSQL\nmsg.payload = {\n    query: \"sp_USP_Shift_Production\",\n    queryParams: [\n        { name: \"Target_Count\", value: params.Target_Count },\n        { name: \"Actual_Count\", value: params.Actual_Count },\n        { name: \"Actual_CountLH\", value: params.Actual_CountLH },\n        { name: \"Actual_CountRH\", value: params.Actual_CountRH },\n        { name: \"Shift\", value: shift },\n        { name: \"TimeStamp\", value: new Date().toISOString() } // or pass actual shift end time if available\n    ],\n    queryMode: \"execute\"\n};\n\nreturn msg;\n}\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -13413,7 +13717,7 @@
         "type": "function",
         "z": "d56e9038cfc4ecfb",
         "name": "Filter TRUE tags and prepare SQL",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedToTrue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    if (current[tag] === true && previous[tag] !== true) {\n        changedToTrue.push(tag);\n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\n// Build SQL procedure calls\nlet now = new Date();\nlet timestamp = now.toISOString();\n\nlet msgs = [];\n\nfor (let i = 0; i < changedToTrue.length; i++) {\n    const key = changedToTrue[i];\n    const parts = key.split('_');\n\n    if (parts.length === 2) {\n        msgs.push({\n            payload: 'USP_Insert_Atc_TipChange_Collision',\n            queryParams: [\n                { name: \"RobotID\", value: parts[0] },\n                { name: \"EventType\", value: parts[1] },\n                { name: \"TimeStamp\", value: timestamp }\n            ],\n            queryMode: \"execute\"\n        });\n    }\n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedToTrue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    if (current[tag] === true && previous[tag] !== true) {\n        changedToTrue.push(tag);\n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\n// Build SQL procedure calls\nlet now = new Date();\nlet timestamp = now.toISOString();\n\nlet msgs = [];\n\nfor (let i = 0; i < changedToTrue.length; i++) {\n    const key = changedToTrue[i];\n    const parts = key.split('_');\n\n    if (parts.length === 2) {\n        msgs.push({\n            payload: 'USP_Insert_Atc_TipChange_Collision',\n            queryParams: [\n                { name: \"RobotID\", value: parts[0] },\n                { name: \"EventType\", value: parts[1] },\n                { name: \"TimeStamp\", value: new Date().toISOString() }\n            ],\n            queryMode: \"execute\"\n        });\n    }\n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -13462,8 +13766,8 @@
         "mode": "all",
         "variable": "",
         "diff": true,
-        "name": "",
-        "x": 320,
+        "name": "ATC Collision",
+        "x": 290,
         "y": 140,
         "wires": [
             [
@@ -13511,14 +13815,60 @@
         "type": "file",
         "z": "d56e9038cfc4ecfb",
         "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\ATCError.txt",
+        "filename": "D:\\JBM\\Log\\ACTIntruption_collision.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 780,
+        "x": 770,
         "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db9fe116b7e56482",
+        "type": "inject",
+        "z": "d56e9038cfc4ecfb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"01_Collision\":true}",
+        "payloadType": "json",
+        "x": 290,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1ca024276372247",
+        "type": "inject",
+        "z": "d56e9038cfc4ecfb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"01_Collision\":false}",
+        "payloadType": "json",
+        "x": 290,
+        "y": 80,
         "wires": [
             []
         ]
@@ -13545,7 +13895,7 @@
         "type": "function",
         "z": "5872bea43d03ee26",
         "name": "InsertonTime",
-        "func": "// Get current month and year key (e.g., 072025)\n//let now = new Date();\n//let key = String(now.getMonth() + 1).padStart(2, '0') + String(now.getFullYear());\nlet now = new Date();\n\nlet Newdate =\n  String(now.getDate()).padStart(2, '0') +          // DD\n  String(now.getMonth() + 1).padStart(2, '0') +     // MM\n  String(now.getFullYear());\n// Get tag values (replace with correct tag names)\nlet monthlyTarget = msg.payload.Monthly_Target || 0;\nlet monthlyActual = msg.payload.Monthly_Achieved || 0;\nlet ShiftA = msg.payload.ShiftA_Target || 0;\nlet ShiftB = msg.payload.ShiftB_Target || 0;\nlet ShiftC = msg.payload.ShiftC_Target || 0;\nlet DailyTarget=ShiftA+ShiftB+ShiftC;\nlet ShiftAchived = msg.payload.ShiftA_Achieved || 0;\nlet ShiftBAchived = msg.payload.ShiftB_Achieved || 0;\nlet ShiftCAchived = msg.payload.ShiftC_Achieved || 0;\nlet DailyAchived=ShiftAchived+ShiftBAchived+ShiftCAchived;\n// Prepare SQL message for stored procedure\nlet sqlMsg = {\n    payload: \"USP_InsertOrUpdate_Target_Production\",\n    queryParams: [\n        { name: \"Month\", value: parseInt(Newdate) },\n        { name: \"Monthly_Target\", value: monthlyTarget },\n        { name: \"Monthly_Actual\", value: monthlyActual },\n         { name: \"Daily_Target\", value: DailyTarget },\n         { name: \"Daily_Achieved\", value: DailyAchived }\n    ],\n    queryMode: \"execute\"\n};\n\nreturn [sqlMsg];\n",
+        "func": "// Get current month and year key (e.g., 072025)\n//let now = new Date();\n//let key = String(now.getMonth() + 1).padStart(2, '0') + String(now.getFullYear());\nlet now = new Date();\n\nlet Newdate =\n  String(now.getDate()).padStart(2, '0') +          // DD\n  String(now.getMonth() + 1).padStart(2, '0') +     // MM\n  String(now.getFullYear());\n// Get tag values (replace with correct tag names)\nlet monthlyTarget = msg.payload.Monthly_Target || 0;\nlet monthlyActual = msg.payload.Monthly_Achieved || 0;\nlet ShiftA = msg.payload.ShiftA_Target || 0;\nlet ShiftB = msg.payload.ShiftB_Target || 0;\nlet ShiftC = msg.payload.ShiftC_Target || 0;\nlet DailyTarget=ShiftA+ShiftB+ShiftC;\nlet ShiftAchived = msg.payload.ShiftA_Achieved || 0;\nlet ShiftBAchived = msg.payload.ShiftB_Achieved || 0;\nlet ShiftCAchived = msg.payload.ShiftC_Achieved || 0;\nlet DailyAchived=ShiftAchived+ShiftBAchived+ShiftCAchived;\n// Prepare SQL message for stored procedure\nlet sqlMsg = {\n    payload: \"USP_InsertOrUpdate_Target_Production\",\n    queryParams: [\n        { name: \"Month\", value: parseInt(Newdate) },\n        { name: \"Monthly_Target\", value: monthlyTarget },\n        { name: \"Monthly_Actual\", value: monthlyActual },\n         { name: \"Daily_Target\", value: DailyTarget },\n         { name: \"Daily_Achieved\", value: DailyAchived },\n          { name: \"TimeStamp\", value:new Date().toISOString() }\n    ],\n    queryMode: \"execute\"\n};\n\nreturn [sqlMsg];\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -13626,13 +13976,13 @@
         "type": "file",
         "z": "5872bea43d03ee26",
         "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\MontlyTargetError.txt",
+        "filename": "D:\\JBM\\Log\\Target_Daily_Monthly.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 610,
+        "x": 570,
         "y": 220,
         "wires": [
             []
@@ -13696,8 +14046,8 @@
         "mode": "all",
         "variable": "",
         "diff": true,
-        "name": "",
-        "x": 140,
+        "name": "Line Layout",
+        "x": 110,
         "y": 140,
         "wires": [
             [
@@ -13710,7 +14060,7 @@
         "type": "function",
         "z": "9dab2313a2f19c0b",
         "name": "function 4",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Save current values for next time\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date();\n    let currentDate = now.getFullYear() + '-' +\n        String(now.getMonth() + 1).padStart(2, '0') + '-' +\n        String(now.getDate()).padStart(2, '0') + ' ' +\n        String(now.getHours()).padStart(2, '0') + ':' +\n        String(now.getMinutes()).padStart(2, '0') + ':' +\n        String(now.getSeconds()).padStart(2, '0');\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_linestatus\",\n                queryParams: [\n                    { name: \"TagName\", value: c.name },\n                    { name: \"Status\", value: c.value },\n                    { name: \"Timestamp\", value: currentDate }\n                ],\n                queryMode: \"execute\"\n            });\n       console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Save current values for next time\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    // let now = new Date();\n    // let currentDate = now.getFullYear() + '-' +\n    //     String(now.getMonth() + 1).padStart(2, '0') + '-' +\n    //     String(now.getDate()).padStart(2, '0') + ' ' +\n    //     String(now.getHours()).padStart(2, '0') + ':' +\n    //     String(now.getMinutes()).padStart(2, '0') + ':' +\n    //     String(now.getSeconds()).padStart(2, '0');\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_linestatus\",\n                queryParams: [\n                    { name: \"TagName\", value: c.name },\n                    { name: \"Status\", value: c.value },\n                    { name: \"Timestamp\", value: new Date().toISOString() }\n                ],\n                queryMode: \"execute\"\n            });\n       console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -13775,9 +14125,7 @@
         "x": 90,
         "y": 60,
         "wires": [
-            [
-                "57e98e7c32c850f5"
-            ]
+            []
         ]
     },
     {
@@ -13804,9 +14152,7 @@
         "x": 130,
         "y": 240,
         "wires": [
-            [
-                "57e98e7c32c850f5"
-            ]
+            []
         ]
     },
     {
@@ -13814,13 +14160,13 @@
         "type": "file",
         "z": "9dab2313a2f19c0b",
         "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\LineLayoutError.txt",
+        "filename": "D:\\JBM\\Log\\Line_Layout.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 560,
+        "x": 500,
         "y": 320,
         "wires": [
             []
@@ -13889,7 +14235,7 @@
         "type": "function",
         "z": "d2f524c7386c779e",
         "name": "Prepare SP Call",
-        "func": "\nlet data = msg.payload;\nnode.warn(data);\n\n    // Prepare SQL data\n    let sqlMsg = {\n        payload: \"USP_Insert_Update_Cabin_Cycle\",\n        queryParams: [\n            {   name: \"CabinNo\", value: data.CabinNo },\n            {   name: \"StartDate\", value: data.StartDate },\n            {   name: \"EndDate\", value: data.EndDate },\n            {   name: \"CycleTime\", value: data.CycleTime }\n        ],\n        queryMode: \"execute\"\n    };\n\n    return sqlMsg;  // Only return when value changed\n",
+        "func": "\nlet data = msg.payload;\nnode.warn(data);\n\n    // Prepare SQL data\n    let sqlMsg = {\n        payload: \"USP_Insert_Update_Cabin_Cycle\",\n        queryParams: [\n            {   name: \"CabinNo\", value: data.CabinNo },\n            {   name: \"StartDate\", value: data.StartDate },\n            {   name: \"EndDate\", value: data.EndDate },\n            {   name: \"CycleTime\", value: data.CycleTime },\n            {   name: \"TimeStamp\", value:new Date().toISOString() }\n        ],\n        queryMode: \"execute\"\n    };\n\n    return sqlMsg;  // Only return when value changed\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -13970,13 +14316,13 @@
         "type": "file",
         "z": "d2f524c7386c779e",
         "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\CycleTimeError.txt",
+        "filename": "D:\\JBM\\Log\\cycle_Time.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 600,
+        "x": 540,
         "y": 380,
         "wires": [
             []
@@ -13990,8 +14336,8 @@
         "mode": "single",
         "variable": "",
         "diff": true,
-        "name": "",
-        "x": 120,
+        "name": "Cycle Time",
+        "x": 80,
         "y": 160,
         "wires": [
             [
@@ -14066,8 +14412,8 @@
         "mode": "all",
         "variable": "",
         "diff": true,
-        "name": "",
-        "x": 120,
+        "name": "Spot Count",
+        "x": 80,
         "y": 180,
         "wires": [
             [
@@ -14083,7 +14429,7 @@
         "type": "function",
         "z": "69c80b9824af6584",
         "name": "function ML10",
-        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML10 ========== //\n\nconst tags = [\"ML10_1_G1\", \"ML10_2_G1\", \"ML10_3_G1\", \"ML10_4_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML10));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML10 ========== //\n\nconst tags = [\"ML10_1_G1\", \"ML10_2_G1\", \"ML10_3_G1\", \"ML10_4_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML10));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14138,13 +14484,13 @@
         "type": "file",
         "z": "69c80b9824af6584",
         "name": "",
-        "filename": "\\\\192.168.1.64\\Vaibhav\\JBM\\SpotCount.txt",
+        "filename": "D:\\JBM\\Log\\Spot_Count.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": false,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 610,
+        "x": 560,
         "y": 380,
         "wires": [
             []
@@ -14168,7 +14514,7 @@
         "payload": "{\"ML10\":1,\"ML10_1_G1_Target\":\"100\",\"ML10_2_G1_Target\":\"100\",\"ML10_3_G1_Target\":\"100\",\"ML10_4_G1_Target\":\"100\",\"ML10_1_G1_Actual\":\"80\",\"ML10_2_G1_Actual\":\"80\",\"ML10_3_G1_Actual\":\"80\",\"ML10_4_G1_Actual\":\"80\"}",
         "payloadType": "json",
         "x": 140,
-        "y": 80,
+        "y": 40,
         "wires": [
             []
         ]
@@ -14191,7 +14537,7 @@
         "payload": "{\"ML10\":2,\"ML10_1_G1_Target\":\"100\",\"ML10_2_G1_Target\":\"100\",\"ML10_3_G1_Target\":\"100\",\"ML10_4_G1_Target\":\"100\",\"ML10_1_G1_Actual\":\"80\",\"ML10_2_G1_Actual\":\"80\",\"ML10_3_G1_Actual\":\"80\",\"ML10_4_G1_Actual\":\"80\"}",
         "payloadType": "json",
         "x": 140,
-        "y": 120,
+        "y": 80,
         "wires": [
             []
         ]
@@ -14283,7 +14629,7 @@
         "type": "function",
         "z": "69c80b9824af6584",
         "name": "function ML20",
-        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML20 ========== //\nconst tags = [\"ML20_5_G1\", \"ML20_6_G1\", \"ML20_7_G1\", \"ML20_7_G2\", \"ML20_7_G3\", \"ML20_8_G1\", \"ML20_8_G2\", \"ML20_8_G3\"];\ntags.forEach(tag => pushTagRow(tag, data.ML20)); \n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML20 ========== //\nconst tags = [\"ML20_5_G1\", \"ML20_6_G1\", \"ML20_7_G1\", \"ML20_7_G2\", \"ML20_7_G3\", \"ML20_8_G1\", \"ML20_8_G2\", \"ML20_8_G3\"];\ntags.forEach(tag => pushTagRow(tag, data.ML20)); \n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14323,7 +14669,7 @@
         "type": "function",
         "z": "69c80b9824af6584",
         "name": "function ML40",
-        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML40 ========== //\nconst tags = [\"ML40_11_G1\", \"ML40_12_G1\", \"ML40_13_G1\", \"ML40_14_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML40));\n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML40 ========== //\nconst tags = [\"ML40_11_G1\", \"ML40_12_G1\", \"ML40_13_G1\", \"ML40_14_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML40));\n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14343,7 +14689,7 @@
         "type": "function",
         "z": "69c80b9824af6584",
         "name": "function ML30",
-        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML30 ========== //\n\nconst tags = [\"ML30_9_G1\", \"ML30_10_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML30));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`])\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML30 ========== //\n\nconst tags = [\"ML30_9_G1\", \"ML30_10_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML30));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14382,7 +14728,7 @@
         "id": "706122ba56e085a6",
         "type": "s7 in",
         "z": "fdbb4441f79199f2",
-        "endpoint": "s7-ep",
+        "endpoint": "",
         "mode": "all",
         "variable": "",
         "diff": false,
@@ -14408,7 +14754,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 120,
+        "y": 100,
         "wires": [
             [
                 "a39c0f085c64d4da",
@@ -14459,158 +14805,122 @@
         "wires": []
     },
     {
-        "id": "plc_in",
-        "type": "inject",
-        "z": "91fcc6c4eea2fda6",
-        "name": "Simulate PLC Data",
-        "props": [
-            {
-                "p": "payload"
-            }
+        "id": "e67acb59bb0caf1d",
+        "type": "status",
+        "z": "502c7cc05ab695d2",
+        "name": "Status",
+        "scope": [
+            "s7in1"
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "topic": "",
-        "payload": "{\"ML10\":1,\"cycletime\":10,\"timestamp\":\"2025-09-04T14:00:00\"}",
-        "payloadType": "json",
-        "x": 130,
-        "y": 80,
-        "wires": [
-            [
-                "rbe_biwno"
-            ]
-        ]
-    },
-    {
-        "id": "rbe_biwno",
-        "type": "rbe",
-        "z": "91fcc6c4eea2fda6",
-        "name": "Only on biwno change",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.ML10",
-        "topi": "topic",
-        "x": 400,
-        "y": 80,
-        "wires": [
-            [
-                "debug_out"
-            ]
-        ]
-    },
-    {
-        "id": "debug_out",
-        "type": "debug",
-        "z": "91fcc6c4eea2fda6",
-        "name": "Output",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "x": 590,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "16613ce65ee5cbc4",
-        "type": "inject",
-        "z": "91fcc6c4eea2fda6",
-        "name": "Simulate PLC Data",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "topic": "",
-        "payload": "{\"ML20\":1,\"cycletime\":10,\"timestamp\":\"2025-09-04T14:00:00\"}",
-        "payloadType": "json",
-        "x": 130,
-        "y": 220,
-        "wires": [
-            [
-                "fdf5c0f76505cbd0"
-            ]
-        ]
-    },
-    {
-        "id": "fdf5c0f76505cbd0",
-        "type": "rbe",
-        "z": "91fcc6c4eea2fda6",
-        "name": "Only on biwno change",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.ML20",
-        "topi": "topic",
-        "x": 400,
-        "y": 140,
-        "wires": [
-            [
-                "debug_out"
-            ]
-        ]
-    },
-    {
-        "id": "31d7f8d95a35427f",
-        "type": "inject",
-        "z": "91fcc6c4eea2fda6",
-        "name": "Simulate PLC Data",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "topic": "",
-        "payload": "{\"ML10\":2,\"cycletime\":10,\"timestamp\":\"2025-09-04T14:00:00\"}",
-        "payloadType": "json",
-        "x": 130,
+        "x": 370,
         "y": 120,
         "wires": [
             [
-                "rbe_biwno"
+                "01e778e4a88376b9"
             ]
         ]
     },
     {
-        "id": "2c97083fbef687d3",
-        "type": "inject",
-        "z": "91fcc6c4eea2fda6",
-        "name": "Simulate PLC Data",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "topic": "",
-        "payload": "{\"ML20\":2,\"cycletime\":10,\"timestamp\":\"2025-09-04T14:00:00\"}",
-        "payloadType": "json",
-        "x": 150,
-        "y": 260,
+        "id": "01e778e4a88376b9",
+        "type": "function",
+        "z": "502c7cc05ab695d2",
+        "name": "function 4",
+        "func": "let plcName = \"MainPLC\"; // Customize as needed\nlet statusText = msg.status.text;  // e.g., \"connected\", \"disconnected\"\nlet timestamp = new Date().toISOString();\nif(statusText!= 'online')\n{\nmsg.payload = `[${timestamp}] PLC: ${plcName} Status: ${statusText}\\n`;\nnode.warn(msg.payload);\nreturn msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 120,
         "wires": [
             [
-                "fdf5c0f76505cbd0"
+                "7cce20d79b4e0cc2"
             ]
+        ]
+    },
+    {
+        "id": "7cce20d79b4e0cc2",
+        "type": "file",
+        "z": "502c7cc05ab695d2",
+        "name": "",
+        "filename": "D:\\JBM\\Log\\PLC_Status.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 740,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60780780c64cc66e",
+        "type": "catch",
+        "z": "502c7cc05ab695d2",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 200,
+        "y": 200,
+        "wires": [
+            [
+                "8d66ee34c8417fd3"
+            ]
+        ]
+    },
+    {
+        "id": "8d66ee34c8417fd3",
+        "type": "function",
+        "z": "502c7cc05ab695d2",
+        "name": "ERROR FUNCTION",
+        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 200,
+        "wires": [
+            [
+                "fdd2dae9dc14dc0e"
+            ]
+        ]
+    },
+    {
+        "id": "fdd2dae9dc14dc0e",
+        "type": "file",
+        "z": "502c7cc05ab695d2",
+        "name": "",
+        "filename": "D:\\JBM\\Log\\PLC_Status.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 740,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70a844866d4e64b1",
+        "type": "s7 in",
+        "z": "502c7cc05ab695d2",
+        "endpoint": "7dd5cd65d6bef1e2",
+        "mode": "all",
+        "diff": false,
+        "name": "PLC Status",
+        "x": 190,
+        "y": 120,
+        "wires": [
+            []
         ]
     }
 ]

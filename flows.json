@@ -14826,5 +14826,21 @@
         "x": 300,
         "y": 200,
         "wires": []
+    },
+    {
+        "id": "528bb0087df7ff22",
+        "type": "debug",
+        "z": "2c7b76b91ffbf54a",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 280,
+        "wires": []
     }
 ]

@@ -14801,9 +14801,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"Test1\":\"1\",\"Test2\":\"2\"}",
+        "payload": "{\"Test1\":\"1\"}",
         "payloadType": "json",
-        "x": 90,
+        "x": 110,
         "y": 100,
         "wires": [
             [

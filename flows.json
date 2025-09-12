@@ -159,6 +159,14 @@
         "env": []
     },
     {
+        "id": "2c7b76b91ffbf54a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "5f5798233d6334e6",
         "type": "MSSQL-CN",
         "z": "e07e4c26beb8b4f7",
@@ -14758,6 +14766,29 @@
         "name": "PLC Status",
         "x": 190,
         "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "00892bc7c99d32ba",
+        "type": "inject",
+        "z": "2c7b76b91ffbf54a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Test1\":true}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 100,
         "wires": [
             []
         ]

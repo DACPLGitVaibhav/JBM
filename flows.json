@@ -67,7 +67,7 @@
         "id": "b225c926a1394a08",
         "type": "tab",
         "label": "Tip_Change_Count",
-        "disabled": true,
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -83,7 +83,7 @@
         "id": "77b8f05fc0c712f8",
         "type": "tab",
         "label": "HP_Insert_Update",
-        "disabled": true,
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -155,6 +155,14 @@
         "type": "tab",
         "label": "PLC_Status",
         "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "61ad92684be24455",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -4259,196 +4267,8 @@
         "name": "PLC",
         "vartable": [
             {
-                "addr": "DB428,I0",
-                "name": "01_RH"
-            },
-            {
-                "addr": "DB428,I2",
-                "name": "02_RH"
-            },
-            {
-                "addr": "DB428,I4",
-                "name": "03_RH"
-            },
-            {
-                "addr": "DB428,I6",
-                "name": "04_RH"
-            },
-            {
-                "addr": "DB428,I8",
-                "name": "05_RH"
-            },
-            {
-                "addr": "DB428,I10",
-                "name": "06_RH"
-            },
-            {
-                "addr": "DB428,I12",
-                "name": "07_RH"
-            },
-            {
-                "addr": "DB428,I14",
-                "name": "08_RH"
-            },
-            {
-                "addr": "DB428,I16",
-                "name": "09_RH"
-            },
-            {
-                "addr": "DB428,I18",
-                "name": "10_RH"
-            },
-            {
-                "addr": "DB428,I20",
-                "name": "11_RH"
-            },
-            {
-                "addr": "DB428,I22",
-                "name": "12_RH"
-            },
-            {
-                "addr": "DB428,I24",
-                "name": "13_RH"
-            },
-            {
-                "addr": "DB428,I26",
-                "name": "14_RH"
-            },
-            {
-                "addr": "DB428,I28",
-                "name": "15_RH"
-            },
-            {
-                "addr": "DB428,I30",
-                "name": "16_RH"
-            },
-            {
-                "addr": "DB428,I32",
-                "name": "17_RH"
-            },
-            {
-                "addr": "DB428,I34",
-                "name": "18_RH"
-            },
-            {
-                "addr": "DB428,I36",
-                "name": "19_RH"
-            },
-            {
-                "addr": "DB428,I38",
-                "name": "20_RH"
-            },
-            {
-                "addr": "DB428,I40",
-                "name": "21_RH"
-            },
-            {
-                "addr": "DB428,I42",
-                "name": "22_RH"
-            },
-            {
-                "addr": "DB428,I44",
-                "name": "23_RH"
-            },
-            {
-                "addr": "DB428,I46",
-                "name": "24_RH"
-            },
-            {
-                "addr": "DB428,I60",
-                "name": "01_LH"
-            },
-            {
-                "addr": "DB428,I62",
-                "name": "02_LH"
-            },
-            {
-                "addr": "DB428,I64",
-                "name": "03_LH"
-            },
-            {
-                "addr": "DB428,I66",
-                "name": "04_LH"
-            },
-            {
-                "addr": "DB428,I68",
-                "name": "05_LH"
-            },
-            {
-                "addr": "DB428,I70",
-                "name": "06_LH"
-            },
-            {
-                "addr": "DB428,I72",
-                "name": "07_LH"
-            },
-            {
-                "addr": "DB428,I74",
-                "name": "08_LH"
-            },
-            {
-                "addr": "DB428,I76",
-                "name": "09_LH"
-            },
-            {
-                "addr": "DB428,I78",
-                "name": "10_LH"
-            },
-            {
-                "addr": "DB428,I80",
-                "name": "11_LH"
-            },
-            {
-                "addr": "DB428,I82",
-                "name": "12_LH"
-            },
-            {
-                "addr": "DB428,I84",
-                "name": "13_LH"
-            },
-            {
-                "addr": "DB428,I86",
-                "name": "14_LH"
-            },
-            {
-                "addr": "DB428,I88",
-                "name": "15_LH"
-            },
-            {
-                "addr": "DB428,I90",
-                "name": "16_LH"
-            },
-            {
-                "addr": "DB428,I92",
-                "name": "17_LH"
-            },
-            {
-                "addr": "DB428,I94",
-                "name": "18_LH"
-            },
-            {
-                "addr": "DB428,I96",
-                "name": "19_LH"
-            },
-            {
-                "addr": "DB428,I98",
-                "name": "20_LH"
-            },
-            {
-                "addr": "DB428,I100",
-                "name": "21_LH"
-            },
-            {
-                "addr": "DB428,I102",
-                "name": "22_LH"
-            },
-            {
-                "addr": "DB428,I104",
-                "name": "23_LH"
-            },
-            {
-                "addr": "DB428,I106",
-                "name": "24_LH"
+                "addr": "DB100,I286",
+                "name": "1"
             }
         ]
     },
@@ -11401,6 +11221,31 @@
         ]
     },
     {
+        "id": "48792a48b96c7658",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.50",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": 2,
+        "cycletime": 1000,
+        "timeout": 2000,
+        "name": "PLC1",
+        "vartable": [
+            {
+                "addr": "DB100,X2.3",
+                "name": "Tag1"
+            }
+        ]
+    },
+    {
         "id": "2caf7da1d841fdb1",
         "type": "debug",
         "z": "e07e4c26beb8b4f7",
@@ -12827,12 +12672,14 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"1_G1\":\"1\"}",
+        "payload": "{\"1_G1\":\"1\",\"2_G1\":\"1\",\"3_G1\":\"1\",\"4_G1\":\"1\",\"5_G1\":\"1\",\"6_G1\":\"1\",\"7_G1\":\"1\",\"7_G2\":\"1\",\"7_G3\":\"1\",\"8_G1\":\"1\",\"8_G2\":\"1\",\"8_G3\":\"1\",\"9_G1\":\"1\",\"10_G1\":\"1\",\"11_G1\":\"1\",\"12_G1\":\"1\",\"13_G1\":\"1\",\"14_G1\":\"1\"}",
         "payloadType": "json",
         "x": 230,
         "y": 120,
         "wires": [
-            []
+            [
+                "3ace388f45e1996f"
+            ]
         ]
     },
     {
@@ -12852,7 +12699,7 @@
         "wires": []
     },
     {
-        "id": "d3e9118137a8bcfc",
+        "id": "d4c6b70f847a7775",
         "type": "inject",
         "z": "b225c926a1394a08",
         "name": "inject 2",
@@ -12866,12 +12713,14 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"1_G1\":\"2\"}",
+        "payload": "{\"1_G1\":\"2\",\"2_G1\":\"2\",\"3_G1\":\"2\",\"4_G1\":\"2\",\"5_G1\":\"2\",\"6_G1\":\"2\",\"7_G1\":\"2\",\"7_G2\":\"2\",\"7_G3\":\"2\",\"8_G1\":\"2\",\"8_G2\":\"2\",\"8_G3\":\"2\",\"9_G1\":\"2\",\"10_G1\":\"2\",\"11_G1\":\"2\",\"12_G1\":\"2\",\"13_G1\":\"2\",\"14_G1\":\"2\"}",
         "payloadType": "json",
         "x": 230,
         "y": 160,
         "wires": [
-            []
+            [
+                "3ace388f45e1996f"
+            ]
         ]
     },
     {
@@ -13027,7 +12876,7 @@
         "y": 180,
         "wires": [
             [
-                "784091927262c47e"
+                "e754287c373e329f"
             ]
         ]
     },
@@ -13043,12 +12892,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 280,
-        "y": 180,
+        "x": 300,
+        "y": 200,
         "wires": [
             [
-                "3e053b2c09523811",
-                "e754287c373e329f"
+                "3e053b2c09523811"
             ]
         ]
     },
@@ -14728,7 +14576,7 @@
         "id": "706122ba56e085a6",
         "type": "s7 in",
         "z": "fdbb4441f79199f2",
-        "endpoint": "",
+        "endpoint": "48792a48b96c7658",
         "mode": "all",
         "variable": "",
         "diff": false,
@@ -14737,7 +14585,7 @@
         "y": 120,
         "wires": [
             [
-                "3177621d71678f29"
+                "c2023ed7d9bd0936"
             ]
         ]
     },
@@ -14757,8 +14605,7 @@
         "y": 100,
         "wires": [
             [
-                "a39c0f085c64d4da",
-                "c2023ed7d9bd0936"
+                "a39c0f085c64d4da"
             ]
         ]
     },
@@ -14800,8 +14647,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 60,
+        "x": 280,
+        "y": 220,
         "wires": []
     },
     {
@@ -14922,5 +14769,21 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "2d3774684adee2f9",
+        "type": "debug",
+        "z": "61ad92684be24455",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 220,
+        "y": 100,
+        "wires": []
     }
 ]

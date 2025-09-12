@@ -159,14 +159,6 @@
         "env": []
     },
     {
-        "id": "2c7b76b91ffbf54a",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "5f5798233d6334e6",
         "type": "MSSQL-CN",
         "z": "e07e4c26beb8b4f7",
@@ -14769,6 +14761,7 @@
         "wires": [
             []
         ]
+
     },
     {
         "id": "00892bc7c99d32ba",
@@ -14810,5 +14803,6 @@
         "x": 280,
         "y": 100,
         "wires": []
+
     }
 ]

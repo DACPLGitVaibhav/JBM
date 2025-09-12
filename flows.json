@@ -159,14 +159,6 @@
         "env": []
     },
     {
-        "id": "61ad92684be24455",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "5f5798233d6334e6",
         "type": "MSSQL-CN",
         "z": "e07e4c26beb8b4f7",
@@ -14768,47 +14760,6 @@
         "y": 120,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "2d3774684adee2f9",
-        "type": "debug",
-        "z": "61ad92684be24455",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 340,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "8999428d69789ca4",
-        "type": "inject",
-        "z": "61ad92684be24455",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"Test1\":\"1\",\"Test2\":\"2\",\"Test3\":\"3\",\"Test4\":\"4\"}",
-        "payloadType": "json",
-        "x": 90,
-        "y": 100,
-        "wires": [
-            [
-                "2d3774684adee2f9"
-            ]
         ]
     }
 ]

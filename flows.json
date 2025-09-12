@@ -14782,8 +14782,33 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 220,
+        "x": 340,
         "y": 100,
         "wires": []
+    },
+    {
+        "id": "8999428d69789ca4",
+        "type": "inject",
+        "z": "61ad92684be24455",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Test1\":\"1\"}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "2d3774684adee2f9"
+            ]
+        ]
     }
 ]
